@@ -1,0 +1,10 @@
+cam=webcam(3);
+preview(cam);
+prompt = 'Press any key to take reference image of the ball to track';
+inputkey = input(prompt);
+ReferenceFrame = snapshot(cam);
+ReferenceImage = imresize (ReferenceFrame,0.65,'bilinear');
+prompt = 'Press any key to continue execution';
+inputkey2 = input(prompt);
+closePreview(cam);
+clear cam;
