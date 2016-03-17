@@ -41,8 +41,8 @@ function [OutOfPitchFlag] = refereeingOutOfPitch(yawAngleDrone,ballPosition,line
 
 
 
-mReferenceSideLine = tan(yawAngleDrone+pi/2); % slope of the side lines
-mReferenceGoalLine = tan(yawAngleDrone); % slope of the goal lines
+mReferenceSideLine = tan(yawAngleDrone); % slope of the side lines
+mReferenceGoalLine = tan(yawAngleDrone+pi/2); % slope of the goal lines
 mSlopeTH =abs(mReferenceSideLine-mReferenceGoalLine)*0.6; % Threshold slope matching
 sizeSelectedLines=size(selectedLines);
 rhoDistanceTH=0.75; % rho threshold in meters
@@ -110,7 +110,7 @@ else
         %     if auxCntSide>1
 
             auxWMSideLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
-            auxWMSideLines1=auxWMSideLines(auxWMSideLines(:,3)==2,:); % Filter by the SideOrGoal flag equal to '1' - Side
+            auxWMSideLines1=auxWMSideLines(auxWMSideLines(:,3)==1,:); % Filter by the SideOrGoal flag equal to '1' - Side
 
                 if auxSideLines(j,6)*pixelDistance>auxWMSideLines1(1,5)-rhoDistanceTH && auxSideLines(j,6)*pixelDistance<auxWMSideLines1(1,5)+rhoDistanceTH
                     selectedFilteredLines(1,:)=auxSideLines(j,:); % Side line stored in the first row
@@ -126,7 +126,7 @@ else
         %     if auxCntSide>1
 
             auxWMGoalLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
-            auxWMGoalLines1=auxWMGoalLines(auxWMGoalLines(:,3)==1,:); % Filter by the SideOrGoal flag equal to '2' - Side
+            auxWMGoalLines1=auxWMGoalLines(auxWMGoalLines(:,3)==2,:); % Filter by the SideOrGoal flag equal to '2' - Goal
 
                 if auxGoalLines(j,6)*pixelDistance>auxWMGoalLines1(1,5)-rhoDistanceTH && auxGoalLines(j,6)*pixelDistance<auxWMGoalLines1(1,5)+rhoDistanceTH
                     selectedFilteredLines(2,:)=auxGoalLines(j,:); % Goal line stored in the second row
