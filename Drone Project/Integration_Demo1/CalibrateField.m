@@ -23,14 +23,17 @@ ref_anch = set_reference(s); % Set up anchor coord system
 pause(0.1);
 
 % Calibrate field
-[CR1,CR2,CR3,CR4,ref]  = Field_Calib(100,ref_anch,s);
+[CR1,CR2,CR3,CR4,ref]  = Field_Calib(50,ref_anch,s);
 
 % Create set of plot items
 items = {CR1, 'Corner 1;';CR2, 'Corner 2';CR3, 'Corner 3';CR4, 'Corner 4'};
 
 % Estimate field sizes
-field_x = abs(CR1(1) - CR2(1) + CR4(1) - CR3(1))/2;
-field_y = abs(CR4(2) - CR1(2) + CR3(2) - CR2(2))/2;
+field_x_vec = (CR2 - CR1 + CR3 - CR4)/2;
+field_y_vec = (CR4 - CR1 + CR3 - CR2)/2;
+
+field_x = sqrt(field_x_vec(1)^2 + field_x_vec(2)^2);
+field_y = sqrt(field_y_vec(1)^2 + field_y_vec(2)^2);
 
 % Save configuration for reuse
 save('Config.mat','ref','items','CR1','CR2','CR3','CR4','field_x','field_y');
@@ -44,12 +47,9 @@ ioffs = 32;
 joffs = 37; % Trim edges to only have the field
 field = field(ioffs+2:end-ioffs,joffs:end-joffs,:);
 
-
-
 % Coordinate system conversion preparation
 [nrows,ncols,colval] = size(field); % Get matrix size
 field2im_params = [field_x,field_y,nrows,ncols];
 
 % Call init function
 fign = init_plot_trilat(field, items, field2im_params);
-

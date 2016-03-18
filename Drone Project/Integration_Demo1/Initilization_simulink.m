@@ -1,13 +1,13 @@
 clear all; close all; clc;
 
 %% Add function to path
-addpath('E:\Dropbox\Dropbox\MSD\referee_drone\matlab\Integration_Demo1\Trilateration\')
-addpath('E:\Dropbox\Dropbox\MSD\referee_drone\matlab\Integration_Demo1\Trilateration\Trilateration_algorithm')
-addpath('E:\Dropbox\Dropbox\MSD\referee_drone\matlab\Integration_Demo1\Detection')
-addpath('E:\Dropbox\Dropbox\MSD\referee_drone\matlab\Integration_Demo1\Detection\AR_Drone_CamCalibrationSet')
-addpath('E:\Dropbox\Dropbox\MSD\referee_drone\matlab\Integration_Demo1\Refereeing')
-addpath('E:\Dropbox\Dropbox\MSD\referee_drone\matlab\Integration_Demo1\World_Model')
-addpath('E:\Dropbox\Dropbox\MSD\referee_drone\matlab\Integration_Demo1\Top_View_Camera')
+addpath('E:\GitHub\MSD2015\Drone Project\Integration_Demo1\Trilateration\')
+addpath('E:\GitHub\MSD2015\Drone Project\Integration_Demo1\Trilateration\Trilateration_algorithm')
+addpath('E:\GitHub\MSD2015\Drone Project\Integration_Demo1\Detection')
+addpath('E:\GitHub\MSD2015\Drone Project\Integration_Demo1\Detection\AR_Drone_CamCalibrationSet')
+addpath('E:\GitHub\MSD2015\Drone Project\Integration_Demo1\Refereeing')
+addpath('E:\GitHub\MSD2015\Drone Project\Integration_Demo1\World_Model')
+addpath('E:\GitHub\MSD2015\Drone Project\Integration_Demo1\Top_View_Camera')
 
 %% Initialize Coordinate System and Anchor System
 load('Config.mat') 
