@@ -17,8 +17,8 @@ load('background.mat')
 load('template_drones1.mat')
 
 %% Initialize Variables
-thetaCamX = 43*pi/180;
-thetaCamY = 32*pi/180;
+thetaCamX = 58*pi/180;
+thetaCamY = 45*pi/180;
 
 %% Initialize Reference Image Cascade Detector
 % cam=webcam(3);cl
