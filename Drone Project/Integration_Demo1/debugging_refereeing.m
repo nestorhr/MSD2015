@@ -1,0 +1,13 @@
+yawAngleDrone=-178.6;
+selectedLines=[11    64   609   116   -85   -62];
+droneInPitch=1;
+numOutOfBoundLines=1;
+worldModelOuterLines=[1 0 2 8.779 -169.2;2 0 1 8.279 170.8;3 0 2 3.077 -172.3; 4 1 1 0.4512 -170.8];
+thetaCamX=58*pi/180;
+height=1.8;
+frameProperties=[480 640];
+lineWidth=1;
+% frame1=imread('f1.jpg');
+% frame2=imresize(frame1,[480 640]);
+% ballPosition=[128 240];
+ballPosition=[1 1];

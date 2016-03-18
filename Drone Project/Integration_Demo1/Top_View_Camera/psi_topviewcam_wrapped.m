@@ -1,4 +1,4 @@
-function epsi = psi_topviewcam_wrapped(backim, drone1)
+function [epsi,img] = psi_topviewcam_wrapped(backim, drone1)
     
     persistent camObj height width
     

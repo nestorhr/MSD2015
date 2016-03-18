@@ -160,8 +160,8 @@ switch ballSelectionMode
 
         if lineDetectionEnabled==1
 
-            [image,newOrigin] = undistortImage(videoFrameLines,cameraParams); % Correct image based on camera calibration
-            I=im2bw(image,0.5);
+%             [image,newOrigin] = undistortImage(videoFrameLines,cameraParams); % Correct image based on camera calibration
+            I=im2bw(videoFrameLines,0.5);
             imBW= bwmorph(I,'thin',10);
             % Detect lines
             [H,T,R] = hough(imBW);
@@ -198,8 +198,17 @@ switch ballSelectionMode
                 LinesCandidates=zeros(sizeLines(1),2);
                 SumCandidates=1;
                 LinesCandidates(1,:)=TRmatrix(1,:);
-
-
+                
+                if ~isempty(TRmatrix)
+                    sizeTRmatrix=size(TRmatrix);
+                    for i = 1:sizeTRmatrix(1)
+                        if TRmatrix(i,2) < 0
+                            TRmatrix(i,1) = TRmatrix(i,1) + 180;
+                            TRmatrix(i,2) = -TRmatrix(i,2);
+                        end
+                    end
+                end
+                
                 ThetaTH=10; % Threshold defined for theta difference
                 RhoTH=90; % Threshold defined for rho difference
 
@@ -283,7 +292,7 @@ switch ballSelectionMode
                 % figure; imshow(maskedI);
                 I=im2bw(maskedI,0.005);
                 % figure;imshow(I);
-                [centers, radii, metric] = imfindcircles(I,[20 60], 'Sensitivity',0.95);
+                [centers, radii, metric] = imfindcircles(I,[15 50], 'Sensitivity',0.95);
 
                 if ~isempty(centers)
 
@@ -385,8 +394,8 @@ switch ballSelectionMode
 
         if lineDetectionEnabled==1
 
-            [image,newOrigin] = undistortImage(videoFrameLines,cameraParams); % Correct image based on camera calibration
-            I=im2bw(image,0.5);
+%             [image,newOrigin] = undistortImage(videoFrameLines,cameraParams); % Correct image based on camera calibration
+            I=im2bw(videoFrameLines,0.5);
             imBW= bwmorph(I,'thin',10);
             % Detect lines
             [H,T,R] = hough(imBW);
@@ -423,8 +432,17 @@ switch ballSelectionMode
                 LinesCandidates=zeros(sizeLines(1),2);
                 SumCandidates=1;
                 LinesCandidates(1,:)=TRmatrix(1,:);
-
-
+                
+                if ~isempty(TRmatrix)
+                    sizeTRmatrix=size(TRmatrix);
+                    for i = 1:sizeTRmatrix(1)
+                        if TRmatrix(i,2) < 0
+                            TRmatrix(i,1) = TRmatrix(i,1) + 180;
+                            TRmatrix(i,2) = -TRmatrix(i,2);
+                        end
+                    end
+                end
+                
                 ThetaTH=10; % Threshold defined for theta difference
                 RhoTH=90; % Threshold defined for rho difference
 
@@ -475,7 +493,7 @@ switch ballSelectionMode
 
                     % Select candidate
 
-                    [maxLenght,maxIdx]=max(longestLine);   
+                    [maxLength,maxIdx]=max(longestLine);   
                     selectedLines(i,1)= px1(maxIdx);
                     selectedLines(i,2)= py1(maxIdx);
                     selectedLines(i,3)= px2(maxIdx);

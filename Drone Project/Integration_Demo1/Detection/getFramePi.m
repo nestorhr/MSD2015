@@ -3,7 +3,7 @@ function frame = getFramePi()
     
     if isempty(cam)
         rpi = raspi();
-        cam = cameraboard(rpi, 'Resolution', '640x480', 'FrameRate', 20);
+        cam = cameraboard(rpi, 'Resolution', '320x240', 'FrameRate', 5);
     end
     
     frame = snapshot(cam);

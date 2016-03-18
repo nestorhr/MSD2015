@@ -3,7 +3,7 @@
 % Technical University of Eindhoven
 % Mechatronic Systems Design PDEng trainee
 
-function [OutOfPitchFlag] = refereeingOutOfPitch(yawAngleDrone,ballPosition,lineWidth,selectedLines,numOutOfBoundLines,frameProperties,droneInPitch,thetaCamX,height,worldModelOuterLines)
+function [OutOfPitchFlag, pixelDistance] = refereeingOutOfPitch(yawAngleDrone,ballPosition,lineWidth,selectedLines,numOutOfBoundLines,frameProperties,droneInPitch,thetaCamX,height,worldModelOuterLines)
 
 % This function updates the OutOfPitchFlag ('0'- inside the pitch, '1'-
 % out of the pitch or '-1' not known)
@@ -111,11 +111,12 @@ else
 
             auxWMSideLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
             auxWMSideLines1=auxWMSideLines(auxWMSideLines(:,3)==1,:); % Filter by the SideOrGoal flag equal to '1' - Side
-
-                if auxSideLines(j,6)*pixelDistance>auxWMSideLines1(1,5)-rhoDistanceTH && auxSideLines(j,6)*pixelDistance<auxWMSideLines1(1,5)+rhoDistanceTH
+            if ~isempty(auxWMSideLines1)
+                if abs(auxSideLines(j,6)*pixelDistance)>auxWMSideLines1(1,4)-rhoDistanceTH && abs(auxSideLines(j,6)*pixelDistance)<auxWMSideLines1(1,4)+rhoDistanceTH
                     selectedFilteredLines(1,:)=auxSideLines(j,:); % Side line stored in the first row
                     auxCntSide=1;
                 end
+            end
         end
     else
        auxCntSide=0;
@@ -127,11 +128,12 @@ else
 
             auxWMGoalLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
             auxWMGoalLines1=auxWMGoalLines(auxWMGoalLines(:,3)==2,:); % Filter by the SideOrGoal flag equal to '2' - Goal
-
-                if auxGoalLines(j,6)*pixelDistance>auxWMGoalLines1(1,5)-rhoDistanceTH && auxGoalLines(j,6)*pixelDistance<auxWMGoalLines1(1,5)+rhoDistanceTH
+            if ~isempty(auxWMGoalLines1)
+                if abs(auxGoalLines(j,6)*pixelDistance)>auxWMGoalLines1(1,4)-rhoDistanceTH && abs(auxGoalLines(j,6)*pixelDistance)<auxWMGoalLines1(1,4)+rhoDistanceTH
                     selectedFilteredLines(2,:)=auxGoalLines(j,:); % Goal line stored in the second row
                     auxCntGoal=1;
-                end   
+                end
+            end
 
         end 
     else
