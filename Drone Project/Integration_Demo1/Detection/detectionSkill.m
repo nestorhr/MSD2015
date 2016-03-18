@@ -197,17 +197,17 @@ switch ballSelectionMode
                 TRmatrix=[ThetaVector RhoVector]; % Matrix of theta and rho
                 LinesCandidates=zeros(sizeLines(1),2);
                 SumCandidates=1;
-                LinesCandidates(1,:)=TRmatrix(1,:);
                 
-                if ~isempty(TRmatrix)
-                    sizeTRmatrix=size(TRmatrix);
-                    for i = 1:sizeTRmatrix(1)
-                        if TRmatrix(i,2) < 0
-                            TRmatrix(i,1) = TRmatrix(i,1) + 180;
-                            TRmatrix(i,2) = -TRmatrix(i,2);
+                
+                sizeTRmatrix=size(TRmatrix);
+                
+                    for z = 1:sizeTRmatrix(1)
+                        if TRmatrix(z,2) < 0
+                            TRmatrix(z,1) = TRmatrix(z,1) + 180;
+                            TRmatrix(z,2) = -TRmatrix(z,2);
                         end
                     end
-                end
+                LinesCandidates(1,:)=TRmatrix(1,:);
                 
                 ThetaTH=10; % Threshold defined for theta difference
                 RhoTH=90; % Threshold defined for rho difference
@@ -228,8 +228,11 @@ switch ballSelectionMode
                     end
                 end
 
-                idx=kmeans(TRmatrix, SumCandidates); % Get the index of the clustered lines based on the real number of lines detected
-
+                if sizeTRmatrix(1) > 1
+                    idx=kmeans(TRmatrix, SumCandidates, 'Distance','cityblock'); % Get the index of the clustered lines based on the real number of lines detected
+                else
+                    idx = [1];
+                end
                 % Select candidates based on the longest one
 
                 selectedLines=zeros(SumCandidates,6); % Should include the coordinates for both points and the theta and rho value
@@ -292,7 +295,7 @@ switch ballSelectionMode
                 % figure; imshow(maskedI);
                 I=im2bw(maskedI,0.005);
                 % figure;imshow(I);
-                [centers, radii, metric] = imfindcircles(I,[15 50], 'Sensitivity',0.95);
+                [centers, radii, metric] = imfindcircles(I,[20 60], 'Sensitivity',0.95);
 
                 if ~isempty(centers)
 
@@ -431,17 +434,15 @@ switch ballSelectionMode
                 TRmatrix=[ThetaVector RhoVector]; % Matrix of theta and rho
                 LinesCandidates=zeros(sizeLines(1),2);
                 SumCandidates=1;
-                LinesCandidates(1,:)=TRmatrix(1,:);
-                
-                if ~isempty(TRmatrix)
-                    sizeTRmatrix=size(TRmatrix);
-                    for i = 1:sizeTRmatrix(1)
-                        if TRmatrix(i,2) < 0
-                            TRmatrix(i,1) = TRmatrix(i,1) + 180;
-                            TRmatrix(i,2) = -TRmatrix(i,2);
+                                
+                sizeTRmatrix=size(TRmatrix);
+                    for z = 1:sizeTRmatrix(1)
+                        if TRmatrix(z,2) < 0
+                            TRmatrix(z,1) = TRmatrix(z,1) + 180;
+                            TRmatrix(z,2) = -TRmatrix(z,2);
                         end
-                    end
-                end
+                    end               
+                LinesCandidates(1,:)=TRmatrix(1,:);
                 
                 ThetaTH=10; % Threshold defined for theta difference
                 RhoTH=90; % Threshold defined for rho difference
@@ -462,8 +463,12 @@ switch ballSelectionMode
                     end
                 end
 
-                idx=kmeans(TRmatrix, SumCandidates); % Get the index of the clustered lines based on the real number of lines detected
-
+                if sizeTRmatrix(1) > 1
+                    idx=kmeans(TRmatrix, SumCandidates, 'Distance','cityblock'); % Get the index of the clustered lines based on the real number of lines detected
+                else
+                    idx = [1];
+                end
+                    
                 % Select candidates based on the longest one
 
                 selectedLines=zeros(SumCandidates,6); % Should include the coordinates for both points and the theta and rho value
