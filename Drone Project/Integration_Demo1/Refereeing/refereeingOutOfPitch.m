@@ -42,8 +42,18 @@ function [OutOfPitchFlag, pixelDistance] = refereeingOutOfPitch(yawAngleDrone,ba
 
 
 mReferenceSideLine = tan(yawAngleDrone); % slope of the side lines
+if mReferenceSideLine>20
+    mReferenceSideLine=20;
+elseif mReferenceSideLine<-20
+    mReferenceSideLine=-20;
+end
 mReferenceGoalLine = tan(yawAngleDrone+pi/2); % slope of the goal lines
-mSlopeTH =abs(mReferenceSideLine-mReferenceGoalLine)*0.6; % Threshold slope matching
+if mReferenceGoalLine>20
+    mReferenceGoalLine=20;
+elseif mReferenceGoalLine<-20
+    mReferenceGoalLine=-20;
+end
+mSlopeTH =abs(mReferenceSideLine-mReferenceGoalLine); % Threshold slope matching
 sizeSelectedLines=size(selectedLines);
 rhoDistanceTH=0.75; % rho threshold in meters
 
@@ -73,6 +83,11 @@ else
     for i=1:sizeSelectedLines(1)
 
         mSlope=(selectedLines(i,4)-selectedLines(i,2))/(selectedLines(i,3)-selectedLines(i,1))*(-1); % Y-axis is flipped in the frame
+        if mSlope>20
+            mSlope=20;
+        elseif mSlope<-20
+            mSlope=-20;
+        end
 
         if mSlope>0
             if mSlope<mReferenceSideLine+mSlopeTH && mSlope>mReferenceSideLine-mSlopeTH
@@ -153,6 +168,11 @@ else
     for k=1:sizeFilteredLines(1) % The size of the filtered selected lines
 
         a_p=(selectedFilteredLines(k,4)-selectedFilteredLines(k,2))/(selectedFilteredLines(k,3)-selectedFilteredLines(k,1));
+        if a_p>20
+            a_p=20;
+        elseif a_p<-20
+            a_p=-20;
+        end
         b_p=(-selectedFilteredLines(k,1)*a_p+selectedFilteredLines(k,2));    
         Fline=symfun(a_p*x_v2+b_p,x_v2);
 
@@ -170,6 +190,11 @@ else
     for k=1:sizeFilteredLines(1) % The size of the filtered selected lines
 
         a_p=(selectedFilteredLines(k,4)-selectedFilteredLines(k,2))/(selectedFilteredLines(k,3)-selectedFilteredLines(k,1));
+        if a_p>20
+            a_p=20;
+        elseif a_p<-20
+            a_p=-20;
+        end
         b_p=(-selectedFilteredLines(k,1)*a_p+selectedFilteredLines(k,2));    
         Fline=symfun(a_p*x_v2+b_p,x_v2);
 

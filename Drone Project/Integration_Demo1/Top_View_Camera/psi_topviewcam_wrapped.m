@@ -29,7 +29,7 @@ N = 1;
 
 
 % load background
-% while runLoop
+% while runLoopim
     % variable initialization
     numFrames = 1;
     xc = zeros(N,numFrames);

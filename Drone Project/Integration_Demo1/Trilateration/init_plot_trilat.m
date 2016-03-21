@@ -13,9 +13,10 @@ imshow(im)
 axis image
 
 % Plot corners
+hold on
 plots = [];
-for i = 1:length(items)
-    [xi,xj] = xy2ij(items{i,1}(1),items{i,1}(2),field2im_params(1),field2im_params(2),field2im_params(3),field2im_params(4));
+for i = 1:4
+    [xi,xj] = xy2ij(items(i,1),items(i,2),field2im_params(1),field2im_params(2),field2im_params(3),field2im_params(4));
     xin(i) = xi; xjn(i) = xj;
     plots(i) = plot(xj,xi,'*','markersize',20);   
 end
