@@ -31,4 +31,8 @@ field2im_params = [field_x,field_y,nrows,ncols];
 %     linepos(end+1) = xin(i);
 % end
 % im = insertShape(im,'line',linepos,'color','black');
+
+im = insertText(im,[10 10],'LEGEND','BoxOpacity',0);
+im = insertText(im,[10 30],'Drone: Black','BoxOpacity',0);
+im = insertText(im,[10 50],'Ball:     Red','BoxOpacity',0);
 end
