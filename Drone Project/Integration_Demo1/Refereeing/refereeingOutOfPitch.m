@@ -41,21 +41,44 @@ function [OutOfPitchFlag, pixelDistance] = refereeingOutOfPitch(yawAngleDrone,ba
 
 
 
-mReferenceSideLine = tan(yawAngleDrone); % slope of the side lines
-if mReferenceSideLine>20
-    mReferenceSideLine=20;
-elseif mReferenceSideLine<-20
-    mReferenceSideLine=-20;
+% mReferenceSideLine = tan(yawAngleDrone); % slope of the side lines
+% if mReferenceSideLine>20
+%     mReferenceSideLine=20;
+% elseif mReferenceSideLine<-20
+%     mReferenceSideLine=-20;
+% end
+% mReferenceGoalLine = tan(yawAngleDrone+pi/2); % slope of the goal lines
+% if mReferenceGoalLine>20
+%     mReferenceGoalLine=20;
+% elseif mReferenceGoalLine<-20
+%     mReferenceGoalLine=-20;
+% end
+% mSlopeTH =abs(mReferenceSideLine-mReferenceGoalLine); % Threshold slope matching
+
+
+auxWMSideLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
+auxWMSideLines1=auxWMSideLines(auxWMSideLines(:,3)==1,:); % Filter by the SideOrGoal flag equal to '1' - Side
+auxWMGoalLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
+auxWMGoalLines1=auxWMGoalLines(auxWMGoalLines(:,3)==2,:); % Filter by the SideOrGoal flag equal to '2' - Goal
+
+% Taking theta references to filter correct candidates
+
+if ~isempty(auxWMSideLines1)
+    mThetaSideReference=auxWMSideLines1(1,5);
+else
+    mThetaSideReference=-999;
 end
-mReferenceGoalLine = tan(yawAngleDrone+pi/2); % slope of the goal lines
-if mReferenceGoalLine>20
-    mReferenceGoalLine=20;
-elseif mReferenceGoalLine<-20
-    mReferenceGoalLine=-20;
+
+if ~isempty(auxWMGoalLines1)
+    mThetaGoalReference=auxWMGoalLines1(1,5);
+else
+    mThetaGoalReference=-999;
 end
-mSlopeTH =abs(mReferenceSideLine-mReferenceGoalLine); % Threshold slope matching
+mThetaReferences=[mThetaSideReference mThetaGoalReference];
+
 sizeSelectedLines=size(selectedLines);
-rhoDistanceTH=0.75; % rho threshold in meters
+rhoDistanceTH=0.2; % rho threshold in meters
+thetaTH=pi/12; % theta threshold in radians 
 
 dronePosition=[frameProperties(2)/2 frameProperties(1)/2];
 
@@ -70,7 +93,7 @@ auxCntSide=0;
 auxCntGoal=0;
 auxCnt=0;
 
-% Calculate mask based on slope comparison
+% If there are no out of bounds line detected then give the result
 if numOutOfBoundLines == 0
     if ballPosition == [-100 -100]
         OutOfPitchFlag = -1;
@@ -79,36 +102,58 @@ if numOutOfBoundLines == 0
     else
         OutOfPitchFlag = 1;
     end        
-else
+else % Calculate mask based on theta comparison
     for i=1:sizeSelectedLines(1)
 
-        mSlope=(selectedLines(i,4)-selectedLines(i,2))/(selectedLines(i,3)-selectedLines(i,1))*(-1); % Y-axis is flipped in the frame
-        if mSlope>20
-            mSlope=20;
-        elseif mSlope<-20
-            mSlope=-20;
-        end
+%         mSlope=(selectedLines(i,4)-selectedLines(i,2))/(selectedLines(i,3)-selectedLines(i,1))*(-1); % Y-axis is flipped in the frame
+%         if mSlope>20
+%             mSlope=20;
+%         elseif mSlope<-20
+%             mSlope=-20;
+%         end
+%         if mSlope>0
+%             if mSlope<mReferenceSideLine+mSlopeTH && mSlope>mReferenceSideLine-mSlopeTH
+%                 auxCntSide=auxCntSide+1;
+%                 outOfBoundsDetector(i)=1; % '1' for a correct side line matching
+%             elseif mSlope<mReferenceGoalLine+mSlopeTH && mSlope>mReferenceGoalLine-mSlopeTH
+%                     auxCntGoal=auxCntGoal+1;
+%                     outOfBoundsDetector(i)=2; % '2' for a correct goal line matching
+%             else
+%                 outOfBoundsDetector(i)=0; % '0' for no matching                    
+%             end
+%         else if mSlope>mReferenceSideLine-mSlopeTH && mSlope<mReferenceSideLine+mSlopeTH
+%                 auxCntSide=auxCntSide+1;
+%                 outOfBoundsDetector(i)=1; 
+%             elseif mSlope>mReferenceGoalLine-mSlopeTH && mSlope<mReferenceGoalLine+mSlopeTH
+%                     auxCntGoal=auxCntGoal+1;
+%                     outOfBoundsDetector(i)=2;            
+%             else
+%                 outOfBoundsDetector(i)=0; % '0' for no matching
+%             end
+%         end
 
-        if mSlope>0
-            if mSlope<mReferenceSideLine+mSlopeTH && mSlope>mReferenceSideLine-mSlopeTH
+          mTheta=selectedLines(i,5)*pi/180;
+        if mTheta>0
+            if mTheta<mThetaReferences(1)+thetaTH && mTheta>mThetaReferences(1)-thetaTH
                 auxCntSide=auxCntSide+1;
                 outOfBoundsDetector(i)=1; % '1' for a correct side line matching
-            elseif mSlope<mReferenceGoalLine+mSlopeTH && mSlope>mReferenceGoalLine-mSlopeTH
+            elseif mTheta<mThetaReferences(2)+thetaTH && mTheta>mThetaReferences(2)-thetaTH
                     auxCntGoal=auxCntGoal+1;
                     outOfBoundsDetector(i)=2; % '2' for a correct goal line matching
             else
                 outOfBoundsDetector(i)=0; % '0' for no matching                    
             end
-        else if mSlope>mReferenceSideLine-mSlopeTH && mSlope<mReferenceSideLine+mSlopeTH
+        else if mTheta>mThetaReferences(1)-thetaTH && mTheta<mThetaReferences(1)+thetaTH
                 auxCntSide=auxCntSide+1;
                 outOfBoundsDetector(i)=1; 
-            elseif mSlope>mReferenceGoalLine-mSlopeTH && mSlope<mReferenceGoalLine+mSlopeTH
+            elseif mTheta>mThetaReferences(2)-thetaTH && mTheta<mThetaReferences(2)+thetaTH
                     auxCntGoal=auxCntGoal+1;
                     outOfBoundsDetector(i)=2;            
             else
                 outOfBoundsDetector(i)=0; % '0' for no matching
             end
-        end            
+        end
+         
 
     end 
 
@@ -123,9 +168,9 @@ else
     if sizeAuxSideLines(1)>0
         for j=1:sizeAuxSideLines(1)
         %     if auxCntSide>1
-
-            auxWMSideLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
-            auxWMSideLines1=auxWMSideLines(auxWMSideLines(:,3)==1,:); % Filter by the SideOrGoal flag equal to '1' - Side
+% 
+%             auxWMSideLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
+%             auxWMSideLines1=auxWMSideLines(auxWMSideLines(:,3)==1,:); % Filter by the SideOrGoal flag equal to '1' - Side
             if ~isempty(auxWMSideLines1)
                 if abs(auxSideLines(j,6)*pixelDistance)>auxWMSideLines1(1,4)-rhoDistanceTH && abs(auxSideLines(j,6)*pixelDistance)<auxWMSideLines1(1,4)+rhoDistanceTH
                     selectedFilteredLines(1,:)=auxSideLines(j,:); % Side line stored in the first row
@@ -141,8 +186,8 @@ else
         for j=1:sizeAuxGoalLines(1)
         %     if auxCntSide>1
 
-            auxWMGoalLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
-            auxWMGoalLines1=auxWMGoalLines(auxWMGoalLines(:,3)==2,:); % Filter by the SideOrGoal flag equal to '2' - Goal
+%             auxWMGoalLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
+%             auxWMGoalLines1=auxWMGoalLines(auxWMGoalLines(:,3)==2,:); % Filter by the SideOrGoal flag equal to '2' - Goal
             if ~isempty(auxWMGoalLines1)
                 if abs(auxGoalLines(j,6)*pixelDistance)>auxWMGoalLines1(1,4)-rhoDistanceTH && abs(auxGoalLines(j,6)*pixelDistance)<auxWMGoalLines1(1,4)+rhoDistanceTH
                     selectedFilteredLines(2,:)=auxGoalLines(j,:); % Goal line stored in the second row
@@ -168,7 +213,7 @@ else
     for k=1:sizeFilteredLines(1) % The size of the filtered selected lines
 
         a_p=(selectedFilteredLines(k,4)-selectedFilteredLines(k,2))/(selectedFilteredLines(k,3)-selectedFilteredLines(k,1));
-        if a_p>20
+        if a_p>20 % Filtering completely vertical slope
             a_p=20;
         elseif a_p<-20
             a_p=-20;
@@ -190,7 +235,7 @@ else
     for k=1:sizeFilteredLines(1) % The size of the filtered selected lines
 
         a_p=(selectedFilteredLines(k,4)-selectedFilteredLines(k,2))/(selectedFilteredLines(k,3)-selectedFilteredLines(k,1));
-        if a_p>20
+        if a_p>20 % Filtering completely vertical slope
             a_p=20;
         elseif a_p<-20
             a_p=-20;
@@ -236,10 +281,10 @@ else
         case 1 % One outer line can be found
 
             if auxCnt==1
-                if auxCntSide==1
+                if auxCntSide==1 % Compare with the side line
                    if droneInPitch==1
 
-                       if relativeDronePosition(1)==relativeBallPosition(1) % Compare to the only outer line
+                       if relativeDronePosition(1)==relativeBallPosition(1) % Compare to the only outer line (side)
 
                            OutOfPitchFlag=0; % Not out of pitch
 
@@ -248,10 +293,10 @@ else
                            OutOfPitchFlag=1; % Out of pitch
                        end
                    end
-                else
+                else % Compare with the goal line
                     if droneInPitch==1
 
-                       if relativeDronePosition(2)==relativeBallPosition(2) % Compare to the only outer line
+                       if relativeDronePosition(2)==relativeBallPosition(2) % Compare to the only outer line (goal)
 
                            OutOfPitchFlag=0; % Not out of pitch
 
