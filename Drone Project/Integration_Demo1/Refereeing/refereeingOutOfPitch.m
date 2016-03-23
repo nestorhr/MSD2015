@@ -1,7 +1,10 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Author: Nestor Hernandez Rodriguez
-% Last Update: 16-03-2016
+% Project: Robotic Referee Drone
+% Date: March 2016
 % Technical University of Eindhoven
 % Mechatronic Systems Design PDEng trainee
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 function [OutOfPitchFlag, pixelDistance] = refereeingOutOfPitch(yawAngleDrone,ballPosition,lineWidth,selectedLines,numOutOfBoundLines,frameProperties,droneInPitch,thetaCamX,height,worldModelOuterLines)
 
@@ -9,24 +12,12 @@ function [OutOfPitchFlag, pixelDistance] = refereeingOutOfPitch(yawAngleDrone,ba
 % out of the pitch or '-1' not known)
 % 
 % Inputs:
-% yawAngleDrone - yaw angle with respect to the field. Should be calibrated
-%   so that the outer lines have the initial value as stated in default.
-% 
-%   Default: goal line yaw angle = pi/2 rad
-%            side lines yaw angle = 0 rad
-% 
-% ballMdl - Object that contains position of the center, diameter and
-%   relative position to the selected lines with respect to the frame and
-%   taking into account the height of the drone.
-% 
-% lineWidth - Width of the lines with respect to the frame and taking into
-%   account the height of the drone
+% ballPosition - X and Y coordinates of the ball in pixels within the current frame
 % 
 % selectedLines - Matrix containing the selected lines points, theta and
-%   rho [x1_vector y1_vector x2_vector y2_vector theta_vector rho_vector]
+% rho [x1_vector y1_vector x2_vector y2_vector theta_vector rho_vector]
 % 
-% numOutOfBoundLines - Integer that contains the number of outer lines that
-%   the frame should contain
+% numOutOfBoundLines - Integer that contains the number of outer lines that the frame should contain
 %
 % frameProperties - [height width] Size of the frame used after pre-process
 %
@@ -36,33 +27,16 @@ function [OutOfPitchFlag, pixelDistance] = refereeingOutOfPitch(yawAngleDrone,ba
 % line identification, rho and theta for the 4 outer lines.
 %
 % The position of the drone within the frame it is assumed to be in the
-% center of the frame as it is a top view camera with a pitch angle of 
-% pi/2 rad.
+% center of the frame using a top view camera with a pitch angle of 
+% pi/2 rad (completely vertical)
 
-
-
-% mReferenceSideLine = tan(yawAngleDrone); % slope of the side lines
-% if mReferenceSideLine>20
-%     mReferenceSideLine=20;
-% elseif mReferenceSideLine<-20
-%     mReferenceSideLine=-20;
-% end
-% mReferenceGoalLine = tan(yawAngleDrone+pi/2); % slope of the goal lines
-% if mReferenceGoalLine>20
-%     mReferenceGoalLine=20;
-% elseif mReferenceGoalLine<-20
-%     mReferenceGoalLine=-20;
-% end
-% mSlopeTH =abs(mReferenceSideLine-mReferenceGoalLine); % Threshold slope matching
-
-
+%% Categorize the lines provided by the World Model into side or goal lines
 auxWMSideLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
 auxWMSideLines1=auxWMSideLines(auxWMSideLines(:,3)==1,:); % Filter by the SideOrGoal flag equal to '1' - Side
 auxWMGoalLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
 auxWMGoalLines1=auxWMGoalLines(auxWMGoalLines(:,3)==2,:); % Filter by the SideOrGoal flag equal to '2' - Goal
 
-% Taking theta references to filter correct candidates
-
+%% Take theta references to filter correct candidates
 if ~isempty(auxWMSideLines1)
     mThetaSideReference=auxWMSideLines1(1,5);
 else
@@ -74,28 +48,29 @@ if ~isempty(auxWMGoalLines1)
 else
     mThetaGoalReference=-999;
 end
+
 mThetaReferences=[mThetaSideReference mThetaGoalReference];
 
 sizeSelectedLines=size(selectedLines);
 rhoDistanceTH=0.2; % rho threshold in meters
 thetaTH=pi/12; % theta threshold in radians 
 
+%% Calculate drone position in the frame
 dronePosition=[frameProperties(2)/2 frameProperties(1)/2];
 
-% Calculate pixel to meters conversion factor
-
+%% Calculate pixel to meters conversion factor
 pixelDistance = (height*tan(thetaCamX/2))/(frameProperties(2)/2);
 
-
-outOfBoundsDetector=zeros(sizeSelectedLines(1),1); % Create mask for outer lines
+%% Create mask and initialize variables for filtering outer lines
+outOfBoundsDetector=zeros(sizeSelectedLines(1),1); 
 
 auxCntSide=0;
 auxCntGoal=0;
 auxCnt=0;
 
-% If there are no out of bounds line detected then give the result
+%% If there are no out of bounds line detected then give the result
 if numOutOfBoundLines == 0
-    if ballPosition == [-100 -100]
+    if ballPosition == [-100 -100] % Predefined ball position given when no ball is found 
         OutOfPitchFlag = -1;
     elseif droneInPitch
         OutOfPitchFlag = 0;
@@ -104,33 +79,6 @@ if numOutOfBoundLines == 0
     end        
 else % Calculate mask based on theta comparison
     for i=1:sizeSelectedLines(1)
-
-%         mSlope=(selectedLines(i,4)-selectedLines(i,2))/(selectedLines(i,3)-selectedLines(i,1))*(-1); % Y-axis is flipped in the frame
-%         if mSlope>20
-%             mSlope=20;
-%         elseif mSlope<-20
-%             mSlope=-20;
-%         end
-%         if mSlope>0
-%             if mSlope<mReferenceSideLine+mSlopeTH && mSlope>mReferenceSideLine-mSlopeTH
-%                 auxCntSide=auxCntSide+1;
-%                 outOfBoundsDetector(i)=1; % '1' for a correct side line matching
-%             elseif mSlope<mReferenceGoalLine+mSlopeTH && mSlope>mReferenceGoalLine-mSlopeTH
-%                     auxCntGoal=auxCntGoal+1;
-%                     outOfBoundsDetector(i)=2; % '2' for a correct goal line matching
-%             else
-%                 outOfBoundsDetector(i)=0; % '0' for no matching                    
-%             end
-%         else if mSlope>mReferenceSideLine-mSlopeTH && mSlope<mReferenceSideLine+mSlopeTH
-%                 auxCntSide=auxCntSide+1;
-%                 outOfBoundsDetector(i)=1; 
-%             elseif mSlope>mReferenceGoalLine-mSlopeTH && mSlope<mReferenceGoalLine+mSlopeTH
-%                     auxCntGoal=auxCntGoal+1;
-%                     outOfBoundsDetector(i)=2;            
-%             else
-%                 outOfBoundsDetector(i)=0; % '0' for no matching
-%             end
-%         end
 
           mTheta=selectedLines(i,5)*pi/180;
         if mTheta>0
@@ -157,54 +105,49 @@ else % Calculate mask based on theta comparison
 
     end 
 
-    % Filter possible parallel lines selected as outer lines based on rho provided as input
-
-    selectedFilteredLines=zeros(2,6); % First row for possible side line and Second row for possible goal line
-    auxSideLines=selectedLines(outOfBoundsDetector==1,:);
+    %% Filter possible parallel lines selected as outer lines based on rho provided as input
+    selectedFilteredLines=zeros(2,6); % Predefined as 'First row' for possible 'side line' and 'Second row' for possible 'goal line'
+    auxSideLines=selectedLines(outOfBoundsDetector==1,:); % Filter selected lines with mask to get side lines detected
     sizeAuxSideLines=size(auxSideLines);
-    auxGoalLines=selectedLines(outOfBoundsDetector==2,:);
+    auxGoalLines=selectedLines(outOfBoundsDetector==2,:); % Filter selected lines with mask to get goal lines detected
     sizeAuxGoalLines=size(auxGoalLines);
 
-    if sizeAuxSideLines(1)>0
+    if sizeAuxSideLines(1)>0 % If filtered selected side lines is not empty
         for j=1:sizeAuxSideLines(1)
-        %     if auxCntSide>1
-% 
-%             auxWMSideLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
-%             auxWMSideLines1=auxWMSideLines(auxWMSideLines(:,3)==1,:); % Filter by the SideOrGoal flag equal to '1' - Side
-            if ~isempty(auxWMSideLines1)
-                if abs(auxSideLines(j,6)*pixelDistance)>auxWMSideLines1(1,4)-rhoDistanceTH && abs(auxSideLines(j,6)*pixelDistance)<auxWMSideLines1(1,4)+rhoDistanceTH
-                    selectedFilteredLines(1,:)=auxSideLines(j,:); % Side line stored in the first row
+            if ~isempty(auxWMSideLines1) % If Wolrd Model filtered lines is not empty
+                if abs(auxSideLines(j,6)*pixelDistance)>auxWMSideLines1(1,4)-rhoDistanceTH && abs(auxSideLines(j,6)*pixelDistance)<auxWMSideLines1(1,4)+rhoDistanceTH % Filter using rho
+                    selectedFilteredLines(1,:)=auxSideLines(j,:); % Matching side line stored in the first row
                     auxCntSide=1;
                 end
             end
         end
     else
-       auxCntSide=0;
+       auxCntSide=0; % No side lines can be matched
     end
 
     if sizeAuxGoalLines(1)>0
         for j=1:sizeAuxGoalLines(1)
-        %     if auxCntSide>1
-
-%             auxWMGoalLines=worldModelOuterLines(worldModelOuterLines(:,2)==1,:); % Filter by the InFrameFlag equal to '1'
-%             auxWMGoalLines1=auxWMGoalLines(auxWMGoalLines(:,3)==2,:); % Filter by the SideOrGoal flag equal to '2' - Goal
             if ~isempty(auxWMGoalLines1)
                 if abs(auxGoalLines(j,6)*pixelDistance)>auxWMGoalLines1(1,4)-rhoDistanceTH && abs(auxGoalLines(j,6)*pixelDistance)<auxWMGoalLines1(1,4)+rhoDistanceTH
-                    selectedFilteredLines(2,:)=auxGoalLines(j,:); % Goal line stored in the second row
+                    selectedFilteredLines(2,:)=auxGoalLines(j,:); % Matching goal line stored in the second row
                     auxCntGoal=1;
                 end
             end
 
         end 
     else
-       auxCntGoal=0;
+       auxCntGoal=0; % No goal lines can be matched
     end
 
-    auxCnt=auxCntSide+auxCntGoal;
+    auxCnt=auxCntSide+auxCntGoal; % Total number of lines matched. It can only be '0', '1' or '2' (either you see no lines, 1 side or 1 goal line or a corner that contains both, 1 side line and 1 goal line), this is based on the FOV of the camera and the height ranged assumed
 
-    % Calculate relative position for ball and drone respect to the filtered outer lines
+    %% Calculate relative position for ball and drone respect to the filtered outer lines 
+    % The process of calculating the relative position is defined as follows:
+    %   1. Creating different areas of the frame defined with the intersection of the outer lines
+    %   2. Filling in a binary output stating if the object (drone or ball)
+    %      is above or below the lines with a '1' or '0' respectively
 
-    % Calculate Relative Ball Position
+    %% Calculate Relative Ball Position
     syms x_v2;
     sizeFilteredLines=size(selectedFilteredLines);
     relativeBallPosition=zeros(sizeFilteredLines(1),1);
@@ -213,7 +156,7 @@ else % Calculate mask based on theta comparison
     for k=1:sizeFilteredLines(1) % The size of the filtered selected lines
 
         a_p=(selectedFilteredLines(k,4)-selectedFilteredLines(k,2))/(selectedFilteredLines(k,3)-selectedFilteredLines(k,1));
-        if a_p>20 % Filtering completely vertical slope
+        if a_p>20 % Filtering completely vertical slopes (inf. slope) to a slope of ~20
             a_p=20;
         elseif a_p<-20
             a_p=-20;
@@ -230,7 +173,7 @@ else % Calculate mask based on theta comparison
         end
     end
 
-    % Calculate Relative Drone Position
+    %% Calculate Relative Drone Position
 
     for k=1:sizeFilteredLines(1) % The size of the filtered selected lines
 
@@ -252,7 +195,7 @@ else % Calculate mask based on theta comparison
         end
     end
 
-    % Update OutOfBounds flag
+    %% Update OutOfBounds flag
 
     switch numOutOfBoundLines
 
