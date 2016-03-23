@@ -1,0 +1,1806 @@
+
+Relocations for 'c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libcrt0.obj' section '.text':
+20: 000078dd|000078bf|_cinit                   | 
+Relocations for 'lccstub.obj' section '.data':
+ 6: 00000000|08001020|LibMain                  | 
+Relocations for 'lccstub.obj' section '.pdata':
+12: 00000000|00001020|LibMain                  | 12: 00000004|0000103e|LibMain                  |
+
+Relocations for 'test_plotblock_acc.obj' section '.text':
+20: 000092df|000090bd|memcpy                   | 20: 00009327|00009075|memcpy                   |
+20: 0000713a|00006efc|GetErrorBuffer           | 20: 00007154|00006f04|GetNullPointer           |
+20: 00007166|00006ef2|GetNullPointer           | 20: 0000701c|00006877|LibUpdate_Video          |
+20: 0000969b|00008d01|memcpy                   | 20: 00000518|0001a385|_$667                    |
+20: 0000050e|0001db66|mxCreateString           | 20: 00000541|0001a358|_$668                    |
+20: 00000552|0001dbaa|mexCallMATLABWithObject  | 20: 00000585|0001a30c|_$671                    |
+20: 00000581|0001dafb|mxGetField_700           | 20: 000005ba|0001daca|mxGetString_700          |
+20: 000005d7|0001dab5|mxDestroyArray           | 20: 000005e1|0001daab|mxDestroyArray           |
+20: 000005fe|0001a28f|_$676                    | 20: 0000fdb8|0000f184|strcmp                   |
+20: 0000067c|0001a1c3|_$680                    | 20: 000006cf|0001a120|_$683                    |
+20: 0000072a|0001a072|_$689                    | 20: 00000721|0001689b|_$S1                     |
+20: 0000fc47|0000eeef|sprintf                  | 20: 00002399|0001a5e3|lrrbys4r2m               |
+20: 00007d9d|00006ebf|rt_InitInfAndNaN         | 20: 000007d8|00019fbc|_$715                    |
+20: 000007f2|00019f9a|_$719                    | 20: 0000080e|00019f7e|_$719                    |
+20: 0000088d|00019eda|_$720                    | 20: 0000093c|00019dc1|_$733                    |
+20: 00000990|00019cf7|_$738                    | 20: 000009ed|0001d6a7|mxCalloc                 |
+20: 00000a76|0001d61e|mxCalloc                 | 20: 00000ad8|00018684|DYNAMIC_DIMENSION        |
+20: 00000bc2|0001859a|DYNAMIC_DIMENSION        | 20: 00000caa|000184b2|DYNAMIC_DIMENSION        |
+20: 00000d68|000183f4|DYNAMIC_DIMENSION        | 20: 00000e7b|00018331|_$829                    |
+20: 00000f03|000182c9|_$839                    | 20: 00000f8f|0001825d|_$850                    |
+20: 00001646|00019146|_$719                    | 20: 00001952|0001c742|mxCalloc                 |
+20: 0000197a|0001c71a|mxCalloc                 | 20: 000019ed|00018c87|_$1029                   |
+20: 000019fc|00018c78|_$1029                   | 20: 00001a09|0001c68b|mxCalloc                 |
+20: 00001b0b|00017799|_$1049                   | 20: 0001142c|0000ddb0|strlen                   |
+20: 00011446|0000dd96|strlen                   | 20: 0000ad0c|00007610|malloc                   |
+20: 00001b8a|0001c57a|mexWarnMsgTxt            | 20: 000110c6|0000da70|sprintf                  |
+20: 00001bb0|0001c554|mexWarnMsgTxt            | 20: 0000a33a|00006b82|free                     |
+20: 00001bfd|00018a6b|_$1064                   | 20: 00001bf3|0001c481|mxCreateString           |
+20: 00001c1e|00018a44|_$1065                   | 20: 00001c14|0001c460|mxCreateString           |
+20: 00001c32|0001c442|mxCreateString           | 20: 00001c7d|000189dc|_$1068                   |
+20: 00001c8c|0001c470|mexCallMATLABWithObject  | 20: 000023ec|000183a8|_$715                    |
+20: 00011eec|0000d2f0|strlen                   | 20: 00011f06|0000d2d6|strlen                   |
+20: 0000b7d3|00006b49|malloc                   | 20: 000026a3|00016c18|_ssBadLevel2InputAccessMsg|
+20: 00011bbd|0000cf79|sprintf                  | 20: 0000ae48|00006074|free                     |
+20: 0001200b|0000d1d1|strlen                   | 20: 00012025|0000d1b7|strlen                   |
+20: 0000b8f2|00006a2a|malloc                   | 20: 00002774|00016fae|_ssBadLevel2ZeroDirectFeedMsg2|
+20: 000027a4|00016e42|_ssBadLevel2ZeroDirectFeedMsg| 20: 00011cbe|0000ce78|sprintf                  |
+20: 0000af49|00005f73|free                     | 20: 00012149|0000d093|strlen                   |
+20: 00012163|0000d079|strlen                   | 20: 0000ba30|000068ec|malloc                   |
+20: 00002900|000169bb|_ssBadLevel2InputAccessMsg| 20: 00011e1a|0000cd1c|sprintf                  |
+20: 0000b0a5|00005e17|free                     | 20: 00012268|0000cf74|strlen                   |
+20: 00012282|0000cf5a|strlen                   | 20: 0000bb4f|000067cd|malloc                   |
+20: 000029d1|00016d51|_ssBadLevel2ZeroDirectFeedMsg2| 20: 00002a01|00016be5|_ssBadLevel2ZeroDirectFeedMsg|
+20: 00011f1b|0000cc1b|sprintf                  | 20: 0000b1a6|00005d16|free                     |
+20: 000123aa|0000ce32|strlen                   | 20: 000123c4|0000ce18|strlen                   |
+20: 0000bc91|0000668b|malloc                   | 20: 0000bcb2|0000666a|malloc                   |
+20: 00002b70|000168cd|_ssBadLevel2DirectFeedMsg| 20: 0001208a|0000caac|sprintf                  |
+20: 00002b89|000169ef|_ssBadLevel2DirectFeedSolutionMsg| 20: 000120a3|0000ca93|sprintf                  |
+20: 00012301|0000cb9b|strcat                   | 20: 0000b33c|00005b80|free                     |
+20: 0000b346|00005b76|free                     | 20: 00002c21|000164e7|_sfcnName                |
+20: 00002c28|000179c5|_$1336                   | 20: 00012145|0000c9f1|sprintf                  |
+20: 00002cdd|0001642b|_sfcnName                | 20: 00002ce4|0001789b|_$1344                   |
+20: 00012201|0000c935|sprintf                  | 20: 00002d80|0001b31c|mxGetClassID             |
+20: 00002dc5|00016b37|_$1366                   | 20: 00003047|00016975|_$1399                   |
+20: 000033e7|0001715b|_$1397                   | 20: 00003457|000170bc|_$1403                   |
+20: 000034f4|00016fdb|_$1410                   | 20: 000035b3|00016ee5|_$1422                   |
+20: 000037d5|00016247|_$1512                   | 20: 00003e7a|000165e4|_$1510                   |
+20: 00003f5e|000164cf|_$1523                   | 20: 000040d0|00016349|_$1640                   |
+20: 000041ae|000158ae|_$1660                   | 20: 00004bea|000157f2|_$1659                   |
+20: 00004c1a|000157c0|_$1665                   | 20: 00004cbc|00014df8|_$1811                   |
+20: 00004d07|000156cd|_$1814                   | 20: 000144c4|0000aa78|strcmp                   |
+20: 00004d2c|000156a2|_$1815                   | 20: 000144e9|0000aa53|strcmp                   |
+20: 00004d51|00015677|_$1816                   | 20: 0001450e|0000aa2e|strcmp                   |
+20: 0001467f|0000ab5d|strlen                   | 20: 00004de6|00015576|_$1821                   |
+20: 00004e4f|000154d0|_$1825                   | 20: 00004e66|0001556e|_$1814                   |
+20: 00014623|0000a919|strcmp                   | 20: 00004eae|00015520|_$1815                   |
+20: 0001466b|0000a8d1|strcmp                   | 20: 00004ef6|000154d2|_$1816                   |
+20: 000146b3|0000a889|strcmp                   | 20: 00004f81|0001536f|_$1832                   |
+20: 00004f9f|00015344|_$1833                   | 20: 000144b9|0000a67d|sprintf                  |
+20: 000050b0|00015228|_$1840                   | 20: 000145ca|0000a56c|sprintf                  |
+20: 00005103|000151d0|_$1843                   | 20: 0000515f|0001516e|_$1846                   |
+20: 000051b8|0001510a|_$1849                   | 20: 000051fd|000151dd|_$1665                   |
+20: 0000529a|00014f82|_$1856                   | 20: 00005291|00011e2b|_$S2                     |
+20: 000147b7|0000a37f|sprintf                  | 20: 000052e4|00011dd8|_$S2                     |
+20: 00005342|00013dc6|_sfcnName                | 20: 00005349|00014e9c|_$1901                   |
+20: 00014866|0000a2d0|sprintf                  | 20: 00005353|00018db9|mexErrMsgTxt             |
+20: 00005370|00013d98|_sfcnName                | 20: 00005377|00014e42|_$1904                   |
+20: 00014894|0000a2a2|sprintf                  | 20: 00005381|00018d8b|mexErrMsgTxt             |
+20: 0000538f|00018d15|mxGetM                   | 20: 000053b2|00018cfa|mxGetN                   |
+20: 000053f0|00018cc4|mxIsComplex              | 20: 0000541f|00018c9d|mxIsNumeric              |
+20: 00005457|00013cb1|_sfcnName                | 20: 0000545e|00014d18|_$1909                   |
+20: 0001497b|0000a1bb|sprintf                  | 20: 00005468|00018ca4|mexErrMsgTxt             |
+20: 00005476|00018c4e|mxGetPr                  | 20: 000054da|00013c2e|_sfcnName                |
+20: 000054e1|00014c95|_$1909                   | 20: 000149fe|0000a138|sprintf                  |
+20: 000054eb|00018c21|mexErrMsgTxt             | 20: 0000550b|00013bfd|_sfcnName                |
+20: 00005512|00014c4a|_$1914                   | 20: 00014a2f|0000a107|sprintf                  |
+20: 0000551c|00018bf0|mexErrMsgTxt             | 20: 0000552a|00018b7a|mxGetM                   |
+20: 00005565|00018b5f|mxGetPr                  | 20: 000055df|00014b75|_$1920                   |
+20: 0000e846|00003b56|memcpy                   | 20: 0000566d|00015007|_$1029                   |
+20: 0000567b|00014ff9|_$1029                   | 20: 00014e38|0000a104|strcmp                   |
+20: 00014e69|0000a0d3|strcmp                   | 20: 000056eb|000149ca|_$1927                   |
+20: 00014c08|00009f2e|sprintf                  | 20: 000056f5|00018a17|mexErrMsgTxt             |
+20: 0000583f|0001888d|mxCreateDoubleMatrix_700 | 20: 0000586f|00018855|mxGetPr                  |
+20: 00005b6f|00018555|mxGetPr                  | 20: 00005bd5|00013f27|_$2090                   |
+20: 00005c62|00014423|_$1983                   | 20: 00005d1c|00014341|_$1990                   |
+20: 00005dd6|0001425e|_$1997                   | 20: 00005e90|00014174|_$2004                   |
+20: 00005f4a|00014089|_$2011                   | 20: 00005fc7|00013fda|_$2015                   |
+20: 0000608d|00013edf|_$2022                   | 20: 00006156|00013de0|_$2029                   |
+20: 00006223|00013ce6|_$2033                   | 20: 000062f0|00013beb|_$2037                   |
+20: 0000638e|00013b22|_$2041                   | 20: 0000642c|00013a58|_$2045                   |
+20: 000064a9|000139ad|_$2049                   | 20: 00006547|000138df|_$2053                   |
+20: 000065e5|00013810|_$2057                   | 20: 00006662|00013760|_$2061                   |
+20: 00006708|0001368e|_$2065                   | 20: 0000678c|000135e6|_$2070                   |
+20: 00006801|0001354b|_$2074                   | 20: 000068a8|00013487|_$2082                   |
+20: 000068ef|00013402|_$2084                   | 20: 00006936|0001337d|_$2086                   |
+20: 00006992|000132fa|_$2089                   | 
+Relocations for 'test_plotblock_acc.obj' section '.data':
+ 6: 000000f4|08001040|mdlOutputs               |  6: 000000fc|08001338|mdlUpdate                |
+ 6: 00000104|080014fe|mdlInitializeSizes       |  6: 0000010c|0800179a|mdlInitializeSampleTimes |
+ 6: 00000114|080017d9|mdlTerminate             |  6: 0000011c|080017eb|_ssSetStateAbsTol        |
+ 6: 00000124|080018cb|_ssGetAbsTol             |  6: 00000180|0801a170|DYNAMIC_DIMENSION_DEF    |
+ 6: 00000188|08001926|mdlZeroCrossings         |  6: 00000190|0800197a|mdlGetTimeOfNextVarHit   |
+ 6: 00000198|080019ce|_RegNumInputPortsCB      |  6: 000001a0|08001a57|_RegNumOutputPortsCB     |
+ 6: 000001a8|08001ae0|_ssSetInputPortMatrixDimensions|  6: 000001b0|08001bca|_ssSetOutputPortMatrixDimensions|
+ 6: 000001b8|08001cb4|_ssSetInputPortVectorDimension|  6: 000001c0|08001d72|_ssSetOutputPortVectorDimension|
+ 6: 000001c8|08001e30|_ssSetSymbolicDimsSupport|  6: 000001e0|08001e92|_ssRegisterSymbolicDimsExpr|
+ 6: 00000208|08001f16|_ssRegisterSymbolicDims  |  6: 00000220|08001fa6|_ssRegisterSymbolicDimsString|
+ 6: 00000228|0800202a|_ssRegisterSymbolicDimsIntValue|  6: 00000230|08002092|_ssRegisterSymbolicDimsPlus|
+ 6: 00000238|080020ff|_ssRegisterSymbolicDimsMinus|  6: 00000240|0800216c|_ssRegisterSymbolicDimsMultiply|
+ 6: 00000248|080021d9|_ssRegisterSymbolicDimsDivide|  6: 00000250|08002246|_ssGetNumSymbolicDims    |
+ 6: 00000258|080022b0|_ssGetSymbolicDim        |  6: 00000260|0800231d|_ssSetInputPortSymbolicDimsId|
+ 6: 00000268|08002387|_ssGetCompInputPortSymbolicDimsId|  6: 00000270|080023ef|_ssSetCompInputPortSymbolicDimsId|
+ 6: 00000278|08002459|_ssSetOutputPortSymbolicDimsId|  6: 00000280|080024c3|_ssGetCompOutputPortSymbolicDimsId|
+ 6: 00000288|0800252b|_ssSetCompOutputPortSymbolicDimsId|  6: 00000290|08002595|_ssSetCompDWorkSymbolicDimsId|
+ 6: 00000298|080025ff|ssIsRunTimeParamTunable  |  6: 000002a0|08002667|ssGetSFuncBlockHandle    |
+ 6: 000002a8|080026d6|_ssGetCurrentInputPortWidth|  6: 000002b0|080027e2|_ssGetCurrentOutputPortWidth|
+ 6: 000002b8|080028ea|_ssGetCallSystemNumFcnCallDestinations|  6: 000002c0|08002952|_CreateSimStruct         |
+ 6: 000002d7|08002b19|ssWarning                |  6: 0000082e|08002c0f|_ssFatalError            |
+ 6: 00000836|08002cd9|ssGetIsZeroCrossControlDisabled|  6: 0000083e|08002d3a|ssSetIsInputPortUsedForContZcSignal|
+ 6: 00000846|08002d9c|ssSetZcSignalIsZcElementDisc|  6: 0000084e|08002e1a|ssSetZcSignalName        |
+ 6: 00000856|08002e7c|ssSetZcSignalWidth       |  6: 0000085e|08002ede|ssSetZcSignalZcEventType |
+ 6: 00000866|08002f40|ssSetZcSignalType        |  6: 0000086e|08002fa2|ssSetZcSignalZcTol       |
+ 6: 00000876|08003005|ssSetZcSignalNeedsEventNotification|  6: 0000087e|08003067|ssCreateAndAddZcSignalInfo|
+ 6: 00000886|080030ca|ssCloneAndAddZcSignalInfo|  6: 0000088e|08003132|ssGetNumZcSignals        |
+ 6: 00000896|08003195|ssGetZcSignalVector      |  6: 0000089e|080031ff|ssGetZcSignalZcEvents    |
+ 6: 000008a6|08003269|ssGetZcSignalName        |  6: 000008ae|080032d3|ssGetZcSignalWidth       |
+ 6: 000008b6|0800333b|ssGetZcSignalZcEventType |  6: 000008be|080033a1|ssGetZcSignalType        |
+ 6: 000008c6|08003409|ssGetZcSignalZcTol       |  6: 000008ce|0800347d|ssGetZcSignalNeedsEventNotification|
+ 6: 000008d6|080034e3|ssGetZcSignalIsZcElementDisc|  6: 000008de|0800355c|ssGetIsInputPortElementContinuous|
+ 6: 000008e6|080035d5|_ssGetInputPortSignalPtrsFcn|  6: 000008ee|08003832|_ssGetInputPortSignalFcn |
+ 6: 000008f6|08003a8f|_ssSetInputPortDirectFeedThroughFcn|  6: 000008fe|08003c31|_ssSetInputPortReusableFcn|
+ 6: 00000906|08003ced|_ssSetOutputPortReusableFcn|  6: 0000090e|08003dae|ssGetDTypeIdFromMxArray  |
+ 6: 00000920|08003e57|_$1365                   |  6: 00000928|08003dfd|_$1355                   |
+ 6: 00000930|08003dfd|_$1355                   |  6: 00000938|08003e4e|_$1364                   |
+ 6: 00000940|08003dfd|_$1355                   |  6: 00000948|08003e60|_$1353                   |
+ 6: 00000950|08003e06|_$1356                   |  6: 00000958|08003e0f|_$1357                   |
+ 6: 00000960|08003e18|_$1358                   |  6: 00000968|08003e21|_$1359                   |
+ 6: 00000970|08003e2a|_$1360                   |  6: 00000978|08003e33|_$1361                   |
+ 6: 00000980|08003e3c|_$1362                   |  6: 00000988|08003e45|_$1363                   |
+ 6: 00000990|08003e57|_$1365                   |  6: 00000998|08003e57|_$1365                   |
+ 6: 000009a0|08003e60|_$1353                   |  6: 000009a8|08003e60|_$1353                   |
+ 6: 000009b0|08003dfd|_$1355                   |  6: 000009b8|08003e70|ssWriteRTWStr            |
+ 6: 000009c0|08003ed0|ssWriteRTWMxVectParam    |  6: 000009c8|08003f29|ssWriteRTWMx2dMatParam   |
+ 6: 000009d0|08003f93|ssWriteRTWNameValuePair  |  6: 000009e0|0800442b|_$1389                   |
+ 6: 000009e8|0800442b|_$1389                   |  6: 000009f0|0800407f|_$1391                   |
+ 6: 000009f8|080040bf|_$1392                   |  6: 00000a00|080040ff|_$1393                   |
+ 6: 00000a08|0800417a|_$1394                   |  6: 00000a10|080040bf|_$1392                   |
+ 6: 00000a18|080040ff|_$1393                   |  6: 00000a20|0800417a|_$1394                   |
+ 6: 00000a28|0800424f|_$1395                   |  6: 00000a30|080042e9|_$1396                   |
+ 6: 00000a38|0800467a|ssWriteRTWParameters     |  6: 00000a40|0800480d|_$1493                   |
+ 6: 00000a48|080048bf|_$1497                   |  6: 00000a50|08004e61|_$1491                   |
+ 6: 00000a58|080049a0|_$1498                   |  6: 00000a60|08004a92|_$1502                   |
+ 6: 00000a68|08004bb3|_$1503                   |  6: 00000a70|08004cf4|_$1508                   |
+ 6: 00000a78|08005060|ssWriteRTWParamSettings  |  6: 00000a80|080051e6|_$1647                   |
+ 6: 00000a88|080051e6|_$1647                   |  6: 00000a90|08005251|_$1648                   |
+ 6: 00000a98|0800531a|_$1649                   |  6: 00000aa0|0800539a|_$1650                   |
+ 6: 00000aa8|08005464|_$1651                   |  6: 00000ab0|08005586|_$1652                   |
+ 6: 00000ab8|0800564f|_$1653                   |  6: 00000ac0|08005760|_$1654                   |
+ 6: 00000ac8|080058c9|_$1655                   |  6: 00000ad0|08005a27|_$1657                   |
+ 6: 00000b00|08005c87|ssWriteRTWWorkVect       |  6: 00000b08|08006348|_ProcessMexSfunctionCmdLineCall|
+ 6: 00000b10|08006b73|mexFunction              |  6: 00000b20|08007745|_$2066                   |
+ 6: 00000b28|08007988|_$1978                   |  6: 00000b30|0800783e|_$2075                   |
+ 6: 00000b38|0800784d|_$2076                   |  6: 00000b40|0800787f|_$2079                   |
+ 6: 00000b48|08007988|_$1978                   |  6: 00000b50|0800797c|_$2088                   |
+ 6: 00000b58|08007970|_$2087                   |  6: 00000b60|08007988|_$1978                   |
+ 6: 00000b68|08007988|_$1978                   |  6: 00000b70|08007754|_$2067                   |
+ 6: 00000b78|080077c9|_$2071                   |  6: 00000b80|0800732d|_$2038                   |
+ 6: 00000b88|080073cb|_$2042                   |  6: 00000b90|08006c9f|_$1984                   |
+ 6: 00000b98|08006d59|_$1991                   |  6: 00000ba0|08007988|_$1978                   |
+ 6: 00000ba8|08007988|_$1978                   |  6: 00000bb0|08007988|_$1978                   |
+ 6: 00000bb8|080074e6|_$2050                   |  6: 00000bc0|08007584|_$2054                   |
+ 6: 00000bc8|08007193|_$2030                   |  6: 00000bd0|08007260|_$2034                   |
+ 6: 00000bd8|08007988|_$1978                   |  6: 00000be0|08007988|_$1978                   |
+ 6: 00000be8|08006e13|_$1998                   |  6: 00000bf0|08006ecd|_$2005                   |
+ 6: 00000bf8|0800769f|_$2062                   |  6: 00000c00|08007988|_$1978                   |
+ 6: 00000c08|08007988|_$1978                   |  6: 00000c10|08006f87|_$2012                   |
+ 6: 00000c18|08007469|_$2046                   |  6: 00000c20|08007622|_$2058                   |
+ 6: 00000c28|08007988|_$1978                   |  6: 00000c30|08007988|_$1978                   |
+ 6: 00000c38|08007988|_$1978                   |  6: 00000c40|08007988|_$1978                   |
+ 6: 00000c48|08007988|_$1978                   |  6: 00000c50|08007988|_$1978                   |
+ 6: 00000c58|08007988|_$1978                   |  6: 00000c60|08007988|_$1978                   |
+ 6: 00000c68|08006c0d|_$1980                   |  6: 00000c70|08007988|_$1978                   |
+ 6: 00000c78|080078e5|_$2083                   |  6: 00000c80|0800792c|_$2085                   |
+ 6: 00000c88|08007988|_$1978                   |  6: 00000c90|08007988|_$1978                   |
+ 6: 00000c98|08007988|_$1978                   |  6: 00000ca0|08007004|_$2016                   |
+ 6: 00000ca8|080070ca|_$2023                   | 
+Relocations for 'test_plotblock_acc.obj' section '.pdata':
+12: 00000000|00001040|mdlOutputs               | 12: 00000004|00001337|mdlOutputs               |
+12: 0000000c|00001338|mdlUpdate                | 12: 00000010|000014fd|mdlUpdate                |
+12: 00000018|000014fe|mdlInitializeSizes       | 12: 0000001c|00001799|mdlInitializeSizes       |
+12: 00000024|0000179a|mdlInitializeSampleTimes | 12: 00000028|000017d8|mdlInitializeSampleTimes |
+12: 00000030|000017d9|mdlTerminate             | 12: 00000034|000017ea|mdlTerminate             |
+12: 0000003c|000017eb|_ssSetStateAbsTol        | 12: 00000040|000018ca|_ssSetStateAbsTol        |
+12: 00000048|000018cb|_ssGetAbsTol             | 12: 0000004c|00001925|_ssGetAbsTol             |
+12: 00000054|00001926|mdlZeroCrossings         | 12: 00000058|00001979|mdlZeroCrossings         |
+12: 00000060|0000197a|mdlGetTimeOfNextVarHit   | 12: 00000064|000019cd|mdlGetTimeOfNextVarHit   |
+12: 0000006c|000019ce|_RegNumInputPortsCB      | 12: 00000070|00001a56|_RegNumInputPortsCB      |
+12: 00000078|00001a57|_RegNumOutputPortsCB     | 12: 0000007c|00001adf|_RegNumOutputPortsCB     |
+12: 00000084|00001ae0|_ssSetInputPortMatrixDimensions| 12: 00000088|00001bc9|_ssSetInputPortMatrixDimensions|
+12: 00000090|00001bca|_ssSetOutputPortMatrixDimensions| 12: 00000094|00001cb3|_ssSetOutputPortMatrixDimensions|
+12: 0000009c|00001cb4|_ssSetInputPortVectorDimension| 12: 000000a0|00001d71|_ssSetInputPortVectorDimension|
+12: 000000a8|00001d72|_ssSetOutputPortVectorDimension| 12: 000000ac|00001e2f|_ssSetOutputPortVectorDimension|
+12: 000000b4|00001e30|_ssSetSymbolicDimsSupport| 12: 000000b8|00001e91|_ssSetSymbolicDimsSupport|
+12: 000000c0|00001e92|_ssRegisterSymbolicDimsExpr| 12: 000000c4|00001f15|_ssRegisterSymbolicDimsExpr|
+12: 000000cc|00001f16|_ssRegisterSymbolicDims  | 12: 000000d0|00001fa5|_ssRegisterSymbolicDims  |
+12: 000000d8|00001fa6|_ssRegisterSymbolicDimsString| 12: 000000dc|00002029|_ssRegisterSymbolicDimsString|
+12: 000000e4|0000202a|_ssRegisterSymbolicDimsIntValue| 12: 000000e8|00002091|_ssRegisterSymbolicDimsIntValue|
+12: 000000f0|00002092|_ssRegisterSymbolicDimsPlus| 12: 000000f4|000020fe|_ssRegisterSymbolicDimsPlus|
+12: 000000fc|000020ff|_ssRegisterSymbolicDimsMinus| 12: 00000100|0000216b|_ssRegisterSymbolicDimsMinus|
+12: 00000108|0000216c|_ssRegisterSymbolicDimsMultiply| 12: 0000010c|000021d8|_ssRegisterSymbolicDimsMultiply|
+12: 00000114|000021d9|_ssRegisterSymbolicDimsDivide| 12: 00000118|00002245|_ssRegisterSymbolicDimsDivide|
+12: 00000120|00002246|_ssGetNumSymbolicDims    | 12: 00000124|000022af|_ssGetNumSymbolicDims    |
+12: 0000012c|000022b0|_ssGetSymbolicDim        | 12: 00000130|0000231c|_ssGetSymbolicDim        |
+12: 00000138|0000231d|_ssSetInputPortSymbolicDimsId| 12: 0000013c|00002386|_ssSetInputPortSymbolicDimsId|
+12: 00000144|00002387|_ssGetCompInputPortSymbolicDimsId| 12: 00000148|000023ee|_ssGetCompInputPortSymbolicDimsId|
+12: 00000150|000023ef|_ssSetCompInputPortSymbolicDimsId| 12: 00000154|00002458|_ssSetCompInputPortSymbolicDimsId|
+12: 0000015c|00002459|_ssSetOutputPortSymbolicDimsId| 12: 00000160|000024c2|_ssSetOutputPortSymbolicDimsId|
+12: 00000168|000024c3|_ssGetCompOutputPortSymbolicDimsId| 12: 0000016c|0000252a|_ssGetCompOutputPortSymbolicDimsId|
+12: 00000174|0000252b|_ssSetCompOutputPortSymbolicDimsId| 12: 00000178|00002594|_ssSetCompOutputPortSymbolicDimsId|
+12: 00000180|00002595|_ssSetCompDWorkSymbolicDimsId| 12: 00000184|000025fe|_ssSetCompDWorkSymbolicDimsId|
+12: 0000018c|000025ff|ssIsRunTimeParamTunable  | 12: 00000190|00002666|ssIsRunTimeParamTunable  |
+12: 00000198|00002667|ssGetSFuncBlockHandle    | 12: 0000019c|000026d5|ssGetSFuncBlockHandle    |
+12: 000001a4|000026d6|_ssGetCurrentInputPortWidth| 12: 000001a8|000027e1|_ssGetCurrentInputPortWidth|
+12: 000001b0|000027e2|_ssGetCurrentOutputPortWidth| 12: 000001b4|000028e9|_ssGetCurrentOutputPortWidth|
+12: 000001bc|000028ea|_ssGetCallSystemNumFcnCallDestinations| 12: 000001c0|00002951|_ssGetCallSystemNumFcnCallDestinations|
+12: 000001c8|00002952|_CreateSimStruct         | 12: 000001cc|00002b18|_CreateSimStruct         |
+12: 000001d4|00002b19|ssWarning                | 12: 000001d8|00002c0e|ssWarning                |
+12: 000001e0|00002c0f|_ssFatalError            | 12: 000001e4|00002cd8|_ssFatalError            |
+12: 000001ec|00002cd9|ssGetIsZeroCrossControlDisabled| 12: 000001f0|00002d39|ssGetIsZeroCrossControlDisabled|
+12: 000001f8|00002d3a|ssSetIsInputPortUsedForContZcSignal| 12: 000001fc|00002d9b|ssSetIsInputPortUsedForContZcSignal|
+12: 00000204|00002d9c|ssSetZcSignalIsZcElementDisc| 12: 00000208|00002e19|ssSetZcSignalIsZcElementDisc|
+12: 00000210|00002e1a|ssSetZcSignalName        | 12: 00000214|00002e7b|ssSetZcSignalName        |
+12: 0000021c|00002e7c|ssSetZcSignalWidth       | 12: 00000220|00002edd|ssSetZcSignalWidth       |
+12: 00000228|00002ede|ssSetZcSignalZcEventType | 12: 0000022c|00002f3f|ssSetZcSignalZcEventType |
+12: 00000234|00002f40|ssSetZcSignalType        | 12: 00000238|00002fa1|ssSetZcSignalType        |
+12: 00000240|00002fa2|ssSetZcSignalZcTol       | 12: 00000244|00003004|ssSetZcSignalZcTol       |
+12: 0000024c|00003005|ssSetZcSignalNeedsEventNotification| 12: 00000250|00003066|ssSetZcSignalNeedsEventNotification|
+12: 00000258|00003067|ssCreateAndAddZcSignalInfo| 12: 0000025c|000030c9|ssCreateAndAddZcSignalInfo|
+12: 00000264|000030ca|ssCloneAndAddZcSignalInfo| 12: 00000268|00003131|ssCloneAndAddZcSignalInfo|
+12: 00000270|00003132|ssGetNumZcSignals        | 12: 00000274|00003194|ssGetNumZcSignals        |
+12: 0000027c|00003195|ssGetZcSignalVector      | 12: 00000280|000031fe|ssGetZcSignalVector      |
+12: 00000288|000031ff|ssGetZcSignalZcEvents    | 12: 0000028c|00003268|ssGetZcSignalZcEvents    |
+12: 00000294|00003269|ssGetZcSignalName        | 12: 00000298|000032d2|ssGetZcSignalName        |
+12: 000002a0|000032d3|ssGetZcSignalWidth       | 12: 000002a4|0000333a|ssGetZcSignalWidth       |
+12: 000002ac|0000333b|ssGetZcSignalZcEventType | 12: 000002b0|000033a0|ssGetZcSignalZcEventType |
+12: 000002b8|000033a1|ssGetZcSignalType        | 12: 000002bc|00003408|ssGetZcSignalType        |
+12: 000002c4|00003409|ssGetZcSignalZcTol       | 12: 000002c8|0000347c|ssGetZcSignalZcTol       |
+12: 000002d0|0000347d|ssGetZcSignalNeedsEventNotification| 12: 000002d4|000034e2|ssGetZcSignalNeedsEventNotification|
+12: 000002dc|000034e3|ssGetZcSignalIsZcElementDisc| 12: 000002e0|0000355b|ssGetZcSignalIsZcElementDisc|
+12: 000002e8|0000355c|ssGetIsInputPortElementContinuous| 12: 000002ec|000035d4|ssGetIsInputPortElementContinuous|
+12: 000002f4|000035d5|_ssGetInputPortSignalPtrsFcn| 12: 000002f8|00003831|_ssGetInputPortSignalPtrsFcn|
+12: 00000300|00003832|_ssGetInputPortSignalFcn | 12: 00000304|00003a8e|_ssGetInputPortSignalFcn |
+12: 0000030c|00003a8f|_ssSetInputPortDirectFeedThroughFcn| 12: 00000310|00003c30|_ssSetInputPortDirectFeedThroughFcn|
+12: 00000318|00003c31|_ssSetInputPortReusableFcn| 12: 0000031c|00003cec|_ssSetInputPortReusableFcn|
+12: 00000324|00003ced|_ssSetOutputPortReusableFcn| 12: 00000328|00003dad|_ssSetOutputPortReusableFcn|
+12: 00000330|00003dae|ssGetDTypeIdFromMxArray  | 12: 00000334|00003e6f|ssGetDTypeIdFromMxArray  |
+12: 0000033c|00003e70|ssWriteRTWStr            | 12: 00000340|00003ecf|ssWriteRTWStr            |
+12: 00000348|00003ed0|ssWriteRTWMxVectParam    | 12: 0000034c|00003f28|ssWriteRTWMxVectParam    |
+12: 00000354|00003f29|ssWriteRTWMx2dMatParam   | 12: 00000358|00003f92|ssWriteRTWMx2dMatParam   |
+12: 00000360|00003f93|ssWriteRTWNameValuePair  | 12: 00000364|00004679|ssWriteRTWNameValuePair  |
+12: 0000036c|0000467a|ssWriteRTWParameters     | 12: 00000370|0000505f|ssWriteRTWParameters     |
+12: 00000378|00005060|ssWriteRTWParamSettings  | 12: 0000037c|00005c86|ssWriteRTWParamSettings  |
+12: 00000384|00005c87|ssWriteRTWWorkVect       | 12: 00000388|00006347|ssWriteRTWWorkVect       |
+12: 00000390|00006348|_ProcessMexSfunctionCmdLineCall| 12: 00000394|00006b72|_ProcessMexSfunctionCmdLineCall|
+12: 0000039c|00006b73|mexFunction              | 12: 000003a0|000079f6|mexFunction              |
+
+Relocations for 'hostlib_multimedia.obj' section '.data':
+ 6: 000000f4|08007a00|createAudioInfo          |  6: 000000fc|08007a89|createVideoInfo          |
+
+Relocations for 'hostlib_multimedia.obj' section '.pdata':
+12: 00000000|00007a00|createAudioInfo          | 12: 00000004|00007a88|createAudioInfo          |
+12: 0000000c|00007a89|createVideoInfo          | 12: 00000010|00007bee|createVideoInfo          |
+
+Relocations for 'hostlib_video.obj' section '.data':
+ 6: 00000060|0801ba68|_$331                    |  6: 00000068|08007bf0|LibCreate_Video          |
+ 6: 00000070|08007ce7|LibUpdate_Video          | 
+Relocations for 'hostlib_video.obj' section '.pdata':
+12: 00000000|00007bf0|LibCreate_Video          | 12: 00000004|00007ce6|LibCreate_Video          |
+12: 0000000c|00007ce7|LibUpdate_Video          | 12: 00000010|00007d6c|LibUpdate_Video          |
+
+Relocations for 'hostlib_rtw.obj' section '.text':
+20: 00009313|00002539|memset                   | 20: 0000003e|0001740e|__imp_LoadLibraryA       |
+20: 00001af6|00013d82|_$328                    | 20: 0000f5a4|00008862|sprintf                  |
+20: 00001b10|00013d5e|_$329                    | 20: 000000a6|000173ae|__imp_GetProcAddress     |
+20: 00001b51|00013d14|_$330                    | 20: 000000e7|0001736d|__imp_GetProcAddress     |
+20: 00001b92|00013cca|_$331                    | 20: 00000128|0001732c|__imp_GetProcAddress     |
+20: 00001bd3|00013c7f|_$332                    | 20: 0000016f|000172e5|__imp_GetProcAddress     |
+20: 00001c2c|00013c1b|_$333                    | 20: 000001c8|0001728c|__imp_GetProcAddress     |
+20: 00001c85|00013bb5|_$334                    | 20: 00000221|00017233|__imp_GetProcAddress     |
+20: 00001cde|00013b51|_$335                    | 20: 0000027a|000171da|__imp_GetProcAddress     |
+20: 00001d90|00013a6f|_$343                    | 20: 0000f83e|000085c8|sprintf                  |
+20: 00001dcc|00013a30|_$349                    | 20: 00003a33|00015749|_Files                   |
+20: 00010d5c|0000ec55|fprintf                  | 20: 00000391|000170cb|__imp_FreeLibrary        |
+20: 00009690|000021bc|memset                   | 20: 00001fd7|0001381a|_$426                    |
+20: 00010f5d|0000e90f|printf                   | 20: 00002002|000137e2|_$430                    |
+20: 00010f88|0000e8e4|printf                   | 
+Relocations for 'hostlib_rtw.obj' section '.data':
+ 6: 00000000|08007d70|CreateHostLibrary        |  6: 00000008|080080d9|DestroyHostLibrary       |
+ 6: 00000010|0800812a|LibStart                 |  6: 00000018|08008173|LibReset                 |
+ 6: 00000020|080081cf|LibTerminate             |  6: 00000028|08008218|LibDestroy               |
+ 6: 00000030|08008275|LibError                 |  6: 00000038|080082b4|PrintError               |
+ 6: 00000040|080082df|PrintWarning             |  6: 00000048|0800830a|GetErrorBuffer           |
+ 6: 00000050|0800832c|GetNullPointer           | 
+Relocations for 'hostlib_rtw.obj' section '.pdata':
+12: 00000000|00007d70|CreateHostLibrary        | 12: 00000004|000080d8|CreateHostLibrary        |
+12: 0000000c|000080d9|DestroyHostLibrary       | 12: 00000010|00008129|DestroyHostLibrary       |
+12: 00000018|0000812a|LibStart                 | 12: 0000001c|00008172|LibStart                 |
+12: 00000024|00008173|LibReset                 | 12: 00000028|000081ce|LibReset                 |
+12: 00000030|000081cf|LibTerminate             | 12: 00000034|00008217|LibTerminate             |
+12: 0000003c|00008218|LibDestroy               | 12: 00000040|00008274|LibDestroy               |
+12: 00000048|00008275|LibError                 | 12: 0000004c|000082b3|LibError                 |
+12: 00000054|000082b4|PrintError               | 12: 00000058|000082de|PrintError               |
+12: 00000060|000082df|PrintWarning             | 12: 00000064|00008309|PrintWarning             |
+12: 0000006c|0000830a|GetErrorBuffer           | 12: 00000070|0000832b|GetErrorBuffer           |
+12: 00000078|0000832c|GetNullPointer           | 12: 0000007c|0000833b|GetNullPointer           |
+
+Relocations for 'rtgetinf.obj' section '.text':
+20: 00001bf9|000138a3|_$48                     | 20: 00001cda|000137c2|_$48                     |
+
+Relocations for 'rtgetinf.obj' section '.data':
+ 6: 00000000|08008340|rtGetInf                 |  6: 00000008|08008403|rtGetInfF                |
+ 6: 00000010|08008421|rtGetMinusInf            |  6: 00000018|080084e4|rtGetMinusInfF           |
+
+Relocations for 'rtgetinf.obj' section '.pdata':
+12: 00000000|00008340|rtGetInf                 | 12: 00000004|00008402|rtGetInf                 |
+12: 0000000c|00008403|rtGetInfF                | 12: 00000010|00008420|rtGetInfF                |
+12: 00000018|00008421|rtGetMinusInf            | 12: 0000001c|000084e3|rtGetMinusInf            |
+12: 00000024|000084e4|rtGetMinusInfF           | 12: 00000028|00008501|rtGetMinusInfF           |
+
+Relocations for 'rtgetnan.obj' section '.text':
+20: 00001c29|000136fb|_$48                     | 20: 00001ce4|00013630|_$69                     |
+
+Relocations for 'rtgetnan.obj' section '.data':
+ 6: 00000000|08008510|rtGetNaN                 |  6: 0000000c|080085d3|rtGetNaNF                |
+
+Relocations for 'rtgetnan.obj' section '.pdata':
+12: 00000000|00008510|rtGetNaN                 | 12: 00000004|000085d2|rtGetNaN                 |
+12: 0000000c|000085d3|rtGetNaNF                | 12: 00000010|00008644|rtGetNaNF                |
+
+Relocations for 'rt_nonfinite.obj' section '.text':
+20: 0000751e|fffffeae|rtGetNaN                 | 20: 00000844|000101d8|rtNaN                    |
+20: 00007544|ffffff4b|rtGetNaNF                | 20: 0000086a|00010182|rtNaNF                   |
+20: 0000739a|fffffc92|rtGetInf                 | 20: 00000890|0001017c|rtInf                    |
+20: 000073c0|fffffd2f|rtGetInfF                | 20: 000008b6|00010146|rtInfF                   |
+20: 000073e6|fffffd27|rtGetMinusInf            | 20: 000008dc|00010150|rtMinusInf               |
+20: 0000740c|fffffdc4|rtGetMinusInfF           | 20: 00000902|0001013a|rtMinusInfF              |
+20: 0000092c|000100e0|rtInf                    | 20: 00000941|000100eb|rtMinusInf               |
+20: 00000989|00010073|rtInfF                   | 20: 0000099d|0001009f|rtMinusInfF              |
+
+Relocations for 'rt_nonfinite.obj' section '.data':
+ 6: 00000000|08008650|rt_InitInfAndNaN         |  6: 00000008|08008746|rtIsInf                  |
+ 6: 00000010|0800879e|rtIsInfF                 |  6: 00000018|080087f4|rtIsNaN                  |
+ 6: 00000020|08008830|rtIsNaNF                 | 
+Relocations for 'rt_nonfinite.obj' section '.pdata':
+12: 00000000|00008650|rt_InitInfAndNaN         | 12: 00000004|00008745|rt_InitInfAndNaN         |
+12: 0000000c|00008746|rtIsInf                  | 12: 00000010|0000879d|rtIsInf                  |
+12: 00000018|0000879e|rtIsInfF                 | 12: 0000001c|000087f3|rtIsInfF                 |
+12: 00000024|000087f4|rtIsNaN                  | 12: 00000028|0000882f|rtIsNaN                  |
+12: 00000030|00008830|rtIsNaNF                 | 12: 00000034|0000886a|rtIsNaNF                 |
+
+Relocations for 'calloc.obj' section '.text':
+20: 000091d2|0000191a|malloc                   | 20: 0000932c|00001a20|memset                   |
+
+Relocations for 'calloc.obj' section '.pdata':
+12: 00000000|00008870|calloc                   | 12: 00000004|000088c9|calloc                   |
+
+Relocations for 'cinit.obj' section '.text':
+20: 00001dfb|000134f1|_$10                     | 20: 000078ab|ffffff61|calloc                   |
+20: 000008d7|0000ff65|_crt_base                | 20: 000008e8|0000ff54|_crt_base                |
+20: 0000007d|00016887|__imp_GetLocalTime       | 20: 00000923|0000ff19|_crt_base                |
+20: 0000096f|0000fecd|_crt_base                | 20: 0000014f|000167bd|__imp_GetTimeZoneInformation|
+20: 00000a07|0000fe35|_crt_base                | 20: 00001f80|000134d4|_$20                     |
+20: 0000db47|00005f25|setlocale                | 20: 0000a7ac|00002ba3|FullPrecision            |
+20: 00000a33|0000fe09|_crt_base                | 20: 00000a45|0000fdf7|_crt_base                |
+20: 00000a5a|0000fde2|_crt_base                | 20: 00000a6c|0000fdc0|_crt_errno               |
+20: 00000a73|0000fdc9|_crt_base                | 20: 00000a84|0000fdb8|_crt_base                |
+20: 00001fee|0001345d|_$21                     | 20: 00000a9c|0000fda0|_crt_base                |
+20: 00002006|00013431|_$22                     | 20: 00000ab4|0000fd88|_crt_base                |
+20: 0000201e|00013408|_$23                     | 20: 00000acc|0000fd70|_crt_base                |
+20: 00002036|000133ef|_$24                     | 20: 00000ae4|0000fd58|_crt_base                |
+20: 0000204e|000133bd|_$25                     | 20: 00000afc|0000fd40|_crt_base                |
+20: 00002066|000133bf|_$24                     | 20: 00000b14|0000fd28|_crt_base                |
+20: 0000207e|000133a7|_$24                     | 20: 00000b2c|0000fd10|_crt_base                |
+20: 00002096|0001338f|_$24                     | 20: 00000b44|0000fcf8|_crt_base                |
+20: 000020ae|00013377|_$24                     | 20: 00000b5c|0000fce0|_crt_base                |
+20: 000020c6|0001332e|_$26                     | 20: 00000b74|0000fcc8|_crt_base                |
+20: 000020de|00013304|_$27                     | 20: 00000b8c|0000fcb0|_crt_base                |
+20: 000020f6|000132dc|_$28                     | 20: 00000ba4|0000fc98|_crt_base                |
+20: 0000210e|00013317|_$24                     | 20: 00000bbc|0000fc80|_crt_base                |
+20: 00002126|000132ff|_$24                     | 20: 00000bd4|0000fc68|_crt_base                |
+20: 0000213e|00013282|_$29                     | 20: 00000bec|0000fc50|_crt_base                |
+20: 00002156|00013258|_$30                     | 20: 00000c04|0000fc38|_crt_base                |
+20: 0000216e|000132b7|_$24                     | 20: 00000c1c|0000fc20|_crt_base                |
+20: 00002186|0001329f|_$24                     | 20: 00000c34|0000fc08|_crt_base                |
+20: 0000219e|00013287|_$24                     | 20: 00000c4c|0000fbf0|_crt_base                |
+20: 000021b6|000131e4|_$31                     | 20: 00000c64|0000fbd8|_crt_base                |
+20: 000021ce|000131ba|_$32                     | 20: 00000c7c|0000fbc0|_crt_base                |
+20: 000021e6|0001323f|_$24                     | 20: 00000c94|0000fba8|_crt_base                |
+20: 000021fe|00013227|_$24                     | 20: 00000cac|0000fb90|_crt_base                |
+20: 00002216|0001320f|_$24                     | 20: 00000cc4|0000fb78|_crt_base                |
+20: 0000222e|00013149|_$33                     | 20: 00000cdc|0000fb60|_crt_base                |
+20: 00002246|000131df|_$24                     | 20: 00000cf4|0000fb48|_crt_base                |
+20: 0000225e|00013105|_$34                     | 20: 00000d0c|0000fb30|_crt_base                |
+20: 00002276|000131af|_$24                     | 20: 00000d24|0000fb18|_crt_base                |
+20: 0000228e|00013197|_$24                     | 20: 00000d3c|0000fb00|_crt_base                |
+20: 000022a6|0001317f|_$24                     | 20: 00000d54|0000fae8|_crt_base                |
+20: 000022be|0001308d|_$35                     | 20: 00000d6c|0000fad0|_crt_base                |
+20: 000022d6|0001314f|_$24                     | 20: 00000d84|0000fab8|_crt_base                |
+20: 000022ee|00013137|_$24                     | 20: 00000d9c|0000faa0|_crt_base                |
+20: 00002306|00013033|_$36                     | 20: 00000db4|0000fa88|_crt_base                |
+20: 0000231e|0001300c|_$37                     | 20: 00000dcc|0000fa70|_crt_base                |
+20: 00002336|00012fe6|_$38                     | 20: 00007de0|fffffa2c|calloc                   |
+20: 00000e0c|0000fa30|_crt_base                | 20: 00007e1d|fffff9ef|calloc                   |
+20: 00000e49|0000f9f3|_crt_base                | 20: 00007e5a|fffff9b2|calloc                   |
+20: 00000e86|0000f9b6|_crt_base                | 20: 00007e97|fffff975|calloc                   |
+20: 00000ec3|0000f979|_crt_base                | 20: 00007ed4|fffff938|calloc                   |
+20: 00000f00|0000f93c|_crt_base                | 20: 00007f11|fffff8fb|calloc                   |
+20: 00000f3d|0000f8ff|_crt_base                | 20: 00007f4e|fffff8be|calloc                   |
+20: 00000f7a|0000f8c2|_crt_base                | 20: 00000f92|0000f8aa|_crt_base                |
+20: 00001024|0000f818|_crt_base                | 20: 00001035|0000f807|_crt_base                |
+20: 00001047|0000f7f5|_crt_base                | 20: 00003eb1|0001475b|_Files                   |
+20: 0000105c|0000f7e0|_crt_base                | 20: 000007f8|0001611c|__imp_GetStdHandle       |
+20: 0000082a|000160f2|__imp_FlushConsoleInputBuffer| 20: 00000847|000160cd|__imp_GetStdHandle       |
+20: 00000879|000160a3|__imp_FlushConsoleInputBuffer| 20: 00000896|0001607e|__imp_GetStdHandle       |
+20: 000008c8|00016054|__imp_FlushConsoleInputBuffer| 20: 000008e5|0001602f|__imp_GetStdHandle       |
+20: 00003ff0|0001461c|_Files                   | 20: 0000092c|00015fe8|__imp_GetStdHandle       |
+20: 00004037|000145dd|_Files                   | 20: 00000973|00015fa1|__imp_GetStdHandle       |
+20: 0000407e|0001459e|_Files                   | 20: 000040bb|00014551|_Files                   |
+20: 000009ea|00015f3a|__imp_SetHandleInformation| 
+Relocations for 'cinit.obj' section '.pdata':
+12: 00000000|000088d0|_cinit                   | 12: 00000004|00009304|_cinit                   |
+
+Relocations for 'fflush.obj' section '.text':
+20: 0000370d|0001449f|_Files                   | 20: 0001082f|0000837d|_Fwrite                  |
+
+Relocations for 'fflush.obj' section '.pdata':
+12: 00000000|00009330|fflush                   | 12: 00000004|000094b5|fflush                   |
+
+Relocations for 'fpclassify.obj' section '.pdata':
+12: 00000000|00009510|Fpclassify               | 12: 00000004|000095c3|Fpclassify               |
+12: 0000000c|000095c4|__fpclassifyd            | 12: 00000010|000095e0|__fpclassifyd            |
+12: 00000018|000095e1|__fpclassifyl            | 12: 0000001c|0000966f|__fpclassifyl            |
+12: 00000024|00009670|__fpclassifyf            | 12: 00000028|0000968c|__fpclassifyf            |
+
+Relocations for 'fputc.obj' section '.text':
+20: 00010619|00007f13|_Fwprep                  | 20: 000083f4|fffffbd8|fflush                   |
+
+Relocations for 'fputc.obj' section '.pdata':
+12: 00000000|00009690|fputc                    | 12: 00000004|00009779|fputc                    |
+
+Relocations for 'free.obj' section '.text':
+20: 00000013|00015a71|__imp_GlobalFree         | 
+Relocations for 'free.obj' section '.pdata':
+12: 00000000|00009780|free                     | 12: 00000004|000097a8|free                     |
+
+Relocations for 'frexpl.obj' section '.text':
+20: 00008aca|000002e2|isnanl                   | 20: 000089ba|00000172|isinfl                   |
+20: 000020d8|00012844|_$9                      | 20: 00002124|000127f8|_$9                      |
+20: 00002141|000127db|_$9                      | 20: 00002150|000127bc|_$18                     |
+
+Relocations for 'frexpl.obj' section '.pdata':
+12: 00000000|000097b0|frexpl                   | 12: 00000004|00009938|frexpl                   |
+
+Relocations for 'isinfl.obj' section '.pdata':
+12: 00000000|00009970|isinfl                   | 12: 00000004|000099d8|isinfl                   |
+12: 0000000c|000099d9|isinfd                   | 12: 00000010|00009a47|isinfd                   |
+12: 00000018|00009a48|isinff                   | 12: 0000001c|00009a9b|isinff                   |
+12: 00000024|00009a9c|_isinfi                  | 12: 00000028|00009aaf|_isinfi                  |
+
+Relocations for 'isnanl.obj' section '.pdata':
+12: 00000000|00009ab0|isnanl                   | 12: 00000004|00009b03|isnanl                   |
+12: 0000000c|00009b04|isnanf                   | 12: 00000010|00009b22|isnanf                   |
+
+Relocations for 'ldexp.obj' section '.text':
+20: 00008530|fffffa8d|__fpclassifyl            | 20: 000020f8|000124f4|_$16                     |
+20: 0000210a|000124e2|_$16                     | 20: 00002122|000124ba|_$19                     |
+20: 00002143|000124a9|_$16                     | 20: 00002152|0001247a|_$24                     |
+20: 000021db|00012411|_$16                     | 20: 0000225a|00012392|_$16                     |
+20: 0000228b|00012341|_$24                     | 
+Relocations for 'ldexp.obj' section '.pdata':
+12: 00000000|00009b39|ldexpl                   | 12: 00000004|00009d8c|ldexpl                   |
+12: 0000000c|00009d8d|ldexpf                   | 12: 00000010|00009dda|ldexpf                   |
+12: 00000018|00009ddb|ldexp                    | 12: 0000001c|00009e2e|ldexp                    |
+
+Relocations for 'localeconv.obj' section '.text':
+20: 0000088b|0000ea51|_crt_base                | 
+Relocations for 'localeconv.obj' section '.pdata':
+12: 00000000|00009e30|localeconv               | 12: 00000004|00009e4e|localeconv               |
+
+Relocations for 'logl.obj' section '.text':
+20: 00008ac3|fffffc49|isnanl                   | 20: 000020e6|000123e6|_$8                      |
+20: 00002103|000123b9|_$12                     | 20: 0000211a|000123a2|_$12                     |
+20: 0000212c|00012380|_$15                     | 20: 000023db|00012501|NANL                     |
+20: 00008853|fffff8b9|frexpl                   | 20: 00002184|00012318|_$22                     |
+20: 0000219e|000122ee|_$23                     | 20: 000021ad|000122df|_$23                     |
+20: 000021cf|000122bd|_$23                     | 20: 000021e1|000122ab|_$23                     |
+20: 000021f0|0001229c|_$23                     | 20: 0000222a|000121b2|R                        |
+20: 00009536|000003d6|polevll                  | 20: 00002253|000121c9|S                        |
+20: 0000955f|00000429|p1evll                   | 20: 0000228a|000121e2|C2                       |
+20: 000022aa|000121b2|C1                       | 20: 000022ca|000121d2|_$22                     |
+20: 00008d6d|fffffaa8|ldexpl                   | 20: 00002300|0001217c|_$27                     |
+20: 00002314|00012168|_$27                     | 20: 00002335|00011fd7|P                        |
+20: 00009641|000002cb|polevll                  | 20: 0000235e|0001201e|Q                        |
+20: 0000966a|0000031e|p1evll                   | 20: 00002395|000120d7|C2                       |
+20: 00008e36|fffff9df|ldexpl                   | 20: 000023e8|00012074|C1                       |
+
+Relocations for 'logl.obj' section '.pdata':
+12: 00000000|00009e50|logl                     | 12: 00000004|0000a1a5|logl                     |
+
+Relocations for 'malloc.obj' section '.text':
+20: 00000015|00015037|__imp_GlobalAlloc        | 
+Relocations for 'malloc.obj' section '.pdata':
+12: 00000000|0000a1b0|malloc                   | 12: 00000004|0000a1ea|malloc                   |
+
+Relocations for 'memmove.obj' section '.pdata':
+12: 00000000|0000a220|memmove                  | 12: 00000004|0000a2d7|memmove                  |
+
+Relocations for 'mtherr.obj' section '.text':
+20: 00002297|00011f97|_$11                     | 20: 00010a1c|0000c8a0|printf                   |
+20: 000022a3|00011f39|merror                   | 20: 000022d3|00011f19|ermsg                    |
+20: 000022de|00011f46|_$15                     | 20: 00010a63|0000c859|printf                   |
+
+Relocations for 'mtherr.obj' section '.data':
+ 6: 00000010|0801c32f|_$3                      |  6: 00000018|0801c328|_$4                      |
+ 6: 00000020|0801c31c|_$5                      |  6: 00000028|0801c313|_$6                      |
+ 6: 00000030|0801c309|_$7                      |  6: 00000038|0801c2f1|_$8                      |
+ 6: 00000040|0801c2d7|_$9                      | 
+Relocations for 'mtherr.obj' section '.pdata':
+12: 00000000|0000a320|mtherr                   | 12: 00000004|0000a38e|mtherr                   |
+
+Relocations for 'nan.obj' section '.text':
+ 6: 00000003|0801c340|__nan__                  |  6: 0000000d|0801c344|__infinity__             |
+
+Relocations for 'polevll.obj' section '.pdata':
+12: 00000000|0000a3b0|polevll                  | 12: 00000004|0000a42b|polevll                  |
+12: 0000000c|0000a42c|p1evll                   | 12: 00000010|0000a4af|p1evll                   |
+
+Relocations for 'powl.obj' section '.text':
+20: 00002415|0001244f|_$6                      | 20: 00002430|00012424|_$9                      |
+20: 00002445|000123ff|_$12                     | 20: 00002454|00012410|_$6                      |
+20: 0000246c|000123e8|_$9                      | 20: 0000247e|000123e6|_$6                      |
+20: 00008892|fffff21a|frexpl                   | 20: 00002529|0001230b|_$24                     |
+20: 00002554|000122d0|_$25                     | 20: 0000255e|000122b6|_$26                     |
+20: 0000256d|00012297|_$27                     | 20: 0000258a|0001229a|_$25                     |
+20: 0000259f|00012255|_$31                     | 20: 000025b3|00012291|_$12                     |
+20: 000025c8|0001221c|_$36                     | 20: 000025dc|00012288|_$6                      |
+20: 000025ee|000121e6|_$40                     | 20: 00002602|00012252|_$9                      |
+20: 00002628|0001222c|_$9                      | 20: 0000268c|000121c8|_$9                      |
+20: 000026b8|000121ac|_$6                      | 20: 000026ca|0001218a|_$9                      |
+20: 00008d8e|fffff31e|isnanl                   | 20: 00008dbf|fffff2ed|isnanl                   |
+20: 0000273e|00012116|_$9                      | 20: 00008c9d|fffff12f|isfinitel                |
+20: 00002787|0001203d|_$75                     | 20: 0000279c|000120b8|_$9                      |
+20: 000027b5|00012007|_$76                     | 20: 000096da|fffffab2|mtherr                   |
+20: 00002701|00011acb|__nan__                  | 20: 000027d3|00012081|_$9                      |
+20: 000027e5|0001206f|_$9                      | 20: 000027f7|0001204d|_$12                     |
+20: 00002811|00012043|_$9                      | 20: 00002825|0001201f|_$12                     |
+20: 00002837|0001202d|_$6                      | 20: 0000284e|00012006|_$9                      |
+20: 00002862|00012002|_$6                      | 20: 00002874|00011f50|_$75                     |
+20: 00002888|00011fbc|_$12                     | 20: 0000289a|00011f2a|_$75                     |
+20: 000028b1|00011fb3|_$6                      | 20: 000028c5|00011f9f|_$6                      |
+20: 000028d7|00011ed5|_$99                     | 20: 000028f1|00011f63|_$9                      |
+20: 00002905|00011f5f|_$6                      | 20: 00002917|00011f4d|_$6                      |
+20: 0000292e|00011f26|_$9                      | 20: 00002942|00011f02|_$12                     |
+20: 00002954|00011e70|_$75                     | 20: 00002968|00011efc|_$6                      |
+20: 0000297a|00011e4a|_$75                     | 20: 00002991|00011ed3|_$6                      |
+20: 000029a5|00011e9f|_$12                     | 20: 000029b7|00011e8d|_$12                     |
+20: 000029ce|00011e96|_$6                      | 20: 000029e2|00011e62|_$12                     |
+20: 000029f1|00011e73|_$6                      | 20: 00008ac5|ffffea07|floorl                   |
+20: 00008969|ffffe818|fabsl                    | 20: 00002a7b|00011d89|_$27                     |
+20: 00008b4c|ffffe980|floorl                   | 20: 000089c3|ffffe7be|fabsl                    |
+20: 00002acc|00011d38|_$27                     | 20: 00002af9|00011cb3|_$99                     |
+20: 00002b13|00011d51|_$6                      | 20: 00002a6d|00011763|__infinity__             |
+20: 00002aae|00011722|__infinity__             | 20: 00002b80|00011ce4|_$6                      |
+20: 00002b9a|00011c02|_$139                    | 20: 00002ba9|00011cbb|_$6                      |
+20: 00002bc2|00011ca2|_$6                      | 20: 00002bdc|00011c88|_$6                      |
+20: 00002bf9|00011c6b|_$6                      | 20: 0000fd02|00005837|signbitl                 |
+20: 00002c3c|00011b70|_$99                     | 20: 00002c4b|00011bf9|_$12                     |
+20: 00002c5d|00011c07|_$6                      | 20: 0000fd66|000057d3|signbitl                 |
+20: 00002ca0|00011afc|_$139                    | 20: 00002caf|00011bb5|_$6                      |
+20: 00002cc1|00011ba3|_$6                      | 20: 00002cd3|00011b81|_$9                      |
+20: 00002ce2|00011b82|_$6                      | 20: 00002c3a|00011592|__nan__                  |
+20: 00008df7|ffffe6d5|floorl                   | 20: 00008c7c|ffffe505|fabsl                    |
+20: 00002d8b|00011a01|_$164                    | 20: 00008cfd|ffffe484|fabsl                    |
+20: 000091c8|ffffe8e4|frexpl                   | 20: 00002e4c|00011680|A                        |
+20: 00002e79|00011543|A                        | 20: 00002ea4|00011518|A                        |
+20: 00002ecf|000114ed|A                        | 20: 00002eeb|000114e1|A                        |
+20: 00002f14|000114a8|A                        | 20: 00002f39|00011693|B                        |
+20: 00002f54|00011468|A                        | 20: 00000d34|0000d1b8|_$S1                     |
+20: 00002f7d|000113cf|P                        | 20: 00009f39|fffff373|polevll                  |
+20: 00002fa9|000113e3|Q                        | 20: 00009f65|fffff3c3|p1evll                   |
+20: 00000da4|0000d148|_$S1                     | 20: 00000dc7|0000d125|_$S1                     |
+20: 00009733|ffffea82|ldexpl                   | 20: 00000dfa|0000d0f2|_$S1                     |
+20: 00003031|0001174b|_$184                    | 20: 00000e13|0000d0d9|_$S1                     |
+20: 00000e3a|0000d0b2|_$S1                     | 20: 0000307f|000116fd|_$184                    |
+20: 00000e6d|0000d07f|_$S1                     | 20: 00009813|ffffe9a2|ldexpl                   |
+20: 00000f13|0000cfd9|_$S1                     | 20: 00009949|ffffe86c|ldexpl                   |
+20: 0000323e|0001152e|_$188                    | 20: 00003252|000115f2|_$12                     |
+20: 00003264|000114f8|_$192                    | 20: 00003278|000115ec|_$6                      |
+20: 000032ad|000115b7|_$6                      | 20: 000032c7|00011485|_$196                    |
+20: 000032dd|000113ff|R                        | 20: 0000a299|fffff013|polevll                  |
+20: 000010d2|0000ce1a|_$S1                     | 20: 0000335b|00011061|A                        |
+20: 00001139|0000cdb3|_$S1                     | 20: 00001160|0000cd8c|_$S1                     |
+20: 0000118a|0000cd62|_$S1                     | 20: 00009b04|ffffe6b1|ldexpl                   |
+20: 00009b43|ffffe672|ldexpl                   | 20: 000094fa|ffffdfd2|floorl                   |
+20: 00009b98|ffffe61d|ldexpl                   | 20: 00001268|0000cc84|_$S1                     |
+20: 0000128c|0000cc60|_$S1                     | 20: 00009c16|ffffe59f|ldexpl                   |
+20: 000095c1|ffffdf0b|floorl                   | 20: 00009c53|ffffe562|ldexpl                   |
+
+Relocations for 'powl.obj' section '.pdata':
+12: 00000000|0000a4b0|powil                    | 12: 00000004|0000a756|powil                    |
+12: 0000000c|0000a757|powl                     | 12: 00000010|0000b57b|powl                     |
+12: 00000018|0000b57c|reducl                   | 12: 0000001c|0000b5f1|reducl                   |
+
+Relocations for 'qfloat.obj' section '.text':
+20: 0000a696|fffff77e|__qmovz                  | 20: 0000a6c6|fffff71e|__pack                   |
+20: 0000a763|fffff719|__qclear                 | 20: 0000a77e|fffff666|__pack                   |
+20: 0000a82f|fffff5e5|__qmovz                  | 20: 0000a83f|fffff5d5|__qmovz                  |
+20: 0000a865|fffff5af|__qmovz                  | 20: 0000a872|fffff5a2|__qmovz                  |
+20: 0000a8fc|fffffcd0|cmpm                     | 20: 0000a964|fffff518|__qclear                 |
+20: 00009580|ffffdd9c|memcpy                   | 20: 00009597|ffffdd85|memcpy                   |
+20: 000095b1|ffffdd6b|memcpy                   | 20: 0000aa1e|fffff2e6|__addm                   |
+20: 0000aa37|fffff33d|__subm                   | 20: 000097aa|ffffdd52|memset                   |
+20: 0000ab22|fffff1e2|__addm                   | 20: 0000ab6a|fffff27a|__pack                   |
+20: 0000ab75|fffff307|__qclear                 | 20: 0000abb6|fffff2c6|__qclear                 |
+20: 00002ecf|00010c75|_$109                    | 20: 000098c4|ffffdcb8|mtherr                   |
+20: 0000abf6|fffff21e|__qmovz                  | 20: 0000ac71|fffff593|__divi                   |
+20: 0000ac83|fffff191|__qmovz                  | 20: 0000ac93|fffff609|__divm                   |
+20: 00003009|00010b3b|_$109                    | 20: 000099fe|ffffdb7e|mtherr                   |
+20: 0000ad43|fffff0a1|__pack                   | 20: 0000ad9e|fffff0de|__qclear                 |
+20: 0000ade0|fffff034|__qmovz                  | 20: 0000aded|fffff0a7|__mulin                  |
+20: 0000ae5a|ffffefba|__qmovz                  | 20: 0000ae67|fffff02d|__mulin                  |
+20: 0000ae97|ffffef7d|__qmovz                  | 20: 0000aea7|ffffef6d|__qmovz                  |
+20: 0000aeb7|fffff0ed|__mulm                   | 20: 0000af61|ffffee83|__pack                   |
+20: 0000af6c|ffffef10|__qclear                 | 20: 0000afd8|ffffee3c|__qmovz                  |
+20: 0000afe5|ffffeeaf|__mulin                  | 20: 0000b08b|ffffed59|__pack                   |
+20: 0000b096|ffffede6|__qclear                 | 20: 0000339f|0001079d|_$187                    |
+20: 00009d94|ffffd7e8|mtherr                   | 20: 0000347f|000106b1|_$206                    |
+20: 00011554|00009fc8|printf                   | 20: 00009dbd|ffffd5bf|memmove                  |
+20: 0000b237|ffffea4d|__shiftdownn             | 20: 0000355c|000105d4|_$206                    |
+20: 00011631|00009eeb|printf                   | 20: 00009e9a|ffffd4e2|memmove                  |
+20: 0000b2ff|ffffe90d|__shiftupn               | 20: 0000b483|ffffe879|bsr64                    |
+20: 0000b4af|ffffe75d|__shiftupn               | 20: 0000b4e3|ffffe819|bsr64                    |
+20: 0000b506|ffffe77e|__shiftdownn             | 20: 0000b58c|ffffe888|__qmovz                  |
+20: 0000b5b2|ffffe832|__pack                   | 20: 000108a0|000038bc|strlen                   |
+20: 00003990|0001019b|_$288                    | 20: 000108c9|00003733|strcpy                   |
+20: 000039a2|00010183|_$289                    | 20: 000108db|00003721|strcpy                   |
+20: 0000a377|ffffd185|memset                   | 20: 0000a38c|ffffd170|memset                   |
+20: 0000b714|ffffe740|__qmov                   | 20: 00003a2b|0000f771|qone                     |
+20: 0000b77f|ffffe6fd|__qclear                 | 20: 00003a8c|0000f750|qtens                    |
+20: 00003a9e|0000f6fe|qone                     | 20: 0000b7b3|ffffe6a1|__qmov                   |
+20: 0000b7c3|ffffe691|__qmov                   | 20: 00003b96|0000fac6|qmtens                   |
+20: 00003ba1|0000f63b|qtens                    | 20: 00003baf|0000feed|qmtens                   |
+20: 00010d63|00003119|strchr                   | 20: 00010f0d|0000324f|strlen                   |
+20: 00010fb5|000031a7|strlen                   | 20: 00010ff3|00003169|strlen                   |
+20: 00010f21|00002f5b|strchr                   | 20: 0001113b|00003021|strlen                   |
+20: 0000aa9f|ffffc8dd|memmove                  | 20: 0000ab7d|ffffc97f|memset                   |
+20: 000111b6|00002fa6|strlen                   | 20: 0000ab0e|ffffc86e|memmove                  |
+20: 00011220|00002f3c|strlen                   | 20: 0000ab78|ffffc804|memmove                  |
+20: 000112a2|00002eba|strlen                   | 20: 00011324|00002e38|strlen                   |
+20: 00004367|0000f7b7|_$375                    | 20: 00010f6d|00002b49|sprintf                  |
+20: 0000af3e|ffffc5be|memset                   | 20: 0000c451|ffffd793|__shup1                  |
+20: 0000c45a|ffffd78a|__shup1                  | 20: 0000c463|ffffd781|__shup1                  |
+20: 0000c46c|ffffd778|__shup1                  | 20: 0000c477|ffffd76d|__shup1                  |
+20: 0000b03e|ffffc2de|memcpy                   | 20: 0000c49a|ffffd74a|__shup1                  |
+20: 0000c4a6|ffffd73e|__shup1                  | 20: 0000c4b6|ffffd84e|__addm                   |
+20: 0000b16b|ffffc391|memset                   | 20: 0000c4fb|ffffd809|__addm                   |
+20: 00004884|0000f27a|_$489                    | 20: 00012959|00008bc3|printf                   |
+20: 0000c5a2|ffffd8da|__qclear                 | 20: 0000c5da|ffffd8a2|__qclear                 |
+20: 0000b389|ffffc173|memset                   | 20: 0000c75a|ffffd68a|__pack                   |
+20: 0000c7a1|ffffd6db|__qclear                 | 20: 0000c7d1|ffffd613|__pack                   |
+20: 00004ae1|0000f016|_$538                    | 20: 0000b4d6|ffffc0a6|mtherr                   |
+20: 0000c80d|ffffd66f|__qclear                 | 20: 00004b0b|0000efec|_$538                    |
+20: 0000b500|ffffc07c|mtherr                   | 20: 00004b21|0000efbb|_$541                    |
+20: 00012bf6|00008926|printf                   | 20: 00004b5d|0000eabf|qtens                    |
+20: 00004b76|0000e626|qone                     | 20: 0000c88b|ffffd5c9|__qmov                   |
+20: 0000c96c|ffffd4a8|__qmovz                  | 20: 00004fcf|0000e24d|qtens                    |
+20: 00004feb|0000e531|qtens                    | 20: 00005012|0000e18a|qone                     |
+20: 0000ba24|ffffbad8|memset                   | 20: 0000ce08|ffffcddc|__shup1                  |
+20: 0000bad8|ffffba24|memset                   | 20: 0000ce53|ffffcf91|__pack                   |
+20: 0000bb21|ffffb9db|memset                   | 20: 0000cec0|ffffce3c|bsr64                    |
+
+Relocations for 'qfloat.obj' section '.pdata':
+12: 00000000|0000c0c0|qisneg                   | 12: 00000004|0000c0f5|qisneg                   |
+12: 0000000c|0000c0f6|__qifrac                 | 12: 00000010|0000c20a|__qifrac                 |
+12: 00000018|0000c20b|qsub                     | 12: 0000001c|0000c23c|qsub                     |
+12: 00000024|0000c23d|qadd                     | 12: 00000028|0000c26a|qadd                     |
+12: 00000030|0000c26b|__qadd_subtract          | 12: 00000034|0000c60c|__qadd_subtract          |
+12: 0000003c|0000c60d|__qdiv                   | 12: 00000040|0000c7cf|__qdiv                   |
+12: 00000048|0000c7d0|__qmul                   | 12: 0000004c|0000ca09|__qmul                   |
+12: 00000054|0000ca0a|__qmuli                  | 12: 00000058|0000cb46|__qmuli                  |
+12: 00000060|0000cb47|__shift                  | 12: 00000064|0000cd96|__shift                  |
+12: 0000006c|0000cd97|__normlz                 | 12: 00000070|0000cfab|__normlz                 |
+12: 00000078|0000cfac|__qinfin                 | 12: 0000007c|0000cff3|__qinfin                 |
+12: 00000084|0000cff4|qnrmlz                   | 12: 00000088|0000d03e|qnrmlz                   |
+12: 00000090|0000d03f|TrimTrailingZeroes       | 12: 00000094|0000d0aa|TrimTrailingZeroes       |
+12: 0000009c|0000d0ab|__qtoasc                 | 12: 000000a0|0000db1b|__qtoasc                 |
+12: 000000a8|0000db1c|__qcmp                   | 12: 000000ac|0000dc9d|__qcmp                   |
+12: 000000b4|0000dc9e|__asctoq                 | 12: 000000b8|0000e3b8|__asctoq                 |
+12: 000000c0|0000e3b9|__qtoe64                 | 12: 000000c4|0000e73c|__qtoe64                 |
+12: 000000cc|0000e73d|__normalize              | 12: 000000d0|0000e7db|__normalize              |
+12: 000000d8|0000e7dc|__e64toq                 | 12: 000000dc|0000e8df|__e64toq                 |
+12: 000000e4|0000e8e0|__itoq                   | 12: 000000e8|0000e99d|__itoq                   |
+
+Relocations for 'setlocale.obj' section '.text':
+20: 000008b5|00009eb7|_crt_base                | 20: 00000958|00009e14|_crt_base                |
+20: 000009af|00009ded|__currentLocale          | 20: 00003422|0000ebec|_$19                     |
+20: 0000f90b|00001cd1|strcmp                   | 20: 00003443|0000ebc7|_$20                     |
+20: 0000f92c|00001cb0|strcmp                   | 20: 00003464|0000eba3|_$21                     |
+20: 0000f94d|00001c8f|strcmp                   | 20: 000034b3|0000e769|_$69                     |
+20: 00000a66|00009d06|_crt_base                | 20: 00000a88|00009ce4|_crt_base                |
+20: 00000aaa|00009cc2|_crt_base                | 20: 0000351f|0000eaef|_$19                     |
+20: 0000fa08|00001bd4|strcmp                   | 20: 00000ae7|00009c85|_crt_base                |
+20: 00003551|0000eab5|_$31                     | 20: 00000aff|00009c6d|_crt_base                |
+20: 00003569|0000ea9d|_$31                     | 20: 00000b17|00009c55|_crt_base                |
+20: 00003581|0000ea85|_$31                     | 20: 00000b2f|00009c3d|_crt_base                |
+20: 00003599|0000ea6d|_$31                     | 20: 00000b47|00009c25|_crt_base                |
+20: 000035b1|0000ea55|_$31                     | 20: 00000b5f|00009c0d|_crt_base                |
+20: 000035c9|0000ea3d|_$31                     | 20: 00000b77|00009bf5|_crt_base                |
+20: 000035e1|0000ea25|_$31                     | 20: 00000b8f|00009bdd|_crt_base                |
+20: 00000ba1|00009bcb|_crt_base                | 20: 00000bb3|00009bb9|_crt_base                |
+20: 00000bc5|00009ba7|_crt_base                | 20: 00000bd7|00009b95|_crt_base                |
+20: 00000be9|00009b83|_crt_base                | 20: 00000bfb|00009b71|_crt_base                |
+20: 00000c0d|00009b5f|_crt_base                | 20: 00003684|0000e986|_$20                     |
+20: 0000fb6d|00001a6f|strcmp                   | 20: 00000c48|00009b24|_crt_base                |
+20: 000036b2|0000e950|_$34                     | 20: 00000c62|00009b0a|_crt_base                |
+20: 000036cc|0000e932|_$35                     | 20: 00000c7a|00009af2|_crt_base                |
+20: 000036e4|0000e918|_$36                     | 20: 00000c92|00009ada|_crt_base                |
+20: 000036fc|0000e8fe|_$37                     | 20: 00000caa|00009ac2|_crt_base                |
+20: 00003714|0000e8e4|_$38                     | 20: 00000cc2|00009aaa|_crt_base                |
+20: 0000372c|0000e8ca|_$39                     | 20: 00000cda|00009a92|_crt_base                |
+20: 00003744|0000e8c2|_$31                     | 20: 00000cf2|00009a7a|_crt_base                |
+20: 0000375c|0000e898|_$40                     | 20: 00000d0a|00009a62|_crt_base                |
+20: 00000d1c|00009a50|_crt_base                | 20: 00000d2e|00009a3e|_crt_base                |
+20: 00000d40|00009a2c|_crt_base                | 20: 00000d52|00009a1a|_crt_base                |
+20: 00000d64|00009a08|_crt_base                | 20: 00000d76|000099f6|_crt_base                |
+20: 00000d88|000099e4|_crt_base                | 20: 00000da7|000099c5|_crt_base                |
+20: 00000dbc|000099b0|_crt_base                | 20: 00003826|0000e7d4|_$37                     |
+20: 00003834|0000e7da|_$19                     | 20: 0000fd1d|000018bf|strcmp                   |
+20: 00000df8|00009974|_crt_base                | 20: 00003862|0000e7a4|_$31                     |
+20: 00000e10|0000995c|_crt_base                | 20: 0000387a|0000e78c|_$31                     |
+20: 00000e2d|0000993f|_crt_base                | 20: 00003897|0000e761|_$38                     |
+20: 00000e45|00009927|_crt_base                | 20: 000038af|0000e747|_$39                     |
+20: 00000e62|0000990a|_crt_base                | 20: 000038cc|0000e721|_$45                     |
+20: 00000e7a|000098f2|_crt_base                | 20: 000038e4|0000e702|_$46                     |
+20: 00000e92|000098da|_crt_base                | 20: 000038fc|0000e6e2|_$47                     |
+20: 00000eaa|000098c2|_crt_base                | 20: 00003914|0000e6c0|_$48                     |
+20: 00000ec2|000098aa|_crt_base                | 20: 0000392c|0000e69f|_$49                     |
+20: 00000eda|00009892|_crt_base                | 20: 00003944|0000e680|_$50                     |
+20: 00000ef2|0000987a|_crt_base                | 20: 0000395c|0000e65f|_$51                     |
+20: 00000f0a|00009862|_crt_base                | 20: 00003974|0000e63f|_$52                     |
+20: 00000f22|0000984a|_crt_base                | 20: 0000398c|0000e61e|_$53                     |
+20: 00000f3a|00009832|_crt_base                | 20: 000039a4|0000e600|_$54                     |
+20: 00000f52|0000981a|_crt_base                | 20: 000039bc|0000e5e2|_$55                     |
+20: 00000f6a|00009802|_crt_base                | 20: 000039d4|0000e5c6|_$56                     |
+20: 00000f82|000097ea|_crt_base                | 20: 000039ec|0000e5a9|_$57                     |
+20: 00000f9a|000097d2|_crt_base                | 20: 00003a04|0000e58c|_$58                     |
+20: 00000fb2|000097ba|_crt_base                | 20: 00003a1c|0000e56d|_$59                     |
+20: 00000fca|000097a2|_crt_base                | 20: 00003a34|0000e54b|_$60                     |
+20: 00000fe2|0000978a|_crt_base                | 20: 00003a4c|0000e52b|_$61                     |
+20: 00000ffa|00009772|_crt_base                | 20: 00003a64|0000e50a|_$62                     |
+20: 00001012|0000975a|_crt_base                | 20: 00003a7c|0000e4e9|_$63                     |
+20: 00001032|0000973a|_crt_base                | 20: 00003aa7|0000e560|_$21                     |
+20: 0000ff90|0000164c|strcmp                   | 20: 0000106b|00009701|_crt_base                |
+20: 00001080|000096ec|_crt_base                | 20: 00001095|000096d7|_crt_base                |
+20: 00003aff|0000e464|_$66                     | 20: 000010ad|000096bf|_crt_base                |
+20: 00003b17|0000e44c|_$66                     | 20: 000010ca|000096a2|_crt_base                |
+20: 000010df|0000968d|_crt_base                | 20: 000010f4|00009678|_crt_base                |
+20: 00003b5e|0000e401|_$67                     | 20: 0000110c|00009660|_crt_base                |
+20: 00003b76|0000e3e5|_$68                     | 20: 00003b89|0000e3cb|_$72                     |
+20: 00010072|0000156a|strcmp                   | 20: 00003bd8|0000e074|_$101                    |
+20: 0000118b|000095e1|_crt_base                | 20: 000011ad|000095bf|_crt_base                |
+20: 000011cf|0000959d|_crt_base                | 20: 000011e4|00009588|_crt_base                |
+20: 00003c4e|0000e302|_$78                     | 20: 000011fc|00009570|_crt_base                |
+20: 00003c66|0000e2e8|_$79                     | 20: 00001214|00009558|_crt_base                |
+20: 00003c7e|0000e37a|_$38                     | 20: 0000122c|00009540|_crt_base                |
+20: 00003c96|0000e364|_$37                     | 20: 00001244|00009528|_crt_base                |
+20: 00003cae|0000e348|_$39                     | 20: 0000125c|00009510|_crt_base                |
+20: 00003cc6|0000e340|_$31                     | 20: 00001274|000094f8|_crt_base                |
+20: 00003cde|0000e316|_$40                     | 20: 0000128c|000094e0|_crt_base                |
+20: 0000129e|000094ce|_crt_base                | 20: 000012b0|000094bc|_crt_base                |
+20: 000012c2|000094aa|_crt_base                | 20: 000012d4|00009498|_crt_base                |
+20: 000012e6|00009486|_crt_base                | 20: 000012f8|00009474|_crt_base                |
+20: 0000130a|00009462|_crt_base                | 20: 00001329|00009443|_crt_base                |
+20: 0000133e|0000942e|_crt_base                | 20: 00003da8|0000e250|_$38                     |
+20: 00001356|00009416|_crt_base                | 20: 00003dc0|0000e246|_$31                     |
+20: 0000136e|000093fe|_crt_base                | 20: 00003dd8|0000e21e|_$39                     |
+20: 0000138b|000093e1|_crt_base                | 20: 00003df5|0000e150|_$82                     |
+20: 000013a3|000093c9|_crt_base                | 20: 00003e0d|0000e132|_$83                     |
+20: 000013bb|000093b1|_crt_base                | 20: 00003e25|0000e114|_$84                     |
+20: 000013d3|00009399|_crt_base                | 20: 00003e3d|0000e0f3|_$85                     |
+20: 000013eb|00009381|_crt_base                | 20: 00003e55|0000e0d5|_$86                     |
+20: 00001403|00009369|_crt_base                | 20: 00003e6d|0000e0b4|_$87                     |
+20: 0000141b|00009351|_crt_base                | 20: 00003e85|0000e095|_$88                     |
+20: 00001433|00009339|_crt_base                | 20: 00003e9d|0000e075|_$89                     |
+20: 0000144b|00009321|_crt_base                | 20: 00003eb5|0000e055|_$90                     |
+20: 00001463|00009309|_crt_base                | 20: 00003ecd|0000e038|_$91                     |
+20: 0000147b|000092f1|_crt_base                | 20: 00003ee5|0000e01a|_$92                     |
+20: 00001493|000092d9|_crt_base                | 20: 00003efd|0000dffe|_$93                     |
+20: 000014ab|000092c1|_crt_base                | 20: 00003f15|0000dfe1|_$94                     |
+20: 000014c3|000092a9|_crt_base                | 20: 00003f2d|0000dfc1|_$95                     |
+20: 000014db|00009291|_crt_base                | 20: 00003f45|0000dfa4|_$96                     |
+20: 000014f3|00009279|_crt_base                | 20: 00003f5d|0000df82|_$97                     |
+20: 0000150b|00009261|_crt_base                | 20: 00003f75|0000df62|_$98                     |
+20: 00001523|00009249|_crt_base                | 20: 00003f8d|0000df41|_$99                     |
+20: 0000153b|00009231|_crt_base                | 20: 00003fa5|0000df20|_$100                    |
+20: 0000155b|00009211|_crt_base                | 20: 00001570|000091fc|_crt_base                |
+20: 00001585|000091e7|_crt_base                | 20: 0000159a|000091d2|_crt_base                |
+20: 00004004|0000df5f|_$66                     | 20: 000015b2|000091ba|_crt_base                |
+20: 0000401c|0000df47|_$66                     | 20: 0000402f|0000de8e|_$104                    |
+20: 00010518|000010c4|strcmp                   | 20: 0000407e|0000dbfe|_$129                    |
+20: 00001631|0000913b|_crt_base                | 20: 00001653|00009119|_crt_base                |
+20: 00001675|000090f7|_crt_base                | 20: 0000168a|000090e2|_crt_base                |
+20: 000040f4|0000ddc5|_$110                    | 20: 000016a2|000090ca|_crt_base                |
+20: 0000410c|0000ddaa|_$111                    | 20: 000016ba|000090b2|_crt_base                |
+20: 00004124|0000ded4|_$38                     | 20: 000016d2|0000909a|_crt_base                |
+20: 0000413c|0000debe|_$37                     | 20: 000016ea|00009082|_crt_base                |
+20: 00004154|0000dea2|_$39                     | 20: 00001702|0000906a|_crt_base                |
+20: 0000416c|0000de9a|_$31                     | 20: 0000171a|00009052|_crt_base                |
+20: 00004184|0000de70|_$40                     | 20: 00001732|0000903a|_crt_base                |
+20: 00001744|00009028|_crt_base                | 20: 00001756|00009016|_crt_base                |
+20: 00001768|00009004|_crt_base                | 20: 0000177a|00008ff2|_crt_base                |
+20: 0000178c|00008fe0|_crt_base                | 20: 0000179e|00008fce|_crt_base                |
+20: 000017b0|00008fbc|_crt_base                | 20: 000017cf|00008f9d|_crt_base                |
+20: 000017e4|00008f88|_crt_base                | 20: 0000424e|0000ddaa|_$38                     |
+20: 000017fc|00008f70|_crt_base                | 20: 00004266|0000dd94|_$37                     |
+20: 00001814|00008f58|_crt_base                | 20: 0000427e|0000dd78|_$39                     |
+20: 00001831|00008f3b|_crt_base                | 20: 0000429b|0000dc13|_$114                    |
+20: 00001849|00008f23|_crt_base                | 20: 000042b3|0000dbf4|_$115                    |
+20: 00001861|00008f0b|_crt_base                | 20: 000042cb|0000dbd3|_$116                    |
+20: 00001879|00008ef3|_crt_base                | 20: 000042e3|0000dbb2|_$117                    |
+20: 00001891|00008edb|_crt_base                | 20: 000042fb|0000db8f|_$118                    |
+20: 000018a9|00008ec3|_crt_base                | 20: 00004313|0000db6f|_$119                    |
+20: 000018c1|00008eab|_crt_base                | 20: 0000432b|0000db4f|_$120                    |
+20: 000018d9|00008e93|_crt_base                | 20: 00004343|0000db30|_$121                    |
+20: 000018f1|00008e7b|_crt_base                | 20: 0000435b|0000db10|_$122                    |
+20: 00001909|00008e63|_crt_base                | 20: 00004373|0000daf2|_$123                    |
+20: 00001921|00008e4b|_crt_base                | 20: 0000438b|0000dc13|_$55                     |
+20: 00001939|00008e33|_crt_base                | 20: 000043a3|0000dabe|_$124                    |
+20: 00001951|00008e1b|_crt_base                | 20: 000043bb|0000daa1|_$125                    |
+20: 00001969|00008e03|_crt_base                | 20: 000043d3|0000da84|_$126                    |
+20: 00001981|00008deb|_crt_base                | 20: 000043eb|0000db9e|_$59                     |
+20: 00001999|00008dd3|_crt_base                | 20: 00004403|0000db7c|_$60                     |
+20: 000019b1|00008dbb|_crt_base                | 20: 0000441b|0000da34|_$127                    |
+20: 000019c9|00008da3|_crt_base                | 20: 00004433|0000db3b|_$62                     |
+20: 000019e1|00008d8b|_crt_base                | 20: 0000444b|0000d9fb|_$128                    |
+20: 00001a01|00008d6b|_crt_base                | 20: 00001a16|00008d56|_crt_base                |
+20: 00001a2b|00008d41|_crt_base                | 20: 00001a40|00008d2c|_crt_base                |
+20: 000044aa|0000dab9|_$66                     | 20: 00001a58|00008d14|_crt_base                |
+20: 000044c2|0000daa1|_$66                     | 20: 000044d5|0000d96b|_$132                    |
+20: 000109be|00000c1e|strcmp                   | 20: 00004524|0000d788|_$160                    |
+20: 00001ad7|00008c95|_crt_base                | 20: 00001af9|00008c73|_crt_base                |
+20: 00001b1b|00008c51|_crt_base                | 20: 00001b30|00008c3c|_crt_base                |
+20: 0000459a|0000d8a2|_$138                    | 20: 00001b48|00008c24|_crt_base                |
+20: 000045b2|0000d887|_$139                    | 20: 00001b60|00008c0c|_crt_base                |
+20: 000045ca|0000da3c|_$31                     | 20: 00001b78|00008bf4|_crt_base                |
+20: 000045e2|0000da18|_$37                     | 20: 00001b90|00008bdc|_crt_base                |
+20: 000045fa|0000d9fc|_$39                     | 20: 00001ba8|00008bc4|_crt_base                |
+20: 00004612|0000d9f4|_$31                     | 20: 00001bc0|00008bac|_crt_base                |
+20: 0000462a|0000d9ca|_$40                     | 20: 00001bd8|00008b94|_crt_base                |
+20: 00001bea|00008b82|_crt_base                | 20: 00001bfc|00008b70|_crt_base                |
+20: 00001c0e|00008b5e|_crt_base                | 20: 00001c20|00008b4c|_crt_base                |
+20: 00001c32|00008b3a|_crt_base                | 20: 00001c44|00008b28|_crt_base                |
+20: 00001c56|00008b16|_crt_base                | 20: 00001c75|00008af7|_crt_base                |
+20: 00001c8a|00008ae2|_crt_base                | 20: 000046f4|0000d904|_$38                     |
+20: 00001ca2|00008aca|_crt_base                | 20: 0000470c|0000d8ee|_$37                     |
+20: 00001cba|00008ab2|_crt_base                | 20: 00004724|0000d8d2|_$39                     |
+20: 00001cd7|00008a95|_crt_base                | 20: 00004741|0000d6ef|_$142                    |
+20: 00001cef|00008a7d|_crt_base                | 20: 00004759|0000d6d0|_$143                    |
+20: 00001d07|00008a65|_crt_base                | 20: 00004771|0000d6b0|_$144                    |
+20: 00001d1f|00008a4d|_crt_base                | 20: 00004789|0000d68e|_$145                    |
+20: 00001d37|00008a35|_crt_base                | 20: 000047a1|0000d66e|_$146                    |
+20: 00001d4f|00008a1d|_crt_base                | 20: 000047b9|0000d64e|_$147                    |
+20: 00001d67|00008a05|_crt_base                | 20: 000047d1|0000d62f|_$148                    |
+20: 00001d7f|000089ed|_crt_base                | 20: 000047e9|0000d60f|_$149                    |
+20: 00001d97|000089d5|_crt_base                | 20: 00004801|0000d5ee|_$150                    |
+20: 00001daf|000089bd|_crt_base                | 20: 00004819|0000d5d0|_$151                    |
+20: 00001dc7|000089a5|_crt_base                | 20: 00004831|0000d5b1|_$152                    |
+20: 00001ddf|0000898d|_crt_base                | 20: 00004849|0000d592|_$153                    |
+20: 00001df7|00008975|_crt_base                | 20: 00004861|0000d573|_$154                    |
+20: 00001e0f|0000895d|_crt_base                | 20: 00004879|0000d555|_$155                    |
+20: 00001e27|00008945|_crt_base                | 20: 00004891|0000d536|_$156                    |
+20: 00001e3f|0000892d|_crt_base                | 20: 000048a9|0000d514|_$157                    |
+20: 00001e57|00008915|_crt_base                | 20: 000048c1|0000d4f4|_$158                    |
+20: 00001e6f|000088fd|_crt_base                | 20: 000048d9|0000d5f5|_$99                     |
+20: 00001e87|000088e5|_crt_base                | 20: 000048f1|0000d4bb|_$159                    |
+20: 00001ea7|000088c5|_crt_base                | 20: 00001ebc|000088b0|_crt_base                |
+20: 00001ed1|0000889b|_crt_base                | 20: 00001ee6|00008886|_crt_base                |
+20: 00004950|0000d613|_$66                     | 20: 00001efe|0000886e|_crt_base                |
+20: 00004968|0000d5fb|_$66                     | 20: 0000497b|0000d42b|_$163                    |
+20: 00010e64|00000778|strcmp                   | 20: 000049ca|0000d312|_$193                    |
+20: 00001f7d|000087ef|_crt_base                | 20: 00001f9f|000087cd|_crt_base                |
+20: 00001fc1|000087ab|_crt_base                | 20: 00001fd6|00008796|_crt_base                |
+20: 00004a40|0000d362|_$169                    | 20: 00001fee|0000877e|_crt_base                |
+20: 00004a58|0000d346|_$170                    | 20: 00002006|00008766|_crt_base                |
+20: 00004a70|0000d596|_$31                     | 20: 0000201e|0000874e|_crt_base                |
+20: 00004a88|0000d572|_$37                     | 20: 00002036|00008736|_crt_base                |
+20: 00004aa0|0000d556|_$39                     | 20: 0000204e|0000871e|_crt_base                |
+20: 00004ab8|0000d54e|_$31                     | 20: 00002066|00008706|_crt_base                |
+20: 00004ad0|0000d524|_$40                     | 20: 0000207e|000086ee|_crt_base                |
+20: 00002090|000086dc|_crt_base                | 20: 000020a2|000086ca|_crt_base                |
+20: 000020b4|000086b8|_crt_base                | 20: 000020c6|000086a6|_crt_base                |
+20: 000020d8|00008694|_crt_base                | 20: 000020ea|00008682|_crt_base                |
+20: 000020fc|00008670|_crt_base                | 20: 0000211b|00008651|_crt_base                |
+20: 00002130|0000863c|_crt_base                | 20: 00004b9a|0000d45e|_$38                     |
+20: 00002148|00008624|_crt_base                | 20: 00004bb2|0000d448|_$37                     |
+20: 00002160|0000860c|_crt_base                | 20: 00004bca|0000d42c|_$39                     |
+20: 0000217d|000085ef|_crt_base                | 20: 00004be7|0000d1af|_$173                    |
+20: 00002195|000085d7|_crt_base                | 20: 00004bff|0000d191|_$174                    |
+20: 000021ad|000085bf|_crt_base                | 20: 00004c17|0000d172|_$175                    |
+20: 000021c5|000085a7|_crt_base                | 20: 00004c2f|0000d150|_$176                    |
+20: 000021dd|0000858f|_crt_base                | 20: 00004c47|0000d131|_$177                    |
+20: 000021f5|00008577|_crt_base                | 20: 00004c5f|0000d111|_$178                    |
+20: 0000220d|0000855f|_crt_base                | 20: 00004c77|0000d0f2|_$179                    |
+20: 00002225|00008547|_crt_base                | 20: 00004c8f|0000d0d4|_$180                    |
+20: 0000223d|0000852f|_crt_base                | 20: 00004ca7|0000d0b4|_$181                    |
+20: 00002255|00008517|_crt_base                | 20: 00004cbf|0000d096|_$182                    |
+20: 0000226d|000084ff|_crt_base                | 20: 00004cd7|0000d078|_$183                    |
+20: 00002285|000084e7|_crt_base                | 20: 00004cef|0000d05b|_$184                    |
+20: 0000229d|000084cf|_crt_base                | 20: 00004d07|0000d03d|_$185                    |
+20: 000022b5|000084b7|_crt_base                | 20: 00004d1f|0000d01f|_$186                    |
+20: 000022cd|0000849f|_crt_base                | 20: 00004d37|0000d000|_$187                    |
+20: 000022e5|00008487|_crt_base                | 20: 00004d4f|0000cfdd|_$188                    |
+20: 000022fd|0000846f|_crt_base                | 20: 00004d67|0000cfbd|_$189                    |
+20: 00002315|00008457|_crt_base                | 20: 00004d7f|0000cf9b|_$190                    |
+20: 0000232d|0000843f|_crt_base                | 20: 00004d97|0000cf79|_$191                    |
+20: 0000234d|0000841f|_crt_base                | 20: 00002362|0000840a|_crt_base                |
+20: 00002377|000083f5|_crt_base                | 20: 0000238c|000083e0|_crt_base                |
+20: 00004df6|0000cf16|_$192                    | 20: 000023a4|000083c8|_crt_base                |
+20: 00004e0e|0000d155|_$66                     | 
+Relocations for 'setlocale.obj' section '.data':
+ 6: 00000000|0800eb7b|_$26                     |  6: 00000008|0800eb9d|_$27                     |
+ 6: 00000010|0800eebc|_$41                     |  6: 00000018|0800ebbf|_$28                     |
+ 6: 00000020|0800ef7f|_$44                     |  6: 00000030|0800f2a0|_$75                     |
+ 6: 00000038|0800f2c2|_$76                     |  6: 00000040|0800f43e|_$80                     |
+ 6: 00000048|0800f2e4|_$77                     |  6: 00000050|0800f4a8|_$81                     |
+ 6: 00000060|0800f746|_$107                    |  6: 00000068|0800f768|_$108                    |
+ 6: 00000070|0800f8e4|_$112                    |  6: 00000078|0800f78a|_$109                    |
+ 6: 00000080|0800f94e|_$113                    |  6: 00000090|0800fbec|_$135                    |
+ 6: 00000098|0800fc0e|_$136                    |  6: 000000a0|0800fd8a|_$140                    |
+ 6: 000000a8|0800fc30|_$137                    |  6: 000000b0|0800fdf4|_$141                    |
+ 6: 000000c0|08010092|_$166                    |  6: 000000c8|080100b4|_$167                    |
+ 6: 000000d0|08010230|_$171                    |  6: 000000d8|080100d6|_$168                    |
+ 6: 000000e0|0801029a|_$172                    | 
+Relocations for 'setlocale.obj' section '.pdata':
+12: 00000000|0000e9a0|setlocale                | 12: 00000004|0000eac3|setlocale                |
+12: 0000000c|0000eac4|_setlocale               | 12: 00000010|000104e5|_setlocale               |
+
+Relocations for 'sprintf.obj' section '.text':
+20: 00010aaa|000064e9|__doFormat               | 20: 00010b12|00006481|__doFormat               |
+20: 00010bbb|000063d8|__doFormat               | 
+Relocations for 'sprintf.obj' section '.pdata':
+12: 00000000|00010520|OutStreamString          | 12: 00000004|00010591|OutStreamString          |
+12: 0000000c|00010592|vsprintf                 | 12: 00000010|000105f1|vsprintf                 |
+12: 00000018|000105f2|sprintfv                 | 12: 0000001c|00010659|sprintfv                 |
+12: 00000024|0001065a|sprintf                  | 12: 00000028|0001070c|sprintf                  |
+
+Relocations for 'strcmp.obj' section '.pdata':
+12: 00000000|000107c0|strcmp                   | 12: 00000004|0001085b|strcmp                   |
+
+Relocations for 'strlcpy.obj' section '.text':
+20: 0000f929|00000073|strlen                   | 20: 0000925c|ffff9900|memcpy                   |
+
+Relocations for 'strlcpy.obj' section '.pdata':
+12: 00000000|00010880|strlcpy                  | 12: 00000004|00010909|strlcpy                  |
+
+Relocations for 'strtol.obj' section '.text':
+20: 0000fe72|0000014a|toupper                  | 20: 00000b29|00007cc3|_crt_base                |
+
+Relocations for 'strtol.obj' section '.pdata':
+12: 00000000|00010920|_strtoul                 | 12: 00000004|00010bfd|_strtoul                 |
+12: 0000000c|00010bfe|strtoul                  | 12: 00000010|00010c2b|strtoul                  |
+12: 00000018|00010c2c|strtol                   | 12: 0000001c|00010c6b|strtol                   |
+
+Relocations for 'toupper.obj' section '.pdata':
+12: 00000000|00010c70|toupper                  | 12: 00000004|00010c9c|toupper                  |
+
+Relocations for 'wctomb.obj' section '.text':
+20: 00001fa4|0000b259|_ctype                   | 20: 000020aa|0000b153|_ctype                   |
+
+Relocations for 'wctomb.obj' section '.pdata':
+12: 00000000|00010ca0|wctomb                   | 12: 00000004|00010e5a|wctomb                   |
+
+Relocations for 'wstring.obj' section '.pdata':
+12: 00000000|00010e60|wmemcpy                  | 12: 00000004|00010ed3|wmemcpy                  |
+12: 0000000c|00010ed4|wcscpy                   | 12: 00000010|00010f3e|wcscpy                   |
+12: 00000018|00010f3f|wcsncpy                  | 12: 0000001c|00010f9d|wcsncpy                  |
+12: 00000024|00010f9e|wcscat                   | 12: 00000028|0001102c|wcscat                   |
+12: 00000030|0001102d|wcsncat                  | 12: 00000034|000110c8|wcsncat                  |
+12: 0000003c|000110c9|wcscmp                   | 12: 00000040|00011149|wcscmp                   |
+12: 00000048|0001114a|wcsncmp                  | 12: 0000004c|000111e5|wcsncmp                  |
+12: 00000054|000111e6|wcschr                   | 12: 00000058|0001123d|wcschr                   |
+12: 00000060|0001123e|wcscspn                  | 12: 00000064|000112b5|wcscspn                  |
+12: 0000006c|000112b6|wcspbrk                  | 12: 00000070|0001131c|wcspbrk                  |
+12: 00000078|0001131d|wcsrchr                  | 12: 0000007c|00011380|wcsrchr                  |
+12: 00000084|00011381|wcsspn                   | 12: 00000088|00011400|wcsspn                   |
+12: 00000090|00011401|wcsstr                   | 12: 00000094|0001148f|wcsstr                   |
+12: 0000009c|00011490|Wstrtok_r                | 12: 000000a0|00011592|Wstrtok_r                |
+12: 000000a8|00011593|wcslen                   | 12: 000000ac|000115d5|wcslen                   |
+
+Relocations for 'xfiles.obj' section '.data':
+ 6: 00000020|0801d724|sin                      |  6: 00000028|0801d724|sin                      |
+ 6: 00000038|0801d724|sin                      |  6: 00000080|0801d784|sout                     |
+ 6: 00000088|0801d784|sout                     |  6: 00000098|0801d784|sout                     |
+ 6: 000000d0|080181e0|ebuf                     |  6: 000000d8|08018820|ebuf                     |
+ 6: 000000e0|080181e0|ebuf                     |  6: 000000e8|080181e0|ebuf                     |
+ 6: 000000f8|080181e0|ebuf                     |  6: 00000120|0801d6e0|sin                      |
+ 6: 00000128|0801d740|sout                     |  6: 00000130|0801d7a0|serr                     |
+
+Relocations for 'xfwprep.obj' section '.text':
+20: 0000836f|ffff7d0d|fflush                   | 20: 00009245|ffff8b37|malloc                   |
+
+Relocations for 'xfwprep.obj' section '.pdata':
+12: 00000000|000115e0|_Fwprep                  | 12: 00000004|00011767|_Fwprep                  |
+
+Relocations for 'xfwrite.obj' section '.text':
+20: 00003a9a|0000c2f2|_$326                    | 20: 0000006b|0000da31|__imp_WriteFile          |
+20: 00000130|0000d96c|__imp_WriteFile          | 20: 000001a3|0000d8f9|__imp_WriteFile          |
+20: 00000245|0000d857|__imp_WriteFile          | 
+Relocations for 'xfwrite.obj' section '.pdata':
+12: 00000000|00011770|_Fwrite                  | 12: 00000004|000119f9|_Fwrite                  |
+
+Relocations for 'xprintf.obj' section '.text':
+20: 00008e39|ffff8423|localeconv               | 20: 00003aac|0000c080|__internalLocaleValues   |
+20: 00003aba|0000c072|__internalLocaleValues   | 20: 00003acb|0000c061|__internalLocaleValues   |
+20: 00003af4|0000c038|__internalLocaleValues   | 20: 00003b01|0000c033|internalDecimalPoint     |
+20: 0000f8f6|ffffee06|strlcpy                  | 20: 00003b0d|0000c01f|__internalLocaleValues   |
+20: 00003b37|0000bff5|__internalLocaleValues   | 20: 00003b45|0000bff2|__internalThousandSeparator|
+20: 0000f93a|ffffedc2|strlcpy                  | 20: 00003b51|0000bfdb|__internalLocaleValues   |
+20: 00003b7b|0000bfb1|__internalLocaleValues   | 20: 00003b89|0000bfb1|__internalGrouping       |
+20: 0000f97e|ffffed7e|strlcpy                  | 20: 0000fa61|fffff0e7|strtol                   |
+20: 00003c4c|0000c318|_$38                     | 20: 00002510|0000a76c|__nan__                  |
+20: 00003c6f|0000c2f5|_$38                     | 20: 00002531|0000a753|__infinitym__            |
+20: 00009052|ffff824a|logl                     | 20: 00009067|ffff8235|logl                     |
+20: 0000956e|ffff864e|memset                   | 20: 00003ea6|0000bd46|_$174                    |
+20: 0000ff22|ffffec26|strtol                   | 20: 00010076|ffffead2|strtol                   |
+20: 000101ed|ffffe95b|strtol                   | 20: 00004600|0000b53a|__internalGrouping       |
+20: 00004683|0000b542|qualifiers               | 20: 00010398|ffffe1a4|strchr                   |
+20: 0000499b|0000b361|_$248                    | 20: 000049c0|0000b37c|_$250                    |
+20: 00004e11|0000b01b|_$366                    | 20: 0000afe8|ffff69f4|memcpy                   |
+20: 000059a5|0000a1fa|__internalDigitsUpper    | 20: 000059ae|0000a1cc|__internalDigitsLower    |
+20: 00005b66|00009fd4|__internalGrouping       | 20: 00005c27|00009f10|__internalThousandSeparator|
+20: 00011aac|ffffcd70|strlen                   | 20: 00005c79|00009ebe|__internalThousandSeparator|
+20: 00005cfb|00009e3f|__internalGrouping       | 20: 00005d40|00009dfa|__internalGrouping       |
+20: 00004724|00007d79|_ctype                   | 20: 000062a3|00009bd1|__escaped                |
+20: 00011fb8|ffffc584|strchr                   | 20: 000062ce|00009ba6|__escaped                |
+20: 000062db|00009ba2|__translation            | 20: 00006414|00009708|__internalNullString     |
+20: 00012821|ffffd1ce|wcslen                   | 20: 000122f0|ffffc52c|strlen                   |
+20: 00012780|ffffc7bc|wctomb                   | 20: 0000dcbf|ffff8aa8|__qtoasc                 |
+20: 0001251b|ffffc301|strlen                   | 20: 0001250b|ffffc031|strchr                   |
+20: 0001258c|ffffbe90|__lccstackprobe          | 20: 00006a3c|0000951e|_$773                    |
+20: 00006a45|00009511|_$774                    | 20: 00006a9f|000094b2|_$780                    |
+20: 00006aa8|000094a4|_$781                    | 20: 00006af4|00009454|_$786                    |
+20: 00006afd|00009447|_$787                    | 20: 00006b3d|000093f7|_$799                    |
+20: 00006b4f|000093d5|_$800                    | 20: 00006b74|0000902b|__internalDigitsUpper    |
+20: 00006b7d|00008ffd|__internalDigitsLower    | 20: 00006c21|000092f3|_$820                    |
+20: 00006c3a|000092ca|_$822                    | 20: 0000c666|ffff5b9d|powl                     |
+20: 00006c87|0000926d|_$826                    | 20: 0000b54e|ffff46e3|fabsl                    |
+20: 0000b725|ffff4857|floorl                   | 20: 00006d19|000091cb|_$830                    |
+20: 00006d30|000091c4|_$826                    | 20: 0000b774|ffff4808|floorl                   |
+20: 00006de6|00008db9|__internalDigitsUpper    | 20: 00006df6|00008d84|__internalDigitsLower    |
+20: 00006e65|000090ff|_$38                     | 20: 0000e548|ffff98b1|__normalize              |
+20: 0000c20d|ffff46cf|isinfl                   | 20: 0000bdb1|ffff41cb|floorl                   |
+20: 0000cde7|ffff541c|powl                     | 20: 000073f2|00008b72|_$38                     |
+20: 0000ea5b|ffff939e|__normalize              | 20: 0000befc|ffff4080|floorl                   |
+20: 0000d016|ffff51ed|powl                     | 20: 00007618|000088bc|_$901                    |
+20: 0000c06a|ffff3f12|floorl                   | 20: 0000c088|ffff3ef4|floorl                   |
+20: 00007716|000087be|_$901                    | 20: 0000c16a|ffff3e12|floorl                   |
+20: 0000777e|00008756|_$901                    | 20: 0000c1bc|ffff3dc0|floorl                   |
+20: 000077cb|00008709|_$901                    | 20: 0000c281|ffff3cfb|floorl                   |
+20: 0000c2df|ffff3cfd|fmodl                    | 20: 00007a04|00008130|internalDecimalPoint     |
+20: 00013889|ffffaf93|strlen                   | 20: 00007a74|000080c0|internalDecimalPoint     |
+20: 00007a8b|000080af|__internalGrouping       | 20: 00007b0b|000083c9|_$901                    |
+20: 0000c549|ffff3a33|floorl                   | 20: 0000c5ac|ffff3a30|fmodl                    |
+20: 0000c61a|ffff3962|floorl                   | 20: 00007c0f|00008325|_$799                    |
+20: 00007c8f|00007ea8|__internalThousandSeparator| 20: 00013b14|ffffad08|strlen                   |
+20: 00007cf3|00007e44|__internalThousandSeparator| 20: 00007d8e|00007dac|__internalGrouping       |
+20: 00007dff|00007d3b|__internalGrouping       | 20: 00013d8f|ffffaa8d|strlen                   |
+20: 00008699|000077f3|_$1241                   | 20: 000146c5|ffff9d57|__lccstackprobe          |
+20: 0000e2b7|ffff3905|memset                   | 20: 00008a95|00007097|__internalLocaleValues   |
+20: 0000d82c|ffff2af0|fputc                    | 20: 0000893f|00006ba5|_Files                   |
+20: 000089a3|00006b41|_Files                   | 20: 000089ef|00006af5|_Files                   |
+20: 0000da3a|ffff26b3|__fpclassifyl            | 20: 00008fd7|00006f8d|_$38                     |
+
+Relocations for 'xprintf.obj' section '.data':
+ 6: 000000d0|08011e89|_$70                     |  6: 000000d8|080125cd|_$67                     |
+ 6: 000000e0|080125cd|_$67                     |  6: 000000e8|08011eb3|_$73                     |
+ 6: 000000f0|080125cd|_$67                     |  6: 000000f8|080125cd|_$67                     |
+ 6: 00000100|0801257a|_$166                    |  6: 00000108|08012566|_$165                    |
+ 6: 00000110|080125cd|_$67                     |  6: 00000118|080125cd|_$67                     |
+ 6: 00000120|080121c6|_$110                    |  6: 00000128|08011e92|_$71                     |
+ 6: 00000130|080125cd|_$67                     |  6: 00000138|08011e9b|_$72                     |
+ 6: 00000140|08011ebc|_$74                     |  6: 00000148|080125cd|_$67                     |
+ 6: 00000150|08012295|_$123                    |  6: 00000158|080122a5|_$126                    |
+ 6: 00000160|080122a5|_$126                    |  6: 00000168|080122a5|_$126                    |
+ 6: 00000170|080122a5|_$126                    |  6: 00000178|080122a5|_$126                    |
+ 6: 00000180|080122a5|_$126                    |  6: 00000188|080122a5|_$126                    |
+ 6: 00000190|080122a5|_$126                    |  6: 00000198|080122a5|_$126                    |
+ 6: 000001a0|080125cd|_$67                     |  6: 000001a8|080125cd|_$67                     |
+ 6: 000001b0|080125cd|_$67                     |  6: 000001b8|080125cd|_$67                     |
+ 6: 000001c0|080125cd|_$67                     |  6: 000001c8|080125cd|_$67                     |
+ 6: 000001d0|080121bf|_$109                    |  6: 000001e0|08012c1e|_$244                    |
+ 6: 000001e8|08012b3d|_$228                    |  6: 000001f0|08012947|_$188                    |
+ 6: 000001f8|08012c39|_$185                    |  6: 00000200|08012ba5|_$232                    |
+ 6: 00000208|08012bde|_$236                    |  6: 00000210|08012bc3|_$234                    |
+ 6: 00000220|08012b71|_$230                    |  6: 00000228|08012c39|_$185                    |
+ 6: 00000230|08012c39|_$185                    |  6: 00000238|080129c9|_$200                    |
+ 6: 00000240|08012c39|_$185                    |  6: 00000248|08012c39|_$185                    |
+ 6: 00000250|08012c39|_$185                    |  6: 00000258|08012c39|_$185                    |
+ 6: 00000260|08012c39|_$185                    |  6: 00000268|08012c25|_$245                    |
+ 6: 00000270|08012b44|_$229                    |  6: 00000278|0801294e|_$189                    |
+ 6: 00000280|08012ac5|_$222                    |  6: 00000288|08012bac|_$233                    |
+ 6: 00000290|08012be5|_$237                    |  6: 00000298|08012bca|_$235                    |
+ 6: 000002a0|08012c39|_$185                    |  6: 000002a8|08012a91|_$218                    |
+ 6: 000002b0|08012c39|_$185                    |  6: 000002b8|08012c39|_$185                    |
+ 6: 000002c0|08012c39|_$185                    |  6: 000002c8|08012c39|_$185                    |
+ 6: 000002d0|08012c11|_$243                    |  6: 000002d8|08012aeb|_$223                    |
+ 6: 000002e0|08012bf2|_$238                    |  6: 000002e8|08012c39|_$185                    |
+ 6: 000002f0|08012c39|_$185                    |  6: 000002f8|0801298f|_$195                    |
+ 6: 00000300|08012c39|_$185                    |  6: 00000308|08012aae|_$221                    |
+ 6: 00000310|08012dee|_$269                    |  6: 00000318|08012e53|_$273                    |
+ 6: 00000320|0801350e|_$336                    |  6: 00000328|08012e53|_$273                    |
+ 6: 00000330|08012d89|_$265                    |  6: 00000338|08012dee|_$269                    |
+ 6: 00000340|08012dee|_$269                    |  6: 00000348|08013433|_$327                    |
+ 6: 00000350|08012d89|_$265                    |  6: 00000370|0801671d|_$1212                   |
+ 6: 00000378|0801675a|_$1215                   |  6: 00000380|08016611|_$1197                   |
+ 6: 00000388|080167d9|_$1218                   |  6: 00000390|08016808|_$1219                   |
+ 6: 00000398|08016836|_$1221                   |  6: 000003a0|08016931|_$1195                   |
+
+Relocations for 'xprintf.obj' section '.pdata':
+12: 00000000|00011a00|__SetLocale              | 12: 00000004|00011b07|__SetLocale              |
+12: 0000000c|00011b08|__GetPosition            | 12: 00000010|00011baa|__GetPosition            |
+12: 00000018|00011bab|Logarithm                | 12: 0000001c|00011c3a|Logarithm                |
+12: 00000024|00011c3b|__Parse                  | 12: 00000028|000138e3|__Parse                  |
+12: 00000030|000138e4|WriteNumber              | 12: 00000034|000141a8|WriteNumber              |
+12: 0000003c|000141a9|WriteStringCharacter     | 12: 00000040|0001435e|WriteStringCharacter     |
+12: 00000048|0001435f|WriteString              | 12: 0000004c|000145bf|WriteString              |
+12: 00000054|000145c0|WriteQuad                | 12: 00000058|00014864|WriteQuad                |
+12: 00000060|00014865|WriteDouble              | 12: 00000064|0001648b|WriteDouble              |
+12: 0000006c|0001648c|FormatProcess            | 12: 00000070|000169aa|FormatProcess            |
+12: 00000078|000169ab|__doFormat_i             | 12: 0000007c|00016ab6|__doFormat_i             |
+12: 00000084|00016ab7|__doFormat               | 12: 00000088|00016b0b|__doFormat               |
+12: 00000090|00016b0c|__doFormat_s             | 12: 00000094|00016b60|__doFormat_s             |
+12: 0000009c|00016b61|OutStreamFile            | 12: 000000a0|00016bdb|OutStreamFile            |
+12: 000000a8|00016be0|printf                   | 12: 000000ac|00016c90|printf                   |
+12: 000000b4|00016c91|vprintf                  | 12: 000000b8|00016cd4|vprintf                  |
+12: 000000c0|00016cd5|printfv                  | 12: 000000c4|00016d20|printfv                  |
+12: 000000cc|00016d25|fprintf                  | 12: 000000d0|00016dcf|fprintf                  |
+12: 000000d8|00016dd0|vfprintf                 | 12: 000000dc|00016e11|vfprintf                 |
+12: 000000e4|00016e12|fprintfv                 | 12: 000000e8|00016e5b|fprintfv                 |
+12: 000000f0|00016e5c|PrintPointer             | 12: 000000f4|00016f02|PrintPointer             |
+12: 000000fc|00016f03|fpclassify_and_signbit   | 12: 00000100|00017021|fpclassify_and_signbit   |
+output   input     virtual
+section  section   address    tsize
+.text              8001000 16200 16024 
+
+         .text     8001000    18    18  c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libcrt0.obj
+                   8001000              __crtLibMain
+         .text     8001020    20    20  lccstub.obj
+                   8001020              LibMain
+         .text     8001040  69b8  69b8  test_plotblock_acc.obj
+                   8003a8f              _ssSetInputPortDirectFeedThroughFcn
+                   8002fa2              ssSetZcSignalZcTol
+                   800467a              ssWriteRTWParameters
+                   80023ef              _ssSetCompInputPortSymbolicDimsId
+                   8002cd9              ssGetIsZeroCrossControlDisabled
+                   8002d3a              ssSetIsInputPortUsedForContZcSignal
+                   8002459              _ssSetOutputPortSymbolicDimsId
+                   80020ff              _ssRegisterSymbolicDimsMinus
+                   8001fa6              _ssRegisterSymbolicDimsString
+                   8002e7c              ssSetZcSignalWidth
+                   8003132              ssGetNumZcSignals
+                   8003195              ssGetZcSignalVector
+                   80018cb              _ssGetAbsTol
+                   8002f40              ssSetZcSignalType
+                   8005c87              ssWriteRTWWorkVect
+                   8002b19              ssWarning
+                   80027e2              _ssGetCurrentOutputPortWidth
+                   8003067              ssCreateAndAddZcSignalInfo
+                   8001cb4              _ssSetInputPortVectorDimension
+                   8003005              ssSetZcSignalNeedsEventNotification
+                   8003e70              ssWriteRTWStr
+                   8002ede              ssSetZcSignalZcEventType
+                   80025ff              ssIsRunTimeParamTunable
+                   8003832              _ssGetInputPortSignalFcn
+                   80028ea              _ssGetCallSystemNumFcnCallDestinations
+                   8005060              ssWriteRTWParamSettings
+                   800231d              _ssSetInputPortSymbolicDimsId
+                   8003f93              ssWriteRTWNameValuePair
+                   8001ae0              _ssSetInputPortMatrixDimensions
+                   8003409              ssGetZcSignalZcTol
+                   80031ff              ssGetZcSignalZcEvents
+                   8001e30              _ssSetSymbolicDimsSupport
+                   8002667              ssGetSFuncBlockHandle
+                   80034e3              ssGetZcSignalIsZcElementDisc
+                   8003269              ssGetZcSignalName
+                   800216c              _ssRegisterSymbolicDimsMultiply
+                   8001bca              _ssSetOutputPortMatrixDimensions
+                   800202a              _ssRegisterSymbolicDimsIntValue
+                   80022b0              _ssGetSymbolicDim
+                   8002387              _ssGetCompInputPortSymbolicDimsId
+                   80030ca              ssCloneAndAddZcSignalInfo
+                   80026d6              _ssGetCurrentInputPortWidth
+                   800333b              ssGetZcSignalZcEventType
+                   80017eb              _ssSetStateAbsTol
+                   8003ed0              ssWriteRTWMxVectParam
+                   80035d5              _ssGetInputPortSignalPtrsFcn
+                   800355c              ssGetIsInputPortElementContinuous
+                   8002e1a              ssSetZcSignalName
+                   8003c31              _ssSetInputPortReusableFcn
+                   8003f29              ssWriteRTWMx2dMatParam
+                   8006b73              mexFunction
+                   800252b              _ssSetCompOutputPortSymbolicDimsId
+                   800347d              ssGetZcSignalNeedsEventNotification
+                   80021d9              _ssRegisterSymbolicDimsDivide
+                   8002246              _ssGetNumSymbolicDims
+                   80032d3              ssGetZcSignalWidth
+                   8002092              _ssRegisterSymbolicDimsPlus
+                   8003ced              _ssSetOutputPortReusableFcn
+                   8001e92              _ssRegisterSymbolicDimsExpr
+                   8001f16              _ssRegisterSymbolicDims
+                   8002d9c              ssSetZcSignalIsZcElementDisc
+                   8002595              _ssSetCompDWorkSymbolicDimsId
+                   80024c3              _ssGetCompOutputPortSymbolicDimsId
+                   8003dae              ssGetDTypeIdFromMxArray
+                   8001d72              _ssSetOutputPortVectorDimension
+                   80033a1              ssGetZcSignalType
+         .text     8007a00   1f0   1f0  hostlib_multimedia.obj
+                   8007a89              createVideoInfo
+                   8007a00              createAudioInfo
+         .text     8007bf0   180   180  hostlib_video.obj
+                   8007ce7              LibUpdate_Video
+                   8007bf0              LibCreate_Video
+         .text     8007d70   5cc   5cc  hostlib_rtw.obj
+                   8008275              LibError
+                   8007d70              CreateHostLibrary
+                   80082b4              PrintError
+                   8008218              LibDestroy
+                   80080d9              DestroyHostLibrary
+                   80081cf              LibTerminate
+                   8008173              LibReset
+                   800812a              LibStart
+                   80082df              PrintWarning
+                   800830a              GetErrorBuffer
+                   800832c              GetNullPointer
+         .text     8008340   1c4   1c4  rtgetinf.obj
+                   8008340              rtGetInf
+                   8008421              rtGetMinusInf
+                   80084e4              rtGetMinusInfF
+                   8008403              rtGetInfF
+         .text     8008510   138   138  rtgetnan.obj
+                   80085d3              rtGetNaNF
+                   8008510              rtGetNaN
+         .text     8008650   21c   21c  rt_nonfinite.obj
+                   8008830              rtIsNaNF
+                   800879e              rtIsInfF
+                   8008746              rtIsInf
+                   80087f4              rtIsNaN
+                   8008650              rt_InitInfAndNaN
+         .text     8008870    5c    5c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] calloc.obj
+                   8008870              calloc
+         .text     80088d0   a38   a38  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] cinit.obj
+                   80088d0              _cinit
+         .text     8009310    1c    1c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fabs.obj
+                   8009310              fabs
+                   8009325              fabsl
+                   8009310              fabsd
+         .text     8009330   188   188  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fflush.obj
+                   8009330              fflush
+         .text     80094c0    2c    2c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] floorl.obj
+                   80094c0              floorl
+         .text     80094f0    14    14  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fmodl.obj
+                   80094f0              fmodl
+         .text     8009510   180   180  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fpclassify.obj
+                   80095e1              __fpclassifyl
+                   80095c4              __fpclassifyd
+                   8009670              __fpclassifyf
+         .text     8009690    ec    ec  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fputc.obj
+                   8009690              fputc
+         .text     8009780    2c    2c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] free.obj
+                   8009780              free
+         .text     80097b0   18c   18c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] frexpl.obj
+                   80097b0              frexpl
+         .text     8009940    24    24  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] isfinitel.obj
+                   8009940              isfinitel
+         .text     8009970   140   140  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] isinfl.obj
+                   8009a9c              _isinfi
+                   8009a48              isinff
+                   80099d9              isinf
+                   80099d9              _isinfd
+                   80099d9              isinfd
+                   8009970              isinfl
+         .text     8009ab0    74    74  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] isnanl.obj
+                   8009b04              isnanf
+                   8009ab0              isnanl
+         .text     8009b30   300   300  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] ldexp.obj
+                   8009d8d              ldexpf
+                   8009ddb              ldexp
+                   8009b39              ldexpl
+         .text     8009e30    20    20  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] localeconv.obj
+                   8009e30              localeconv
+         .text     8009e50   358   358  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] logl.obj
+                   8009e50              logl
+         .text     800a1b0    3c    3c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] malloc.obj
+                   800a1b0              malloc
+         .text     800a1f0    2c    2c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] memcpy.obj
+                   800a1f0              memcpy
+         .text     800a220    b8    b8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] memmove.obj
+                   800a220              memmove
+         .text     800a2e0    38    38  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] memset.obj
+                   800a2e0              memset
+         .text     800a320    70    70  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] mtherr.obj
+                   800a320              mtherr
+         .text     800a390    1c    1c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] nan.obj
+                   800a398              infinity
+                   800a3a2              infinityl
+                   800a398              infinityf
+                   800a390              nan
+         .text     800a3b0   100   100  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] polevll.obj
+                   800a42c              p1evll
+                   800a3b0              polevll
+         .text     800a4b0  1144  1144  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] powl.obj
+                   800a4b0              powil
+                   800a757              powl
+         .text     800b600    34    34  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] precision.obj
+                   800b623              FullPrecision
+                   800b600              DoublePrecision
+                   800b61c              GetPrecision
+         .text     800b640   a80   a80  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] qasm.obj
+                   800b640              __shdn1
+                   800b690              __shiftupn
+                   800c050              cmpm
+                   800bef8              __qequal
+                   800b8d8              __qmov
+                   800bd20              __divm
+                   800b708              __shiftdownn
+                   800b900              __qclear
+                   800ba28              __mulm
+                   800b668              __shup1
+                   800b780              bsr64
+                   800b898              __qmovz
+                   800b868              __pack
+                   800bf58              mdnorm
+                   800b7f8              __subm
+                   800bc88              __divi
+                   800b918              __mulin
+                   800b788              __addm
+         .text     800c0c0  28e0  28e0  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] qfloat.obj
+                   800c7d0              __qmul
+                   800c0f6              __qifrac
+                   800c0c0              qisneg
+                   800e73d              __normalize
+                   800e3b9              __qtoe64
+                   800ca0a              __qmuli
+                   800c20b              qsub
+                   800c26b              __qadd_subtract
+                   800db1c              __qcmp
+                   800cfac              __qinfin
+                   800cb47              __shift
+                   800cff4              qnrmlz
+                   800dc9e              __asctoq
+                   800e7dc              __e64toq
+                   800cd97              __normlz
+                   800e8e0              __itoq
+                   800c23d              qadd
+                   800d0ab              __qtoasc
+                   800c60d              __qdiv
+         .text     800e9a0  1b48  1b48  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] setlocale.obj
+                   800eac4              _setlocale
+                   800e9a0              setlocale
+         .text     80104f0    24    24  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] signbit.obj
+                   80104fd              signbitl
+                   80104f0              signbit
+                   80104f0              _signbit
+                   80104f7              signbitf
+         .text     8010520   1f0   1f0  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] sprintf.obj
+                   8010592              vsprintf
+                   80105f2              sprintfv
+                   801065a              sprintf
+                   8010520              OutStreamString
+         .text     8010710    58    58  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] stack.obj
+                   8010710              __stackprobe
+                   8010710              __lccstackprobe
+         .text     8010770    28    28  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strcat.obj
+                   8010770              strcat
+         .text     80107a0    14    14  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strchr.obj
+                   80107a0              strchr
+         .text     80107c0    9c    9c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strcmp.obj
+                   80107c0              strcmp
+         .text     8010860    18    18  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strcpy.obj
+                   8010860              strcpy
+         .text     8010880    8c    8c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strlcpy.obj
+                   8010880              strlcpy
+         .text     8010910    10    10  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strlen.obj
+                   8010910              _strlen
+                   8010910              strlen
+         .text     8010920   34c   34c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strtol.obj
+                   8010bfe              strtoul
+                   8010c2c              strtol
+         .text     8010c70    30    30  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] toupper.obj
+                   8010c70              toupper
+         .text     8010ca0   1bc   1bc  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] wctomb.obj
+                   8010ca0              wctomb
+         .text     8010e60   778   778  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] wstring.obj
+                   8011593              wcslen
+                   8011490              Wstrtok_r
+                   801131d              wcsrchr
+                   80112b6              wcspbrk
+                   801114a              wcsncmp
+                   8011401              wcsstr
+                   8010e60              wmemcpy
+                   8010ed4              wcscpy
+                   801123e              wcscspn
+                   80111e6              wcschr
+                   801102d              wcsncat
+                   8011381              wcsspn
+                   8010f3f              wcsncpy
+                   80110c9              wcscmp
+                   8010f9e              wcscat
+         .text     80115e0   188   188  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xfwprep.obj
+                   80115e0              _Fwprep
+         .text     8011770   28c   28c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xfwrite.obj
+                   8011770              _Fwrite
+         .text     8011a00  5624  5624  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xprintf.obj
+                   8016be0              printf
+                   8016e12              fprintfv
+                   8016b0c              __doFormat_s
+                   8016cd5              printfv
+                   8011c3b              __Parse
+                   8016bdc              xprintf
+                   8011b08              __GetPosition
+                   8016d25              fprintf
+                   8016c91              vprintf
+                   8011a00              __SetLocale
+                   8016b61              OutStreamFile
+                   8016d21              xfprintf
+                   8016ab7              __doFormat
+                   8016dd0              vfprintf
+
+.bss               8018000   ab0     0 
+
+         .bss      8018000   1c8   1c8  test_plotblock_acc.obj
+         .bss      80181d0    10    10  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] powl.obj
+         .bss      80181e0   640   640  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xfiles.obj
+
+         COMMON    8018820    60    60  rt_nonfinite.obj
+                   8018820              rtNaNF
+                   8018830              rtInfF
+                   8018840              rtInf
+                   8018850              rtNaN
+                   8018860              rtMinusInf
+                   8018870              rtMinusInfF
+         COMMON    8018880    20    20  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] crtglobal.obj
+                   8018880              _crt_errno
+                   8018890              _crt_base
+         COMMON    80188a0    10    10  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] setlocale.obj
+                   80188a0              __currentLocale
+         COMMON    80188b0   200   200  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xprintf.obj
+                   80188b0              __internalDigitArray
+
+.rdata             8019000   a00   9bc 
+
+         .rdata    8019000    84    84  c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libcrt0.obj
+
+         .xdata    8019090     8     8  lccstub.obj
+         .xdata    80190a0   330   330  test_plotblock_acc.obj
+         .xdata    80193d0    10    10  hostlib_multimedia.obj
+         .xdata    80193e0    18    18  hostlib_video.obj
+         .xdata    8019400    60    60  hostlib_rtw.obj
+         .xdata    8019460    28    28  rtgetinf.obj
+         .xdata    8019490    18    18  rtgetnan.obj
+         .xdata    80194b0    38    38  rt_nonfinite.obj
+         .xdata    80194f0     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] calloc.obj
+         .xdata    8019500    10    10  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] cinit.obj
+         .xdata    8019510     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fflush.obj
+         .xdata    8019520    24    24  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fpclassify.obj
+         .xdata    8019550     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fputc.obj
+         .xdata    8019560     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] free.obj
+         .xdata    8019570     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] frexpl.obj
+         .xdata    8019580    20    20  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] isinfl.obj
+         .xdata    80195a0    10    10  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] isnanl.obj
+         .xdata    80195b0    1c    1c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] ldexp.obj
+         .xdata    80195d0     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] localeconv.obj
+         .xdata    80195e0     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] logl.obj
+         .xdata    80195f0     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] malloc.obj
+         .xdata    8019600     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] memmove.obj
+         .xdata    8019610     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] mtherr.obj
+         .xdata    8019620    10    10  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] polevll.obj
+         .xdata    8019630    24    24  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] powl.obj
+         .xdata    8019660    e8    e8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] qfloat.obj
+         .xdata    8019750    14    14  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] setlocale.obj
+         .xdata    8019770    24    24  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] sprintf.obj
+         .xdata    80197a0     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strcmp.obj
+         .xdata    80197b0     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strlcpy.obj
+         .xdata    80197c0    1c    1c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strtol.obj
+         .xdata    80197e0     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] toupper.obj
+         .xdata    80197f0     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] wctomb.obj
+         .xdata    8019800    84    84  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] wstring.obj
+         .xdata    8019890     8     8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xfwprep.obj
+         .xdata    80198a0     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xfwrite.obj
+         .xdata    80198b0   10c   10c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xprintf.obj
+
+.data              801a000  4000  3ee8 
+
+         .data     801a000     8     8  lccstub.obj
+                   801a000              __imp_LibMain
+         .data     801a010  18cc  18cc  test_plotblock_acc.obj
+                   801a134              __imp__ssGetAbsTol
+                   801a2e7              __imp_ssWarning
+                   801a170              DYNAMIC_DIMENSION_DEF
+                   801a8fe              __imp__ssGetInputPortSignalFcn
+                   801a5ac              _ssBadLevel2DirectFeedSolutionMsg
+                   801a61a              _ssBadLevel2ZeroDirectFeedMsg
+                   801a8f6              __imp__ssGetInputPortSignalPtrsFcn
+                   801a916              __imp__ssSetOutputPortReusableFcn
+                   801a288              __imp__ssSetOutputPortSymbolicDimsId
+                   801a248              __imp__ssRegisterSymbolicDimsMinus
+                   801a270              __imp__ssSetInputPortSymbolicDimsId
+                   801a1c8              __imp__ssSetInputPortVectorDimension
+                   801a230              __imp__ssRegisterSymbolicDimsString
+                   801a88e              __imp_ssCreateAndAddZcSignalInfo
+                   801a2c8              __imp__ssGetCallSystemNumFcnCallDestinations
+                   801a258              __imp__ssRegisterSymbolicDimsDivide
+                   801a1c0              __imp__ssSetOutputPortMatrixDimensions
+                   801a86e              __imp_ssSetZcSignalZcEventType
+                   801a1b8              __imp__ssSetInputPortMatrixDimensions
+                   801aa48              __imp_ssWriteRTWParameters
+                   801a190              DYNAMIC_DIMENSION
+                   801a876              __imp_ssSetZcSignalType
+                   801a8b6              __imp_ssGetZcSignalName
+                   801a856              __imp_ssSetZcSignalIsZcElementDisc
+                   801a2b8              __imp__ssGetCurrentInputPortWidth
+                   801ab20              __imp_mexFunction
+                   801a240              __imp__ssRegisterSymbolicDimsPlus
+                   801a896              __imp_ssCloneAndAddZcSignalInfo
+                   801a85e              __imp_ssSetZcSignalName
+                   801a298              __imp__ssSetCompOutputPortSymbolicDimsId
+                   801a2a0              __imp__ssSetCompDWorkSymbolicDimsId
+                   801a84e              __imp_ssSetIsInputPortUsedForContZcSignal
+                   801a1d0              __imp__ssSetOutputPortVectorDimension
+                   801a886              __imp_ssSetZcSignalNeedsEventNotification
+                   801a2c0              __imp__ssGetCurrentOutputPortWidth
+                   801a8a6              __imp_ssGetZcSignalVector
+                   801a218              __imp__ssRegisterSymbolicDims
+                   801a8c6              __imp_ssGetZcSignalZcEventType
+                   801a250              __imp__ssRegisterSymbolicDimsMultiply
+                   801a1f0              __imp__ssRegisterSymbolicDimsExpr
+                   801ab10              __imp_ssWriteRTWWorkVect
+                   801a9c8              __imp_ssWriteRTWStr
+                   801a9d0              __imp_ssWriteRTWMxVectParam
+                   801a278              __imp__ssGetCompInputPortSymbolicDimsId
+                   801a268              __imp__ssGetSymbolicDim
+                   801a1d8              __imp__ssSetSymbolicDimsSupport
+                   801aa88              __imp_ssWriteRTWParamSettings
+                   801a8be              __imp_ssGetZcSignalWidth
+                   801a2ef              _ssBadLevel2InputAccessMsg
+                   801a9d8              __imp_ssWriteRTWMx2dMatParam
+                   801a89e              __imp_ssGetNumZcSignals
+                   801a8d6              __imp_ssGetZcSignalZcTol
+                   801a8ee              __imp_ssGetIsInputPortElementContinuous
+                   801a866              __imp_ssSetZcSignalWidth
+                   801a8e6              __imp_ssGetZcSignalIsZcElementDisc
+                   801a12c              __imp__ssSetStateAbsTol
+                   801a2a8              __imp_ssIsRunTimeParamTunable
+                   801a290              __imp__ssGetCompOutputPortSymbolicDimsId
+                   801a2b0              __imp_ssGetSFuncBlockHandle
+                   801a471              _ssBadLevel2DirectFeedMsg
+                   801a87e              __imp_ssSetZcSignalZcTol
+                   801a8ce              __imp_ssGetZcSignalType
+                   801a90e              __imp__ssSetInputPortReusableFcn
+                   801a238              __imp__ssRegisterSymbolicDimsIntValue
+                   801a280              __imp__ssSetCompInputPortSymbolicDimsId
+                   801a260              __imp__ssGetNumSymbolicDims
+                   801a8de              __imp_ssGetZcSignalNeedsEventNotification
+                   801a8ae              __imp_ssGetZcSignalZcEvents
+                   801a906              __imp__ssSetInputPortDirectFeedThroughFcn
+                   801a9e0              __imp_ssWriteRTWNameValuePair
+                   801a91e              __imp_ssGetDTypeIdFromMxArray
+                   801a756              _ssBadLevel2ZeroDirectFeedMsg2
+                   801a846              __imp_ssGetIsZeroCrossControlDisabled
+         .data     801b8e0   104   104  hostlib_multimedia.obj
+                   801b9dc              __imp_createVideoInfo
+                   801b9d4              __imp_createAudioInfo
+         .data     801b9f0    8c    8c  hostlib_video.obj
+                   801ba60              __imp_LibUpdate_Video
+                   801ba58              __imp_LibCreate_Video
+                   801ba50              libName_Video
+         .data     801ba80   160   160  hostlib_rtw.obj
+                   801ba98              __imp_LibReset
+                   801bac0              __imp_PrintWarning
+                   801bac8              __imp_GetErrorBuffer
+                   801baa8              __imp_LibDestroy
+                   801ba80              __imp_CreateHostLibrary
+                   801bab0              __imp_LibError
+                   801bad0              __imp_GetNullPointer
+                   801ba90              __imp_LibStart
+                   801bab8              __imp_PrintError
+                   801baa0              __imp_LibTerminate
+                   801ba88              __imp_DestroyHostLibrary
+         .data     801bbe0    28    28  rtgetinf.obj
+                   801bbe8              __imp_rtGetInfF
+                   801bbf0              __imp_rtGetMinusInf
+                   801bbe0              __imp_rtGetInf
+                   801bbf8              __imp_rtGetMinusInfF
+         .data     801bc10    20    20  rtgetnan.obj
+                   801bc1c              __imp_rtGetNaNF
+                   801bc10              __imp_rtGetNaN
+         .data     801bc30    28    28  rt_nonfinite.obj
+                   801bc38              __imp_rtIsInf
+                   801bc48              __imp_rtIsNaN
+                   801bc40              __imp_rtIsInfF
+                   801bc30              __imp_rt_InitInfAndNaN
+                   801bc50              __imp_rtIsNaNF
+         .data     801bc60   180   180  test_plotblock_acc_data.obj
+                   801bd60              lrrbys4r2m
+         .data     801bde0   16c   16c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] cinit.obj
+         .data     801bf50   104   104  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] ctype.obj
+                   801bf50              _ctype
+         .data     801c060    20    20  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] frexpl.obj
+         .data     801c080    30    30  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] ldexp.obj
+         .data     801c0b0   1d0   1d0  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] logl.obj
+         .data     801c280    b8    b8  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] mtherr.obj
+                   801c280              merror
+         .data     801c340     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] nan.obj
+                   801c340              NAN
+                   801c348              __infinitym__
+                   801c340              __nan__
+                   801c344              __infinity__
+         .data     801c350    b0    b0  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] polevll.obj
+                   801c3b0              PIL
+                   801c360              MACHEPL
+                   801c3a0              LOG2EL
+                   801c390              LOGE2L
+                   801c370              MAXLOGL
+                   801c3d0              PIO4L
+                   801c3c0              PIO2L
+                   801c380              MINLOGL
+                   801c3f0              NEGZEROL
+                   801c350              MAXNUML
+                   801c3e0              NANL
+         .data     801c400   528   528  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] powl.obj
+         .data     801c930   9b0   9b0  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] qfloat.obj
+                   801c930              qone
+         .data     801d2e0   3f4   3f4  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] setlocale.obj
+         .data     801d6e0   3a0   3a0  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xfiles.obj
+                   801d800              _Files
+         .data     801da80     4     4  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xfwrite.obj
+         .data     801da90   458   458  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xprintf.obj
+                   801daee              __internalDigitsLower
+                   801daab              __internalThousandSeparator
+                   801daa0              __internalLocaleValues
+                   801da90              __internalNullString
+                   801daae              __internalGrouping
+                   801ddf1              __translation
+                   801dde8              __escaped
+                   801db38              __internalDigitsUnconverted
+                   801db13              __internalDigitsUpper
+
+.pdata             801e000   c00   a68 
+
+         .pdata    801e000     c     c  lccstub.obj
+         .pdata    801e010   3a8   3a8  test_plotblock_acc.obj
+         .pdata    801e3c0    18    18  hostlib_multimedia.obj
+         .pdata    801e3e0    18    18  hostlib_video.obj
+         .pdata    801e400    84    84  hostlib_rtw.obj
+         .pdata    801e490    30    30  rtgetinf.obj
+         .pdata    801e4c0    18    18  rtgetnan.obj
+         .pdata    801e4e0    3c    3c  rt_nonfinite.obj
+         .pdata    801e520     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] calloc.obj
+         .pdata    801e530     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] cinit.obj
+         .pdata    801e540     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fflush.obj
+         .pdata    801e550    30    30  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fpclassify.obj
+         .pdata    801e580     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] fputc.obj
+         .pdata    801e590     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] free.obj
+         .pdata    801e5a0     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] frexpl.obj
+         .pdata    801e5b0    30    30  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] isinfl.obj
+         .pdata    801e5e0    18    18  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] isnanl.obj
+         .pdata    801e600    24    24  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] ldexp.obj
+         .pdata    801e630     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] localeconv.obj
+         .pdata    801e640     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] logl.obj
+         .pdata    801e650     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] malloc.obj
+         .pdata    801e660     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] memmove.obj
+         .pdata    801e670     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] mtherr.obj
+         .pdata    801e680    18    18  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] polevll.obj
+         .pdata    801e6a0    24    24  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] powl.obj
+         .pdata    801e6d0    f0    f0  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] qfloat.obj
+         .pdata    801e7c0    18    18  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] setlocale.obj
+         .pdata    801e7e0    30    30  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] sprintf.obj
+         .pdata    801e810     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strcmp.obj
+         .pdata    801e820     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strlcpy.obj
+         .pdata    801e830    24    24  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] strtol.obj
+         .pdata    801e860     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] toupper.obj
+         .pdata    801e870     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] wctomb.obj
+         .pdata    801e880    b4    b4  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] wstring.obj
+         .pdata    801e940     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xfwprep.obj
+         .pdata    801e950     c     c  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xfwrite.obj
+         .pdata    801e960   108   108  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xprintf.obj
+
+.idata             801f000   400   3fc 
+
+.debug             8020000    36     0 
+
+         .drectve  8020000    16    16  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] sprintf.obj
+         .drectve  8020020    16    16  [c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libc64dll.lib] xprintf.obj
+Import library libmx.dll
+          mxCreateString	0801f0b8
+          mxGetField_700	0801f0c0
+         mxGetString_700	0801f0c8
+          mxDestroyArray	0801f0d0
+                mxCalloc	0801f0d8
+            mxGetClassID	0801f0e0
+                  mxGetM	0801f0e8
+                  mxGetN	0801f0f0
+             mxIsComplex	0801f0f8
+             mxIsNumeric	0801f100
+                 mxGetPr	0801f108
+mxCreateDoubleMatrix_700	0801f110
+Import library libmex.dll
+mexCallMATLABWithObject	0801f140
+          mexWarnMsgTxt	0801f148
+           mexErrMsgTxt	0801f150
+Import library KERNEL32.dll
+           __imp_LoadLibraryA	0801f1c0
+         __imp_GetProcAddress	0801f1c8
+            __imp_FreeLibrary	0801f1d0
+           __imp_GetLocalTime	0801f1d8
+ __imp_GetTimeZoneInformation	0801f1e0
+           __imp_GetStdHandle	0801f1e8
+__imp_FlushConsoleInputBuffer	0801f1f0
+   __imp_SetHandleInformation	0801f1f8
+            __imp_GlobalAlloc	0801f200
+             __imp_GlobalFree	0801f208
+              __imp_WriteFile	0801f210
+
+Section .text: 90148
+	c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libcrt0.obj:  24
+	lccstub.obj:  32
+	test_plotblock_acc.obj:  27064
+	hostlib_multimedia.obj:  496
+	hostlib_video.obj:  384
+	hostlib_rtw.obj:  1484
+	rtgetinf.obj:  452
+	rtgetnan.obj:  312
+	rt_nonfinite.obj:  540
+
+Section .bss: 0
+
+Section .rdata: 2492
+	c:\program files\matlab\r2015a/sys/lcc64/lcc64/lib64\libcrt0.obj:  132
+	lccstub.obj:  8
+	test_plotblock_acc.obj:  816
+	hostlib_multimedia.obj:  16
+	hostlib_video.obj:  24
+	hostlib_rtw.obj:  96
+	rtgetinf.obj:  40
+	rtgetnan.obj:  24
+	rt_nonfinite.obj:  56
+
+Section .data: 16104
+	lccstub.obj:  8
+	test_plotblock_acc.obj:  6348
+	hostlib_multimedia.obj:  260
+	hostlib_video.obj:  140
+	hostlib_rtw.obj:  352
+	rtgetinf.obj:  40
+	rtgetnan.obj:  32
+	rt_nonfinite.obj:  40
+	test_plotblock_acc_data.obj:  384
+
+Section .pdata: 2664
+	lccstub.obj:  12
+	test_plotblock_acc.obj:  936
+	hostlib_multimedia.obj:  24
+	hostlib_video.obj:  24
+	hostlib_rtw.obj:  132
+	rtgetinf.obj:  48
+	rtgetnan.obj:  24
+	rt_nonfinite.obj:  60
+
+Section .idata: 1020
+
+Section .reloc: 724
+
+Section .debug: 0
+
+Section .edata: 104
+
+

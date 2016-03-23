@@ -41,7 +41,8 @@ N = 1;
     % back = median(backim,4);
     for k = 1:numFrames
         img = snapshot(camObj);
-        cleanim = img - backim;
+%         cleanim = img - backim;
+        [~,cleanim]=createMask(img);
         
         % conversion in black-white picture
         bw_clean = im2bw(uint8(cleanim),0.09);
