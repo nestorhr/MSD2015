@@ -38,13 +38,14 @@ numPts = 0;
             
 % Pre-process and categorize frames
 videoFrame = inputFrame; % Input frame used for color detection and displaying the results
+frameSize = size(videoFrame);
 videoFrameGray = rgb2gray(videoFrame); % Pre-processed  gray frame used for tracking
 videoFrameLines = videoFrame; % RGB frame used for line detection
 
 if numPts < 10 % If not enough tracking points found (Pre-defined minimum number of 10)
 
     % Start color detection
-    [~,maskedI]=createHsvRedMask(videoFrame); % Filter frame by color / Edit the color mask function if needed
+    [~,maskedI]=createHsvYellowMask(videoFrame); % Filter frame by color / Edit the color mask function if needed
     I=im2bw(maskedI,0.005); % Black and White image conversion with '0.005' level threshold
     [centers, radii] = imfindcircles(I,[20 60], 'Sensitivity',0.95); % Find circular forms with the defined pixel radius and with a non-aggresive acceptance criteria (0.95)
 
