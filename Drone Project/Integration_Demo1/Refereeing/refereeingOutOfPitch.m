@@ -52,8 +52,8 @@ end
 mThetaReferences=[mThetaSideReference mThetaGoalReference];
 
 sizeSelectedLines=size(selectedLines);
-rhoDistanceTH=0.2; % rho threshold in meters
-thetaTH=pi/12; % theta threshold in radians 
+rhoDistanceTH=0.4; % rho threshold in meters
+thetaTH=pi/6; % theta threshold in radians 
 
 %% Calculate drone position in the frame
 dronePosition=[frameProperties(2)/2 frameProperties(1)/2];
@@ -81,29 +81,16 @@ else % Calculate mask based on theta comparison
     for i=1:sizeSelectedLines(1)
 
           mTheta=selectedLines(i,5)*pi/180;
-        if mTheta>0
-            if mTheta<mThetaReferences(1)+thetaTH && mTheta>mThetaReferences(1)-thetaTH
+            if abs(mTheta)<abs(mThetaReferences(1))+thetaTH && abs(mTheta)>abs(mThetaReferences(1))-thetaTH
                 auxCntSide=auxCntSide+1;
                 outOfBoundsDetector(i)=1; % '1' for a correct side line matching
-            elseif mTheta<mThetaReferences(2)+thetaTH && mTheta>mThetaReferences(2)-thetaTH
+            elseif abs(mTheta)<abs(mThetaReferences(2))+thetaTH && abs(mTheta)>abs(mThetaReferences(2))-thetaTH
                     auxCntGoal=auxCntGoal+1;
                     outOfBoundsDetector(i)=2; % '2' for a correct goal line matching
-            else
+				else
                 outOfBoundsDetector(i)=0; % '0' for no matching                    
-            end
-        else if mTheta>mThetaReferences(1)-thetaTH && mTheta<mThetaReferences(1)+thetaTH
-                auxCntSide=auxCntSide+1;
-                outOfBoundsDetector(i)=1; 
-            elseif mTheta>mThetaReferences(2)-thetaTH && mTheta<mThetaReferences(2)+thetaTH
-                    auxCntGoal=auxCntGoal+1;
-                    outOfBoundsDetector(i)=2;            
-            else
-                outOfBoundsDetector(i)=0; % '0' for no matching
-            end
-        end
-         
-
-    end 
+				end
+   end 
 
     %% Filter possible parallel lines selected as outer lines based on rho provided as input
     selectedFilteredLines=zeros(2,6); % Predefined as 'First row' for possible 'side line' and 'Second row' for possible 'goal line'
@@ -213,6 +200,8 @@ else % Calculate mask based on theta comparison
 
                        OutOfPitchFlag=1; % Out of pitch
                    end
+               else
+                   OutOfPitchFlag=-1;
                end
 
             else
@@ -235,6 +224,8 @@ else % Calculate mask based on theta comparison
 
                            OutOfPitchFlag=1; % Out of pitch
                        end
+                   else
+                       OutOfPitchFlag=-1;
                    end
                 else % Compare with the goal line
                     if droneInPitch==1
@@ -247,6 +238,8 @@ else % Calculate mask based on theta comparison
 
                            OutOfPitchFlag=1; % Out of pitch
                        end
+                    else
+                        OutOfPitchFlag=-1;   
                     end
                 end
 
