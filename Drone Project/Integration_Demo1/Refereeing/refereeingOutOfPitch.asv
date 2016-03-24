@@ -30,9 +30,8 @@ function [OutOfPitchFlag, pixelDistance] = refereeingOutOfPitch(yawAngleDrone,ba
 % OutOfPitchFlag - flag indicating the stating if the ball is inside or
 % outside of the pitch
 %
-% pixelDistance - pixel to meters conversion factor
+% pixelDistance - 
 %
-% NOTE:
 % The position of the drone within the frame it is assumed to be in the
 % center of the frame using a top view camera with a pitch angle of 
 % pi/2 rad (completely vertical)
@@ -53,7 +52,7 @@ end
 if ~isempty(auxWMGoalLines1)
     mThetaGoalReference=auxWMGoalLines1(1,5);
 else
-    mThetaGoalReference=-999; % Predefined theta reference when there is no candidate
+    mThetaGoalReference=-999;
 end
 
 mThetaReferences=[mThetaSideReference mThetaGoalReference];

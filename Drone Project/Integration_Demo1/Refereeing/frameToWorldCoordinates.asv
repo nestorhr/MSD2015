@@ -30,12 +30,12 @@ function ballWorldPosition =frameToWorldCoordinates(yawAngleDrone, thetaCamX, fr
 
 
 %% Calculate Rotation matrix between the frame reference system and the world reference system
-if ballPosition(1) == -100 && ballPosition(2) == -100 % Filter predefined not-known ball position and assign a predefined value
+if ballPosition(1) == -100 && ballPosition(2) == -100 % Filter predefined not-known ball position and assign a 
     ballWorldPosition = [-999 -999];
-else   
+else    
 
-    Rx=rotx(-180); % Rotation matrix for the x-axis (fliping the y-axis from the frame reference to the world model reference)
-    Rz=rotz(yawAngleDrone*180/pi); % Rotation matrix for the z-axis based on the yaw/psi angle estimated
+    Rx=rotx(-180);
+    Rz=rotz(yawAngleDrone*180/pi);
 
     %% Calculate ball position with respect to the center of the frame
 
@@ -43,7 +43,7 @@ else
 
     %% Calculate vector in the local reference system with the same orientation as the absolute reference system
 
-    ballPosition3=Rx*Rz*ballPosition2; % Apply concatenation of rotations to change from frame reference to the world model system reference
+    ballPosition3=Rx*Rz*ballPosition2;
 
     %% Translate pixel distance into meters for both axis (Using two thetas is more accurate)
 
@@ -53,5 +53,4 @@ else
     %% Calculating ball position in meters
 
     ballWorldPosition=[ballPosition3(1)*pixelDistanceX ballPosition3(2)*pixelDistanceY];
-end
 end
