@@ -49,7 +49,7 @@ field = field(ioffs+2:end-ioffs,joffs:end-joffs,:);
 
 % Coordinate system conversion preparation
 [nrows,ncols,colval] = size(field); % Get matrix size
-field2im_params = [field_x,field_y,nrows,ncols];
+field2im_params = [607/542*field_x,883/810*field_y,nrows,ncols];
 
 % Call init function
 fign = init_plot_trilat(field, items, field2im_params);

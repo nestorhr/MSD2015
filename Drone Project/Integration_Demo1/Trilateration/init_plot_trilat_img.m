@@ -9,13 +9,17 @@ function [im,field2im_params] = init_plot_trilat_img(items,field_x,field_y)
 % Image loading
 im = imread('field.png');
 im = im(9:end,5:end,:);
-ioffs = 32;
-joffs = 37; % Trim edges to only have the field
-im = im(ioffs+2:end-ioffs,joffs:end-joffs,:);
+% ioffs = 32;
+% joffs = 37; % Trim edges to only have the field
+% im = im(ioffs+2:end-ioffs,joffs:end-joffs,:);
 
 % Coordinate system conversion preparation
 [nrows,ncols,~] = size(im); % Get matrix size
-field2im_params = [field_x,field_y,nrows,ncols];
+
+field2im_params = [883/810*field_x,607/542*field_y,nrows,ncols];
+% 883/180 and 607/542 come from the picture size with or without extra
+% space.
+
 
 % Plot corners
 for i = 1:4
@@ -30,6 +34,9 @@ for i = 1:4
     linepos(end+1) = xjn(i);
     linepos(end+1) = xin(i);
 end
+linepos(end+1) = xjn(1);
+linepos(end+1) = xin(1);
+    
 im = insertShape(im,'line',linepos,'color','black');
 
 im = insertText(im,[10 10],'LEGEND','BoxOpacity',0);
