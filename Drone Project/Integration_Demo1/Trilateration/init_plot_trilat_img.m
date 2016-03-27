@@ -21,25 +21,25 @@ field2im_params = [883/810*field_x,607/542*field_y,nrows,ncols];
 % space.
 
 
-% Plot corners
-for i = 1:4
-    [xi,xj] = xy2ij(items(i,1),items(i,2),field2im_params(1),field2im_params(2),field2im_params(3),field2im_params(4));
-    xin(i) = xi; xjn(i) = xj;
-    im = insertShape(im,'circle',[xj xi 5],'color','black');   
-end
-
-% Plot field lines between corners
-linepos = [];
-for i = 1:4
-    linepos(end+1) = xjn(i);
-    linepos(end+1) = xin(i);
-end
-linepos(end+1) = xjn(1);
-linepos(end+1) = xin(1);
-    
-im = insertShape(im,'line',linepos,'color','black');
+% % Plot corners
+% for i = 1:4
+%     [xi,xj] = xy2ij(items(i,1),items(i,2),field2im_params(1),field2im_params(2),field2im_params(3),field2im_params(4));
+%     xin(i) = xi; xjn(i) = xj;
+%     im = insertShape(im,'circle',[xj xi 5],'color','black');   
+% end
+% 
+% % Plot field lines between corners
+% linepos = [];
+% for i = 1:4
+%     linepos(end+1) = xjn(i);
+%     linepos(end+1) = xin(i);
+% end
+% linepos(end+1) = xjn(1);
+% linepos(end+1) = xin(1);
+%     
+% im = insertShape(im,'line',linepos,'color','black');
 
 im = insertText(im,[10 10],'LEGEND','BoxOpacity',0);
-im = insertText(im,[10 30],'Drone: Black','BoxOpacity',0);
-im = insertText(im,[10 50],'Ball:     Red','BoxOpacity',0);
+im = insertText(im,[10 30],'Drone: Black','BoxColor','Black','TextColor','White','BoxOpacity',1);
+im = insertText(im,[10 50],'Ball:     Red','BoxColor','Red','BoxOpacity',1);
 end
