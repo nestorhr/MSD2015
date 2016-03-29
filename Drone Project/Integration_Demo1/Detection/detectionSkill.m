@@ -45,7 +45,7 @@ videoFrameLines = videoFrame; % RGB frame used for line detection
 if numPts < 10 % If not enough tracking points found (Pre-defined minimum number of 10)
 
     % Start color detection
-    [~,maskedI]=createHsvYellowMask(videoFrame); % Filter frame by color / Edit the color mask function if needed
+    [~,maskedI]=createHsvRedMask(videoFrame); % Filter frame by color / Edit the color mask function if needed
     I=im2bw(maskedI,0.005); % Black and White image conversion with '0.005' level threshold
     [centers, radii] = imfindcircles(I,[20 60], 'Sensitivity',0.95); % Find circular forms with the defined pixel radius and with a non-aggresive acceptance criteria (0.95)
 
@@ -187,15 +187,15 @@ if lineDetectionEnabled==1 % Start line detection if enabled
         sizeTRmatrix=size(TRmatrix);
             for z = 1:sizeTRmatrix(1)
                 if TRmatrix(z,2) < 0
-                    TRmatrix(z,1) = TRmatrix(z,1) + 180;
+                    %TRmatrix(z,1) = TRmatrix(z,1) + 180;
                     TRmatrix(z,2) = -TRmatrix(z,2);
                 end
             end
             
         LinesCandidates(1,:)= TRmatrix(1,:);
 
-        ThetaTH=10; % Threshold defined for theta difference in degrees
-        RhoTH=90; % Threshold defined for rho difference in pixels
+        ThetaTH=25; % Threshold defined for theta difference in degrees
+        RhoTH=60; % Threshold defined for rho difference in pixels
         
         % Find the real number of different lines (SumCandidates)
         for i=1:sizeLines(1)-1

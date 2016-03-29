@@ -59,7 +59,7 @@ end
 mThetaReferences=[mThetaSideReference mThetaGoalReference];
 
 sizeSelectedLines=size(selectedLines);
-rhoDistanceTH=0.4; % rho threshold in meters
+rhoDistanceTH=0.2; % rho threshold in meters
 thetaTH=pi/6; % theta threshold in radians 
 
 %% Calculate drone position in the frame
@@ -92,17 +92,17 @@ else % Calculate mask based on theta comparison
             if abs(mTheta)<mThetaReferences(1)+thetaTH && abs(mTheta)>mThetaReferences(1)-thetaTH
                 auxCntSide=auxCntSide+1;
                 outOfBoundsDetector(i)=1; % '1' for a correct side line matching
-            elseif abs(mTheta)<mThetaReferences(2)+thetaTH && abs(mTheta)>mThetaReferences(2)-thetaTH
+            elseif abs(mTheta)<mThetaReferences(2)+thetaTH && abs(mTheta)>abs(mThetaReferences(2))-thetaTH
                     auxCntGoal=auxCntGoal+1;
                     outOfBoundsDetector(i)=2; % '2' for a correct goal line matching
 				else
                 outOfBoundsDetector(i)=0; % '0' for no matching                    
             end
           else
-            if mTheta>mThetaReferences(1)-thetaTH && mTheta<mThetaReferences(1)+thetaTH
+            if abs(mTheta)<abs(mThetaReferences(1))+thetaTH && abs(mTheta)>abs(mThetaReferences(1))-thetaTH
                 auxCntSide=auxCntSide+1;
                 outOfBoundsDetector(i)=1; % '1' for a correct side line matching
-            elseif mTheta>mThetaReferences(2)-thetaTH && mTheta<mThetaReferences(2)+thetaTH
+            elseif abs(mTheta)<abs(mThetaReferences(2))+thetaTH && abs(mTheta)>abs(mThetaReferences(2))-thetaTH
                     auxCntGoal=auxCntGoal+1;
                     outOfBoundsDetector(i)=2; % '2' for a correct goal line matching
 				else
