@@ -5,8 +5,8 @@ function [im] = update_plot_trilat_img(im,field2im_params,ballpos,dronepos,b_out
     
     radius_plot=20;
     
-    im = insertShape(im,'FilledCircle',[dronej dronei radius_plot],'color','black','Opacity', 1);    
-    im = insertShape(im,'FilledCircle',[ballj  balli  radius_plot],'color','red','Opacity', 1);
+    im = insertShape(im,'FilledCircle',[dronej dronei 1.2*radius_plot],'color','black','Opacity', 1);    
+    im = insertShape(im,'FilledCircle',[ballj  balli  0.8*radius_plot],'color','red','Opacity', 1);
     
     im = insertText(im,[10 90],'DRONE POSITION','BoxOpacity',0);
     im = insertText(im,[10 110],['X: ' num2str(dronepos(1),'%0.1f') ' Y: ' num2str(dronepos(2),'%0.1f')],'BoxOpacity',0);
