@@ -9,7 +9,7 @@ function [im] = update_plot_trilat_img(im,field2im_params,ballpos,dronepos,b_out
     im = insertShape(im,'FilledCircle',[ballj  balli  0.8*radius_plot],'color','red','Opacity', 1);
     
     im = insertText(im,[10 90],'DRONE POSITION','BoxOpacity',0);
-    im = insertText(im,[10 110],['X: ' num2str(dronepos(1),'%0.1f') ' Y: ' num2str(dronepos(2),'%0.1f')],'BoxOpacity',0);
+    im = insertText(im,[10 110],['X: ' num2str(dronepos(1),'%0.1f') ' Y: ' num2str(dronepos(2),'%0.1f') ' YAW: ' num2str(180/pi*dronepos(3),'%0.1f')],'BoxOpacity',0);
     
     im = insertText(im,[10 150],'BALL POSITION','BoxOpacity',0);
     if abs(abs(ballpos(1))-0.5*field2im_params(1)) < 2

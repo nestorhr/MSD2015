@@ -6,7 +6,7 @@
 % Mechatronic Systems Design PDEng trainee
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function [ballPosition, selectedLines, outputFrame]=detectionSkill(ballSelectionMode, lineDetectionEnabled, ReferenceImage, inputFrame)
+function [ballPosition, selectedLines, outputFrame]=detectionSkill(lineDetectionEnabled, inputFrame)
 
 % This function carries out the ball and line detection skill and gives as
 % output the ballPosition X and Y coordinates in pixels within the current 

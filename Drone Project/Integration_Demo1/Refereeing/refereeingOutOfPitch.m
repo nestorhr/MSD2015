@@ -6,7 +6,7 @@
 % Mechatronic Systems Design PDEng trainee
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-function [OutOfPitchFlag, pixelDistance] = refereeingOutOfPitch(yawAngleDrone,ballPosition,lineWidth,selectedLines,numOutOfBoundLines,frameProperties,droneInPitch,thetaCamX,height,worldModelOuterLines)
+function [OutOfPitchFlag, pixelDistance] = refereeingOutOfPitch(ballPosition,selectedLines,numOutOfBoundLines,frameProperties,droneInPitch,thetaCamX,height,worldModelOuterLines)
 
 % This function updates the OutOfPitchFlag ('0'- inside the pitch, '1'-
 % out of the pitch or '-1' not known)
