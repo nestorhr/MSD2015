@@ -82,7 +82,7 @@ if numOutOfBoundLines == 0
     elseif droneInPitch
         OutOfPitchFlag = 0;
     else
-        OutOfPitchFlag = 1;
+        OutOfPitchFlag = -1;
     end        
 else % Calculate mask based on theta comparison
     for i=1:sizeSelectedLines(1)

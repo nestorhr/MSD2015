@@ -1,5 +1,4 @@
-addpath('E:\ASD\Module 2\Referee Drone\Integration\Trilateration\')
-addpath('E:\ASD\Module 2\Referee Drone\Integration\Trilateration\Trilateration_algorithm')
+addpath('E:\GitHub\MSD2015\Drone Project\Integration_Demo1\Trilateration\')
 
 %% Initialize Coordinate System and Anchor System
 % SET UP PORT 
@@ -52,4 +51,5 @@ field = field(ioffs+2:end-ioffs,joffs:end-joffs,:);
 field2im_params = [field_x,field_y,nrows,ncols];
 
 % Call init function
+
 fign = init_plot_trilat(field, items, field2im_params);
