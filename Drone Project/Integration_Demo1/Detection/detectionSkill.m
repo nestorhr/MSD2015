@@ -85,7 +85,7 @@ if numPts < 10 % If not enough tracking points found (Pre-defined minimum number
             % Convert the rectangle represented as [x, y, w, h] into an
             % M-by-2 matrix of [x,y] coordinates of the four corners. This
             % is needed to be able to transform the bounding box to display
-            % the orientation of the face.
+            % the orientation.
             bboxPoints = bbox2points(bbox(zbbox, :));
 
             % Convert the box corners into the [x1 y1 x2 y2 x3 y3 x4 y4]  format required by insertShape.
@@ -125,7 +125,7 @@ else
 
             if bboxPolygon(1)>0&&bboxPolygon(2)>0&&bboxPolygon(3)>0&&bboxPolygon(4)>0&&bboxPolygon(5)>0&&bboxPolygon(6)>0&&bboxPolygon(7)>0&&bboxPolygon(8)>0                         
 
-                % Display a bounding box around the face being tracked.
+                % Display a bounding box around the ball being tracked.
                 videoFrame = insertShape(videoFrame, 'Polygon', bboxPolygon, 'LineWidth', 3);
 
                 % Display tracked points.
